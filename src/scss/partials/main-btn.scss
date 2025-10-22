@@ -1,0 +1,20 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.main-btn {
+  font-family: variables.$first-font-family;
+  font-weight: variables.$font-weight-semibold;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: variables.$color-main-bg;
+  border: none;
+  background-color: variables.$color-bg1;
+  padding: 14px 19px 13px 22px;
+
+  &.white {
+    color: variables.$color-bg1;
+    background-color: variables.$color-main-bg;
+    border: 1.5px solid variables.$color-bg1;
+  }
+}

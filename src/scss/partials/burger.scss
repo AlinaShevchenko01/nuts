@@ -1,0 +1,128 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 0.7s ease;
+  background-color: white;
+  padding: 14px 0 0 0;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  @include media.media-breakpoint-up(md) {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__inner {
+    @include mixins.flex-between-center;
+    gap: 16px;
+    padding: 0 11px 12px 0;
+  }
+
+  &__logo {
+    max-width: 300px;
+    @include mixins.flex-between-center;
+    gap: 8px;
+    padding-left: 12px;
+
+    img {
+      width: 34px;
+      height: 33px;
+    }
+  }
+
+  &__name {
+    font-weight: variables.$font-weight-extra;
+    font-size: 12px;
+    color: variables.$color-text2;
+
+    @include media.media-breakpoint-down-equal(xs){
+    max-width: 110px;
+    }
+  }
+
+  &__contact-block {
+
+    .contact-block__wrapper {
+      padding: 10px 11px 10px 10px;
+    }
+
+    .contact-block__call {
+      display: none;
+    }
+
+    .contact-block__inner{
+      order: -1;
+      width: 60%;
+    }
+
+    .contact-block__language{
+      display: none;
+    }
+  }
+
+  &__row {
+    position: relative;
+    @include mixins.flex-column;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 191px;
+    color: variables.$color-main-bg;
+    letter-spacing: 0.01em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: variables.$color-bg5;
+      z-index: -1;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  &__title {
+    max-width: 300px;
+    font-weight: variables.$font-weight-bold;
+    font-size: 24px;
+    margin: 9.5vh auto 12px;
+  }
+
+  &__text{
+    max-width: 64%;
+    font-size: 15px;
+    font-weight: variables.$font-weight-semibold;
+    line-height: 1.22;
+    text-align: center;
+    padding-left: 10px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,111 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.main-hero{
+  position: relative;
+  width: 100%;
+  padding: 200px 56px 134px;
+
+  @include media.media-breakpoint-down-equal(md) {
+    padding: 148px 20px 122px;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.6s ease;
+    pointer-events: auto;
+
+    &.video-play {
+      opacity: 0;
+      pointer-events: auto;
+    }
+  }
+
+  &__title{
+    max-width: 900px;
+    margin: 0 auto 38px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 700px;
+    font-weight: variables.$font-weight-semibold;
+    font-size: 25px;
+    letter-spacing: 0.01em;
+    line-height: 1.25;
+    text-align: center;
+    color: variables.$color-main-bg;
+    margin: 0 auto 38px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      max-width: 500px;
+      font-size: 20px;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      font-size: 17px;
+      line-height: 1.3;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      max-width: 80%;
+    }
+  }
+
+  &__btn-play {
+
+    svg{
+
+      @include media.media-breakpoint-down-equal(xs) {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  &__picture-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__preloader{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mixins.hidden;
+
+    @include media.media-breakpoint-down-equal(md) {
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      height: 100%;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      transform: translateY(-10%);
+    }
+
+    &.active {
+      @include mixins.shown;
+    }
+  }
+}

@@ -1,0 +1,230 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.header{
+  //position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: variables.$color-main-bg;
+
+  &.scrolled {}
+
+  &__contact-block {
+    width: 100%;
+
+    @include media.media-breakpoint-down-equal(md) {
+      .contact-block__sale,
+      .contact-block__activity,
+      .contact-block__social{
+        display: none;
+      }
+    }
+  }
+
+  &__grid {
+    width: 67.7%;
+    max-width: 1293px;
+    display: grid;
+    grid-template-columns: 7.8fr 9.3fr 4fr 5.4fr 4.84fr 1fr;
+    gap: 16px;
+    padding: 17px 0 14px;
+    margin-left: 16.4vw;
+
+    @include media.media-breakpoint-down-equal(l) {
+      max-width: 1300px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @include media.media-breakpoint-down-equal(lg) {
+      grid-template-columns: 6fr 6fr 4fr 5.4fr 4.84fr 1fr;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      width: 100%;
+      grid-template-columns: 0.5fr 1fr 0.5fr;
+      align-items: center;
+      padding: 8px 5px 8px 3.3vw;
+    }
+  }
+
+  &__column {
+    min-width: 126px;
+
+    &:nth-child(1) {
+      @include media.media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @include media.media-breakpoint-down(md) {
+        justify-self: center;
+        margin: 2px 0 0 -3px;
+      }
+    }
+
+    &:nth-child(3) {
+      justify-self: end;
+      margin-top: 5px;
+    }
+    &:nth-child(4) {
+      margin-top: 4px;
+    }
+
+    &:nth-child(5) {
+      justify-self: end;
+      margin-top: 3px;
+    }
+
+    &:nth-child(6) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(7) {
+      min-width: 39px;
+      margin-top: 9px;
+
+      @include media.media-breakpoint-down-equal(md) {
+        justify-self: end;
+        margin-top: -4px;
+      }
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      min-width: auto;
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6){
+        display: none;
+      }
+    }
+  }
+
+  &__burger-icon {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__logo{
+    @include mixins.flex-between-center;
+    gap: 6px;
+    max-width: 217px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      img {
+        width: 29px;
+        height: 28px;
+      }
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      max-width: 160px;
+      flex-direction: column;
+      gap: 7px;
+    }
+  }
+
+  &__name {
+    max-width: 155px;
+    font-weight: variables.$font-weight-extra;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: variables.$color-main-text;
+    line-height: 1.2;
+
+    @include media.media-breakpoint-down-equal(md) {
+      max-width: none;
+      font-size: 14px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      max-width: 130px;
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+
+  &__social {
+    width: 113px;
+    @include mixins.flex-between-center;
+    gap: 6px;
+  }
+
+  &__number {
+    a {
+      font-family: variables.$second-font-family;
+      font-weight: variables.$font-weight-medium;
+      font-size: 13px;
+      color: variables.$color-text2;
+
+      span {
+        font-weight: variables.$font-weight-semibold;
+        color: variables.$color-bg1;
+      }
+    }
+  }
+
+  &__cart {
+    display: block;
+    position: relative;
+    width: 36px;
+    border: none;
+    background-color: transparent;
+
+    svg {
+      @include media.media-breakpoint-down-equal(md) {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  &__cart-counter {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    font-family: variables.$second-font-family;
+    font-weight: variables.$font-weight-bold;
+    font-size: 8px;
+    border-radius: 50%;
+    background-color: variables.$color-bg2;
+    color: variables.$color-main-bg;
+    padding: 2px;
+  }
+
+  &__text-call{
+    max-width: 178px;
+    font-family: variables.$second-font-family;
+    font-weight: variables.$font-weight-medium;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 1.24;
+    color: variables.$color-text1;
+  }
+
+  hr {
+    width: 100vw;
+    height: 1px;
+    border: none;
+    background-color: variables.$color-bg4;
+    margin: 0;
+
+    @include media.media-breakpoint-down-equal(md) {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    @include media.media-breakpoint-down-equal(md) {
+      display: none;
+    }
+  }
+}

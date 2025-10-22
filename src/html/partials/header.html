@@ -1,0 +1,111 @@
+<header class="header">
+    <div class="header__wrapper">
+        {{> contact-block
+        class='header__contact-block'}}
+
+        <div class="header__grid">
+            <div class="header__column">
+                <button class="header__burger-icon">
+                {{> svg-manager
+                id="icon-burger" width="19px" height="17px"}}
+                </button>
+            </div>
+            <div class="header__column">
+                <a href="#"
+                   class="header__logo">
+                    <img src="/img/header/logo.webp"
+                         alt="logo">
+
+                    <span class="header__name">
+                        ОРЕХ ПРИЧЕРНОМОРЬЯ
+                    </span>
+                </a>
+            </div>
+
+            <div class="header__column">
+                <ul class="header__social">
+                    <li>
+                        <a href="https://www.viber.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            {{> svg-manager
+                            id="icon-viber" width="31px" height="31px"}}
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://telegram.org/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            {{> svg-manager
+                            id="icon-telegram" width="31px" height="31px"}}
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.whatsapp.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            {{> svg-manager
+                            id="icon-whatsapp" width="31px" height="31px"}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__column">
+                <ul class="header__numbers">
+                    <li class="header__number">
+                        <a href="tel:'+380447505011'">
+                            <span>
+                                +38 (044)
+                            </span>
+
+                            750-50-11
+                        </a>
+                    </li>
+
+                    <li class="header__number">
+                        <a href="tel:'+380977755051'">
+                            <span>
+                                +38 (097)
+                            </span>
+
+                            775-50-51
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__column">
+                {{> main-btn
+                btn-class='header__request-call'
+                text='Заказать звонок'}}
+            </div>
+
+            <div class="header__column">
+                <p class="header__text-call">
+                  Ждем Вашего звонка ежедневно с 9 до 18
+                </p>
+            </div>
+
+            <div class="header__column">
+                <button class="header__cart">
+                    {{> svg-manager
+                    id="icon-bag" width="24px" height="24px"}}
+
+                    <span class="header__cart-counter">
+                        0
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <hr>
+
+        {{> navigation
+        class='header__navigation'}}
+    </div>
+
+    {{> burger }}
+</header>

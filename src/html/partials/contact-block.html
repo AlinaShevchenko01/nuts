@@ -1,0 +1,115 @@
+<div class="contact-block {{class}}">
+    <div class="contact-block__wrapper">
+        <ul class="contact-block__social">
+            <li>
+                <a href="https://www.facebook.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    {{> svg-manager
+                    id="icon-facebook" width="13px" height="13px"}}
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    {{> svg-manager
+                    id="icon-instagram" width="13px" height="13px"}}
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    {{> svg-manager
+                    svg-class="contact-block__icon-youtube"
+                    id="icon-youtube"
+                    width="16px"
+                    height="16px"
+                    }}
+                </a>
+            </li>
+        </ul>
+
+        <div class="contact-block__call">
+            <a href="tel:'+380447505011'">
+                {{> svg-manager
+                id="icon-telephone"
+                width="10px"
+                height="10px"
+                }}
+
+                <span>
+                    +38 (044)
+                </span>
+
+                750-50-11
+            </a>
+
+            <button data-btn="request">
+                Заказать звонок
+            </button>
+        </div>
+
+        <p class="contact-block__sale">
+            Ваша персональная скидка - 5%
+        </p>
+
+        <div class="contact-block__inner">
+            <ul class="contact-block__activity">
+                <li>
+                    <a class="contact-block__activity-login"
+                       href="#" >
+                        {{> svg-manager
+                        id="icon-man-user" width="11px" height="11px"}}
+
+                        <span>
+                  Вход
+                </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="contact-block__activity-login"
+                       href="#" >
+                        Регистрация
+                    </a>
+                </li>
+            </ul>
+
+            <div class="contact-block__language">
+                <button class="contact-block__language-btn"
+                        aria-haspopup="listbox"
+                        aria-expanded="false">
+                <span class="contact-block__language-selected">
+                    Ru
+                </span>
+
+                    {{> svg-manager
+                    id="icon-arrow-down"
+                    svg-class="contact-block__language-arrow"
+                    width="8px"
+                    height="6px"}}
+                </button>
+
+                <ul class="contact-block__language-list"
+                    role="listbox">
+                    <li class="contact-block__language-item"
+                        role="option"
+                        data-language="ru"
+                        aria-selected="true">
+                        Ru
+                    </li>
+
+                    <li class="contact-block__language-item"
+                        role="option"
+                        data-language="ru">
+                        Ua
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
