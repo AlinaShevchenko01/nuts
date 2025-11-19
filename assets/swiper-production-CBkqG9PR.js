@@ -1,0 +1,2 @@
+import{S as o,N as r}from"./vendor-ULRMf_3L.js";import{l as e}from"./swiper-lazy-loading-C6_8K6q9.js";import"./index-CSt9eDSD.js";function n(n){const i=new o(`${n} .swiper`,{modules:[r],loop:!0,navigation:{nextEl:`${n} .swiper-production__btn_next`,prevEl:`${n} .swiper-production__btn_prev`},grabCursor:!0,speed:700});e(i)}export{n as initSwiper};
+//# sourceMappingURL=swiper-production-CBkqG9PR.js.map
