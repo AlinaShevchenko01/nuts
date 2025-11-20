@@ -1,0 +1,60 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.info-garden {
+  &__wrapper {
+    max-width: 1418px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 37px 56px 88px 56px;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      padding-left: 24px;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+      padding: 37px 34px 40px 34px;
+    }
+  }
+
+  &__inner {
+    @include mixins.flex-column;
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  &__number {
+    position: relative;
+    font-family: variables.$second-font-family;
+    font-size: 72px;
+    font-weight: variables.$font-weight-extra;
+    letter-spacing: 0.01em;
+    margin: 0 auto 16px;
+
+    @include media.media-breakpoint-down-equal(sm) {
+      font-size: 60px;
+    }
+  }
+
+  &__measuring {
+    position: absolute;
+    top: 9px;
+    right: -27px;
+    font-size: 18px;
+    font-weight: variables.$font-weight-black;
+    letter-spacing: 0.05em;
+  }
+
+  &__description {
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.04;
+  }
+}

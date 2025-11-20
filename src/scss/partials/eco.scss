@@ -1,0 +1,72 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.eco {
+  &__wrapper {
+    max-width: 100%;
+    position: relative;
+    padding: 224px 56px 263px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      padding: 180px 56px 200px;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 128px 20px 122px;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      padding: 60px 20px 80px;
+    }
+  }
+
+  &__inner {
+    max-width: 720px;
+    text-align: center;
+    color: variables.$color-main-bg;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 48px 0 23px;
+    letter-spacing: -0.009em;
+
+    @include media.media-breakpoint-down-equal(sm) {
+      margin: 30px 0 20px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    font-weight: variables.$font-weight-medium;
+    line-height: 1.38;
+    letter-spacing: 0.01em;
+
+    @include media.media-breakpoint-down-equal(sm) {
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__shadow {
+    z-index: -1;
+  }
+
+  svg {
+    @include media.media-breakpoint-down-equal(sm) {
+      width: 58px;
+      height: 64px;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.production {
+  width: 100%;
+
+  &__wrapper {
+    max-width: 1448px;
+    width: 100%;
+    @include mixins.flex-between;
+    gap: 32px;
+    padding: 116px 56px;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      align-items: center;
+      padding: 40px 56px;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      flex-direction: column;
+      gap: 32px;
+      padding: 40px 0 0;
+    }
+  }
+
+  &__inner {
+    &:nth-child(1) {
+      width: 37%;
+      padding: 30px 0 0 46px;
+
+      @include media.media-breakpoint-down-equal(lg) {
+        width: 60%;
+        max-width: 800px;
+        padding: 12px 0 0;
+        margin: 0 auto;
+      }
+
+      @include media.media-breakpoint-down-equal(md) {
+        width: 100%;
+        text-align: center;
+        padding: 0 34px;
+      }
+    }
+
+    &:nth-child(2) {
+      flex: 0 0 60%;
+      width: 60%;
+      max-width: 700px;
+      justify-self: end;
+
+      @include media.media-breakpoint-down-equal(md) {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 48px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      margin-bottom: 32px;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__text-block {
+    @include mixins.flex-column;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: variables.$font-weight-medium;
+    letter-spacing: 0.0005em;
+    line-height: 1.6;
+    margin-bottom: 46px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      margin-bottom: 32px;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      gap: 14px;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+  }
+
+  &__text:last-child {
+    display: none;
+  }
+
+  &__text_accent {
+    font-weight: variables.$font-weight-semibold;
+    color: variables.$color-bg1;
+  }
+
+  &__btn.white {
+    padding: 16px 40px;
+  }
+
+  &__swiper-main {
+    width: 100%;
+  }
+}

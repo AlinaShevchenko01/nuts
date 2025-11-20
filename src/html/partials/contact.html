@@ -1,0 +1,123 @@
+<section class="contact">
+  <div class="contact__wrapper">
+    <div class="contact__inner">
+      <h3 class="contact__title">
+        <span>Контакты</span>
+
+        {{> templates/svg-manager id="icon-arrow-down" width="20px"
+        height="20px" svg-class = 'contact__arrow'}}
+      </h3>
+
+      <div class="contact__accordion">
+        <div class="contact__accordion-content">
+          <div class="contact__grid">
+            <ul class="contact__phone">
+              <li class="contact__phone-number">
+                {{> templates/svg-manager id="icon-telephone" width="14px"
+                height="14px" svg-class='contact__phone-icon'}}
+              </li>
+
+              <li class="contact__phone-number">
+                <a href="tel:'+38 (095) 711 11 11'"> +38 (095) 711 11 11 </a>
+              </li>
+
+              <li class="contact__phone-number">
+                <a href="tel:'+38 (095) 711 11 11'"> +38 (095) 711 11 11 </a>
+              </li>
+            </ul>
+
+            <ul class="contact__network">
+              <li class="contact__network-item">
+                <a
+                  href="https://www.viber.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{> templates/svg-manager id="icon-viber" width="31px"
+                  height="31px"}}
+                </a>
+              </li>
+
+              <li class="contact__network-item">
+                <a
+                  href="https://www.telegram.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{> templates/svg-manager id="icon-telegram" width="31px"
+                  height="31px"}}
+                </a>
+              </li>
+
+              <li class="contact__network-item">
+                <a
+                  href="https://www.whatsapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{> templates/svg-manager id="icon-whatsapp" width="31px"
+                  height="31px"}}
+                </a>
+              </li>
+            </ul>
+
+            <ul class="contact__email">
+              <li class="contact__email-item">
+                <a
+                  href="https://mail.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{> templates/svg-manager id="icon-email" width="15px"
+                  height="15px"}}
+
+                  <span> nuts@nbsc.com.ua </span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="contact__address">
+              <div class="contact__address-block">
+                {{> templates/svg-manager id="icon-home" width="16px"
+                height="16px"}}
+
+                <p class="contact__address-title">Офис и отдел продаж</p>
+              </div>
+
+              <p class="contact__address-text">
+                Украина, г. Одесса, <br />
+                ул. Космонавтов, 32
+              </p>
+            </div>
+
+            <div class="contact__production">
+              <div class="contact__production-block">
+                {{> templates/svg-manager id="icon-tree" width="16px"
+                height="19px"}}
+
+                <p class="contact__address-title">Производство</p>
+              </div>
+
+              <p class="contact__address-text">
+                Украина, Одесская обл, <br />
+                с. Яськи, ул. Центральная, 232
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact__map-block">
+      <div class="contact__map" id="map">
+        {{> templates/img-manager
+        img-srcset='/img/pages/main/main-photo-12.webp'
+        img-src='/img/pages/main/main-photo-12.png' img-alt='Ореховое поле'
+        img-class='' img-width='1920' img-height='600' }}
+      </div>
+
+      {{> templates/svg-manager id="icon-place-holder" width="49px"
+      height="49px" svg-class='contact__place-holder'}}
+    </div>
+  </div>
+</section>

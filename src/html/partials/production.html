@@ -1,0 +1,37 @@
+<section class="production">
+  <div class="production__wrapper">
+    <div class="production__inner">
+      <h3 class="production__title">О производителе</h3>
+
+      <div class="production__text-block">
+        <p class="production__text">
+          <span class="production__text_accent">
+            Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья”
+          </span>
+
+          выращивает смешанные сады ореха грецкого с фундуком, а также ореха
+          грецкого с шиповником, на площади более 150 гектаров.
+        </p>
+
+        <p class="production__text">
+          Помимо этого кооператив занимается выращиванием посадочного материала,
+          саженцов привитого и непривитого грецкого ореха, фундука и шиповника.
+        </p>
+
+        <p class="production__text">
+          Предприятие укомплектовано всей необходимой техникой и оборудованием
+          для выращивания интенсивного сада, воспроизводства саженцев в
+          питомнике и выращивания трюфеля.
+        </p>
+      </div>
+
+      {{> partials/main-btn btn-class='production__btn white'
+      btn-text='Подробнее' btn-move='detail'}}
+    </div>
+
+    <div class="production__inner">
+      {{> partials/swiper-production swiper-class='production__swiper-main'
+      slides=slidesProductionMain}}
+    </div>
+  </div>
+</section>

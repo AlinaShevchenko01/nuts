@@ -1,43 +1,30 @@
-<div class="burger">
-    <div class="burger__wrapper">
-        <div class="burger__inner">
-            <a href="#"
-               class="burger__logo">
-                <img src="/img/header/logo.webp"
-                     alt="logo">
+<div class="burger hidden">
+  <div class="burger__wrapper">
+    <div class="burger__inner">
+      <a href="#" class="burger__logo">
+        <img src="/img/header/logo.webp" alt="logo" />
 
-                <span class="burger__name">
-                        ОРЕХ ПРИЧЕРНОМОРЬЯ
-                    </span>
-            </a>
+        <span class="burger__name"> ОРЕХ ПРИЧЕРНОМОРЬЯ </span>
+      </a>
 
-            <button class="burger__close">
-                {{> svg-manager
-                id="icon-close"
-                width="16px"
-                height="16px"
-                }}
-            </button>
-        </div>
-
-        {{> contact-block
-        class='burger__contact-block'}}
-
-        {{> navigation
-        class='burger__navigation'}}
-
-        <div class="burger__row">
-            <picture >
-                <img class="burger__bg"
-                        src="/img/pages/main/main-photo-2.webp">
-            </picture>
-            <p class="burger__title">
-                Орех Причерноморья
-            </p>
-
-            <p class="burger__text">
-                Единственный в Украине сад совместного выращивания фундука и грецкого ореха
-            </p>
-        </div>
+      <button class="burger__close">
+        {{> templates/svg-manager id="icon-close" width="16px" height="16px" }}
+      </button>
     </div>
+
+    {{> partials/contact-block class='burger__contact-block' }} {{>
+    partials/navigation class='burger__navigation' }}
+
+    <div class="burger__row">
+      <picture>
+        <img class="burger__bg" src="/img/pages/main/main-photo-2.webp" />
+      </picture>
+      <p class="burger__title">Орех Причерноморья</p>
+
+      <p class="burger__text">
+        Единственный в Украине сад совместного выращивания фундука и грецкого
+        ореха
+      </p>
+    </div>
+  </div>
 </div>

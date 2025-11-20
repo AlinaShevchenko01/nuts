@@ -1,0 +1,33 @@
+<div class="our-target">
+  <div class="our-target__wrapper" data-container="parent">
+    <div class="our-target__inner">
+      <div class="our-target__container" data-container="hidden">
+        <h3 class="our-target__title">
+          Наша главная цель - получить максимальную прибыль с одного гектара
+        </h3>
+
+        <div
+          class="our-target__video-container"
+          aria-label="play-video"
+          data-btn="play-video"
+        >
+          {{> partials/btn-play btn-class='out-target__btn-play' }}
+
+          <p class="our-target__subtitle-video">
+            Cмотреть видео о производстве
+          </p>
+        </div>
+      </div>
+
+      <div class="our-target__picture-container">
+        {{> templates/img-manager img-srcset='/img/pages/main/main-photo-4.webp'
+        img-src='/img/pages/main/main-photo-4.png' img-alt='Walnuts'
+        img-class='our-target__preloader' img-width='1920' img-height='600' }}
+      </div>
+    </div>
+
+    {{> templates/video-manager video-class='our-target__video'
+    video-width='1000' video-height='600' video-src='video/walnut-hazelnut.mp4'
+    }}
+  </div>
+</div>

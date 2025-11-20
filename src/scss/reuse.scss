@@ -1,9 +1,12 @@
 @use "@/scss/base/reset";
 @use "@/scss/base/base";
 
+@use "@/scss/partials/logo";
 @use "@/scss/partials/burger";
 @use "@/scss/partials/contact-block";
 @use "@/scss/partials/header";
 @use "@/scss/partials/navigation";
 @use "@/scss/partials/main-btn";
-@use "@/scss/partials/video-preloader";
+@use "@/scss/partials/video-hidden";
+@use "@/scss/partials/contact";
+@use "@/scss/partials/footer";

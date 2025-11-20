@@ -1,0 +1,28 @@
+<div class="swiper-production {{swiper-class}}">
+  <div class="swiper-production__swiper swiper">
+    <div class="swiper-wrapper swiper-production__wrapper">
+      {{#each slides}}
+      <div
+        class="swiper-slide swiper-production__slide"
+        data-container="parent"
+      >
+        <div class="swiper-production__slide-container" data-container="hidden">
+          {{> templates/img-manager img-srcset=this.imgSrcset
+          img-src=this.imgSrc img-alt=this.imgAlt img-class=this.imgClass
+          img-width='700' img-height=470 }}
+        </div>
+
+        {{#if this.videoSrc}} {{> templates/video-manager
+        video-class=this.videoClass video-width='700' video-height='472'
+        video-src=this.videoSrc }} {{> partials/btn-play
+        btn-class='swiper-production__btn-play centre'
+        data-btn-move='play-video'}} {{/if}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+  {{> partials/nav-btns nav-btns-class='swiper-production__nav'
+  nav-btn-prev='swiper-production__btn_prev'
+  nav-btn-next='swiper-production__btn_next'}}
+</div>

@@ -1,0 +1,43 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.logo {
+  @include mixins.flex-between-center;
+  gap: 6px;
+  max-width: 217px;
+  cursor: pointer;
+
+  @include media.media-breakpoint-down-equal(md) {
+    img {
+      width: 29px;
+      height: 28px;
+    }
+  }
+
+  @include media.media-breakpoint-down-equal(xs) {
+    max-width: 160px;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__name {
+    max-width: 155px;
+    font-weight: variables.$font-weight-extra;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: variables.$color-main-text;
+    line-height: 1.2;
+
+    @include media.media-breakpoint-down-equal(md) {
+      max-width: none;
+      font-size: 14px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      max-width: 130px;
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+}

@@ -13,6 +13,7 @@
   transition: transform 0.7s ease;
   background-color: white;
   padding: 14px 0 0 0;
+  overflow-y: auto;
 
   &.active {
     transform: translateX(0);
@@ -51,13 +52,12 @@
     font-size: 12px;
     color: variables.$color-text2;
 
-    @include media.media-breakpoint-down-equal(xs){
-    max-width: 110px;
+    @include media.media-breakpoint-down-equal(xs) {
+      max-width: 110px;
     }
   }
 
   &__contact-block {
-
     .contact-block__wrapper {
       padding: 10px 11px 10px 10px;
     }
@@ -66,12 +66,12 @@
       display: none;
     }
 
-    .contact-block__inner{
+    .contact-block__inner {
       order: -1;
       width: 60%;
     }
 
-    .contact-block__language{
+    .contact-block__language {
       display: none;
     }
   }
@@ -116,7 +116,7 @@
     margin: 9.5vh auto 12px;
   }
 
-  &__text{
+  &__text {
     max-width: 64%;
     font-size: 15px;
     font-weight: variables.$font-weight-semibold;

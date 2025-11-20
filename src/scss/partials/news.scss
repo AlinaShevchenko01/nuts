@@ -1,0 +1,70 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.news {
+  background-color: variables.$color-bg10;
+
+  &__wrapper {
+    max-width: 1410px;
+    padding: 88px 56px 88px 56px;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 60px 0 60px 34px;
+    }
+  }
+
+  &__inner {
+    &:nth-child(1) {
+      @include mixins.flex-between;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 0 5px 0 1px;
+    }
+
+    &:nth-child(2) {
+      padding: 0 5px;
+      margin-bottom: 71px;
+
+      @include media.media-breakpoint-down-equal(md) {
+        padding: 0;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 36px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    font-weight: variables.$font-weight-medium;
+    line-height: 1.28;
+    letter-spacing: -0.001em;
+    margin: 0 0 64px 3px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__nav-btns {
+    position: static;
+    margin-top: 26px;
+    padding: 20px 25px 12px;
+  }
+
+  &__swiper {
+    width: 100%;
+  }
+
+  &__main-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

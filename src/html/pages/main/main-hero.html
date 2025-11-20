@@ -1,40 +1,29 @@
 <section class="main-hero">
-    <div class="main-hero__wrapper">
-        <div class="main-hero__container"
-             data-container="hidden">
-            <div class="main-hero__inner">
-                <h1 class="main-hero__title">
-                    Орех Причерноморья
-                </h1>
+  <div class="main-hero__wrapper" data-container="parent">
+    <div class="main-hero__container" data-container="hidden">
+      <div class="main-hero__inner">
+        <h1 class="main-hero__title">Орех Причерноморья</h1>
 
-                <p class="main-hero__subtitle">
-                    Единственный в Украине сад совместного выращивание фундука и грецкого ореха
-                </p>
+        <p class="main-hero__subtitle">
+          Единственный в Украине сад совместного выращивание фундука и грецкого
+          ореха
+        </p>
 
-                {{> btn-play
-                btn-class='main-hero__btn-play'
-                }}
-            </div>
+        {{> partials/btn-play btn-class='main-hero__btn-play'
+        data-btn-move='play-video' }}
+      </div>
 
-            <div class="main-hero__picture-container">
-                {{> img-manager
-                img-srcset='/img/pages/main/main-photo-1.webp'
-                img-src='/img/pages/main/main-photo-1.png'
-                img-alt='Ореховое поле'
-                img-class='main-hero__preloader'
-                img-width='1920'
-                img-height='600'
-                }}
+      <div class="main-hero__picture-container">
+        {{> templates/img-manager img-srcset='/img/pages/main/main-photo-1-o.webp'
+        img-src='/img/pages/main/main-photo-1.png' img-alt='Ореховое поле'
+         img-class='main-hero__preloader' img-width='1920' img-height='600' }}
 
-                <div class="main-hero__shadow shadow">
-                </div>
-            </div>
-        </div>
-
-        {{> video-manager
-        video-class='main-hero__video'
-        video-width='1000'
-        video-height='600'
-        name-video='about-company' }}
+        <div class="main-hero__shadow shadow"></div>
+      </div>
     </div>
+
+    {{> templates/video-manager video-class='main-hero__video'
+    video-width='1000' video-height='600' video-src='video/walnut-small-o.mp4'
+    }}
+  </div>
 </section>

@@ -1,0 +1,57 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.main-products {
+  &__wrapper {
+    max-width: 1405px;
+    margin: 0 auto;
+    padding: 87px 56px 90px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      padding: 60px 34px;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 40px 34px 0;
+    }
+  }
+
+  &__inner {
+    max-width: 620px;
+    text-align: center;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(md) {
+      max-width: 440px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 34px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: variables.$font-weight-medium;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+    margin-bottom: 62px;
+  }
+
+  &__btn-shop {
+    display: block;
+    margin: 72px auto 0;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      margin-top: 52px;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-top: 32px;
+    }
+  }
+}

@@ -9,7 +9,9 @@
     "build:deploy": "vite build --mode deploy",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "convert-webp": "node convert-webp.js"
+    "convert-webp": "node convert-webp.js",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check ."
   },
   "keywords": [],
   "author": "Shevchenko",
@@ -26,18 +28,24 @@
     "postcss-preset-env": "^10.3.1",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.6.2",
+    "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-handlebars": "^0.0.1",
     "rollup": "^4.52.5",
     "sass": "^1.92.1",
+    "terser": "^5.44.1",
     "vite": "^7.1.11",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-hulak-tools": "^3.0.0",
     "vite-plugin-imagemin": "^0.6.1"
   },
   "dependencies": {
+    "firebase": "^12.5.0",
     "just-validate": "^4.3.0",
+    "lazy-viewport-loader": "^1.0.2",
     "libphonenumber-js": "^1.12.15",
     "scroll-lock": "^2.1.5",
-    "swiper": "^11.2.10"
+    "swiper": "^11.2.10",
+    "url-query-toolkit": "^1.0.1"
   }
 }

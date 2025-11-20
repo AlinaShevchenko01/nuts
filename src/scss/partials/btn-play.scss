@@ -1,0 +1,20 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.btn-play {
+  svg {
+    @include media.media-breakpoint-down-equal(xs) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &.centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}

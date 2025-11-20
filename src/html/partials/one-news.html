@@ -1,0 +1,31 @@
+<div class="swiper-slide {{one-news-class}} one-news">
+  <div class="one-news__wrapper">
+    <div class="one-news__inner" data-container="parent">
+      <div class="one-news__container" data-container="hidden">
+        <div class="one-news__picture-container">{{image}}</div>
+      </div>
+
+      {{#if video}} {{video}} {{> partials/btn-play
+      btn-class='one-news__btn-play' data-btn-move='play-video' }} {{/if}}
+    </div>
+
+    <div class="one-news__inner">
+      <p class="one-news__date">{{one-news-date}}</p>
+
+      <h6 class="one-news__title">{{one-news-title}}</h6>
+
+      <p class="one-news__text">
+        Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+        недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+        отличную...
+      </p>
+
+      <button class="one-news__btn">
+        <span class="one-news__btn-text"> Читать </span>
+
+        {{> templates/svg-manager id="icon-arrow-right-bigger"
+        svg-class="one-news__arrow" width="18px" height="18px"}}
+      </button>
+    </div>
+  </div>
+</div>

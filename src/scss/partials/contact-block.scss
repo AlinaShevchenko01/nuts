@@ -2,10 +2,10 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.contact-block{
+.contact-block {
   background-color: variables.$color-bg3;
 
-  &__wrapper{
+  &__wrapper {
     width: 67.7%;
     max-width: 1300px;
     @include mixins.flex-between-center;
@@ -32,16 +32,16 @@
       max-width: 120px;
       align-items: center;
 
-      li{
+      li {
         &:nth-child(1),
-        &:nth-child(2){
+        &:nth-child(2) {
           svg {
             width: 15px;
             height: 15px;
           }
         }
 
-        &:nth-child(3){
+        &:nth-child(3) {
           svg {
             width: 18px;
             height: 18px;
@@ -57,7 +57,7 @@
 
     a {
       @include mixins.flex-between-center;
-      gap:4px;
+      gap: 4px;
       font-family: variables.$second-font-family;
       font-weight: variables.$font-weight-medium;
       font-size: 12px;
@@ -84,7 +84,7 @@
     }
   }
 
-  &__sale{
+  &__sale {
     font-family: variables.$second-font-family;
     font-weight: variables.$font-weight-semibold;
     font-size: 14px;
@@ -142,7 +142,7 @@
       }
 
       @include media.media-breakpoint-up(md) {
-        &:hover::after  {
+        &:hover::after {
           transform: translateX(-50%) scaleX(1);
         }
       }
@@ -188,15 +188,19 @@
     }
   }
 
-  &__language-selected{
+  &__language-selected {
     color: variables.$color-text2;
     font-weight: variables.$font-weight-semibold;
     letter-spacing: 0.02em;
     line-height: 1;
   }
 
-  &__language-arrow{
+  &__language-arrow {
     transition: transform 0.3s ease;
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
   }
 
   &__language-list {
@@ -209,7 +213,7 @@
     overflow: hidden;
     transition: max-height 0.3s ease;
     background-color: variables.$color-main-bg;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     margin-top: 2px;
 
     &.active {
@@ -217,10 +221,12 @@
     }
   }
 
-  &__language-item{
-    padding: 8px  12px;
+  &__language-item {
+    padding: 8px 12px;
     cursor: pointer;
-    transition: color 0.1s ease, background-color 0.1s ease;
+    transition:
+      color 0.1s ease,
+      background-color 0.1s ease;
 
     @include media.media-breakpoint-up(md) {
       &:hover {
@@ -229,7 +235,7 @@
       }
     }
 
-    &:first-child{
+    &:first-child {
       border-bottom: 1px solid variables.$color-text1;
     }
   }

@@ -1,0 +1,23 @@
+<section class="news">
+  <div class="news__wrapper">
+    <div class="news__inner">
+      <div class="news__container">
+        <h3 class="news__title">Новости</h3>
+
+        <p class="news__text">Свежие новости и полезная информация</p>
+      </div>
+
+      {{> partials/nav-btns nav-btns-class='news__nav-btns'
+      nav-btn-prev='news__btn_prev' nav-btn-next='news__btn_next'}}
+    </div>
+
+    <div class="news__inner">
+      <div class="swiper news__swiper">
+        <div class="swiper-wrapper news__swiper-wrapper"></div>
+      </div>
+    </div>
+
+    {{> partials/main-btn btn-class='news__main-btn white' btn-move='to-news'
+    btn-text='Смотреть все новости'}}
+  </div>
+</section>

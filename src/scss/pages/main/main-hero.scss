@@ -2,7 +2,7 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.main-hero{
+.main-hero {
   position: relative;
   width: 100%;
   padding: 200px 56px 134px;
@@ -16,14 +16,9 @@
     height: 100%;
     transition: opacity 0.6s ease;
     pointer-events: auto;
-
-    &.video-play {
-      opacity: 0;
-      pointer-events: auto;
-    }
   }
 
-  &__title{
+  &__title {
     max-width: 900px;
     margin: 0 auto 38px;
 
@@ -59,18 +54,7 @@
     }
   }
 
-  &__btn-play {
-
-    svg{
-
-      @include media.media-breakpoint-down-equal(xs) {
-        width: 45px;
-        height: 45px;
-      }
-    }
-  }
-
-  &__picture-container{
+  &__picture-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,33 +63,15 @@
     height: 100%;
   }
 
-  &__preloader{
+  &__preloader {
     width: 100vw;
     height: 100%;
     object-fit: cover;
     object-position: center center;
   }
 
-  &__video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @include mixins.hidden;
-
-    @include media.media-breakpoint-down-equal(md) {
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
-      height: 100%;
-    }
-
-    @include media.media-breakpoint-down-equal(xs) {
-      transform: translateY(-10%);
-    }
-
-    &.active {
-      @include mixins.shown;
-    }
+  &__video {
+    width: 100%;
+    height: 100%;
   }
 }

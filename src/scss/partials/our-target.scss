@@ -1,0 +1,82 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.our-target {
+  position: relative;
+  width: 100%;
+  color: variables.$color-main-bg;
+  padding: 246px 56px 208px;
+
+  @include media.media-breakpoint-down-equal(md) {
+    padding: 148px 20px 122px;
+  }
+
+  @include media.media-breakpoint-down-equal(sm) {
+    padding: 60px 20px;
+  }
+
+  @include media.media-breakpoint-down-equal(xs) {
+    padding: 60px 20px 40px;
+  }
+
+  &__picture-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 100%;
+    line-height: 1.1;
+    margin: 0 auto 74px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-bottom: 54px;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__subtitle-video {
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    margin-top: 24px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      font-size: 16px;
+    }
+  }
+
+  &__preloader {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+}

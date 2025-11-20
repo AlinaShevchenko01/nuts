@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="ru">
+  {{> partials/head title='Орех Причерноморья' basePath='main/main.scss'}}
 
-{{> head
-title='Орех Причерноморья'
-basePath='main/main.scss'}}
+  <body>
+    {{> partials/sprite }} {{> partials/header }} {{> pages/main/main-hero }}
+    {{> pages/main/main-products }}
+    <section class="about-us">
+      {{> partials/production }} {{> partials/info-garden }} {{>
+      partials/our-target }}
+    </section>
 
-<body>
-{{> header }}
+    {{> pages/main/main-benefit }} {{> partials/news }} {{> partials/contact }}
+    {{> partials/footer }}
 
-{{> main-hero }}
-
-<script type="module"
-        src="/src/js/pages/main/main.js">
-</script>
-</body>
+    <script type="module" src="/src/js/pages/main/main.js"></script>
+  </body>
 </html>
-

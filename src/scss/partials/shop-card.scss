@@ -1,0 +1,414 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.shop-card {
+  container-type: inline-size;
+  max-width: 410px;
+  width: 100%;
+  border: 1px solid variables.$color-border2;
+  transition: border-color 0.3s;
+  align-self: center;
+  justify-self: center;
+
+  @include media.media-breakpoint-down-equal(md) {
+    max-width: 520px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border: 1px solid variables.$color-bg2;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inner {
+    &:nth-child(1) {
+      position: relative;
+      height: 278px;
+      background-color: variables.$color-bg6;
+      overflow: hidden;
+
+      @media (hover: hover) {
+        &:hover {
+          .shop-card__scale-container {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 22px 29px 19px 22px;
+      border-bottom: 1px solid variables.$color-border2;
+    }
+
+    &:nth-child(3) {
+      @include mixins.flex-between-center;
+      gap: 16px;
+      padding: 14px 21px 14px 22px;
+    }
+  }
+
+  &__item-swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item-swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item-picture {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0;
+    transition:
+      transform 0.7s ease,
+      opacity 0.7s ease;
+
+    &.active {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__item-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+  }
+
+  &__item-btn_prev {
+    left: 15px;
+    transform: rotate(180deg) translateY(14%);
+  }
+
+  &__item-btn_next {
+    right: 15px;
+  }
+
+  &__icon-arrow {
+    color: variables.$color-inactive;
+    transition: color 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: variables.$color-bg1;
+      }
+    }
+
+    &:active {
+      color: variables.$color-bg2;
+    }
+  }
+
+  &__scale-container {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -38%);
+    z-index: 10;
+    background-color: variables.$color-bg2;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 55px;
+      height: 55px;
+      border: 5px solid variables.$color-border3;
+      border-radius: 50%;
+    }
+  }
+
+  &__scale {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title-wrapper {
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__title {
+    max-width: 100%;
+    display: inline-block;
+    font-weight: variables.$font-weight-bold;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &.active-tooltip:hover + .shop-card__title-tooltip {
+        opacity: 1;
+      }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      &.active-tooltip:focus + .shop-card__title-tooltip {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title-tooltip {
+    @include mixins.tooltip;
+  }
+
+  &__article-block {
+    font-family: variables.$second-font-family;
+    font-weight: variables.$font-weight-medium;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: variables.$color-text1;
+    margin-bottom: 14px;
+  }
+
+  &__description-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  &__description {
+    width: 80%;
+    font-weight: variables.$font-weight-semibold;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    line-height: 1.16;
+    letter-spacing: 0.005em;
+    color: variables.$color-text2;
+    margin-bottom: 18px;
+
+    @media (hover: hover) {
+      &.active-tooltip:hover + .shop-card__description-tooltip {
+        opacity: 1;
+      }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      &.active-tooltip:focus + .shop-card__description-tooltip {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__description-tooltip {
+    @include mixins.tooltip;
+  }
+
+  &__container {
+    width: 100%;
+    @include mixins.flex-between-center;
+    gap: 24px;
+    font-family: variables.$second-font-family;
+    font-size: 14px;
+    font-weight: variables.$font-weight-medium;
+    letter-spacing: 0.01em;
+    color: variables.$color-text1;
+  }
+
+  &__weight-container {
+    flex-shrink: 0;
+    @include mixins.flex-between-center;
+    width: 20%;
+    gap: 4px;
+  }
+
+  &__weight-icon,
+  &__bag-icon {
+    flex-shrink: 0;
+    margin-top: -5px;
+  }
+
+  &__weight-number-block,
+  &__pack-type {
+    color: variables.$color-bg1;
+  }
+
+  &__weight,
+  &__pack {
+    @include mixins.flex-column;
+    gap: 3px;
+  }
+
+  &__pack-container {
+    flex-shrink: 0;
+    @include mixins.flex-between-center;
+    gap: 4px;
+    width: 29.8%;
+  }
+
+  &__price-container {
+    width: 100%;
+    grid-template-columns: 0.3fr 1fr;
+    display: grid;
+    align-items: center;
+    gap: 0;
+    font-family: variables.$second-font-family;
+    font-weight: variables.$font-weight-semibold;
+    letter-spacing: 0.01em;
+  }
+
+  &__price-title {
+    align-self: end;
+    font-size: 15px;
+  }
+
+  &__price-active {
+    font-size: 15px;
+    color: variables.$color-bg1;
+    justify-self: start;
+  }
+
+  &__price-active_number {
+    font-size: 20px;
+  }
+
+  &__price-inactive {
+    display: none;
+    font-size: 16px;
+    color: variables.$color-text1;
+    font-weight: variables.$font-weight-medium;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    align-self: end;
+  }
+
+  &__btn-buy {
+    padding: 11px 38px 12px 38px;
+  }
+
+  &__flag {
+    position: absolute;
+    top: 20px;
+    left: -1px;
+    z-index: 9;
+
+    &.sale {
+      color: variables.$color-sale;
+    }
+
+    &.new {
+      color: variables.$color-new;
+    }
+
+    &.basic {
+      display: none;
+    }
+  }
+
+  &__flag-text {
+    @include mixins.flex-centering;
+    width: 82px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    font-weight: variables.$font-weight-bold;
+    letter-spacing: 0.06em;
+    color: variables.$color-main-bg;
+    text-transform: uppercase;
+  }
+
+  &__flag-icon {
+    position: absolute;
+  }
+
+  &.sale {
+    .shop-card__price-container {
+      width: 100%;
+      grid-template-columns: 0.8fr 1fr 0.86fr;
+    }
+
+    .shop-card__price-text {
+      display: none;
+    }
+
+    .shop-card__price-inactive {
+      display: block;
+    }
+  }
+}
+
+@container (max-width: 360px) {
+  .shop-card__inner {
+    &:nth-child(3) {
+      flex-direction: column;
+    }
+  }
+
+  .shop-card__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .shop-card__weight-container {
+    width: 40%;
+  }
+
+  .shop-card__weight {
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .shop-card__weight-number-block {
+    display: flex;
+  }
+
+  .shop-card__pack-container {
+    width: 70%;
+  }
+
+  .shop-card__pack {
+    flex-direction: row;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .shop-card__btn-buy {
+    width: 100%;
+  }
+}

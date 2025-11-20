@@ -2,7 +2,7 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.navigation{
+.navigation {
   font-weight: variables.$font-weight-medium;
   font-size: 15px;
   letter-spacing: 0.02em;
@@ -33,13 +33,13 @@
         border-bottom: 1px solid variables.$color-border1;
 
         &:active {
-        color: variables.$color-main-bg;
-        background-color: variables.$color-bg1;
+          color: variables.$color-main-bg;
+          background-color: variables.$color-bg1;
         }
       }
     }
 
-    a{
+    a {
       position: relative;
 
       &::after {

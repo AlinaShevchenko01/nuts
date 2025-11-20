@@ -24,6 +24,19 @@
   justify-content: space-between;
 }
 
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
@@ -38,4 +51,23 @@
 @mixin shown {
   pointer-events: auto;
   opacity: 1;
+}
+
+@mixin tooltip {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50.5%);
+  width: 100%;
+  padding: 10px 14px;
+  background: variables.$color-main-bg;
+  color: variables.$color-main-text;
+  border-radius: 4px;
+  box-shadow: 4px 6px 12px variables.$color-bg1;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+  white-space: normal;
 }

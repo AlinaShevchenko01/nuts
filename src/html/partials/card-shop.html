@@ -1,0 +1,116 @@
+<div class="shop-card {{class-card}}">
+  <div class="shop-card__wrapper">
+    <div class="shop-card__inner">
+      <div class="shop-card__item-swiper">
+        <div class="shop-card__item-swiper-wrapper">{{images}}</div>
+      </div>
+
+      <div class="shop-card__item-nav">
+        <button
+          class="shop-card__item-btn shop-card__item-btn_prev"
+          aria-label="prev-photo"
+        >
+          {{> templates/svg-manager id="icon-arrow-right"
+          svg-class="shop-card__icon-arrow" width="23px" height="23px"}}
+        </button>
+
+        <button
+          class="shop-card__item-btn shop-card__item-btn_next"
+          aria-label="next-photo"
+        >
+          {{> templates/svg-manager id="icon-arrow-right"
+          svg-class="shop-card__icon-arrow" width="23px" height="23px"}}
+        </button>
+      </div>
+
+      <button class="shop-card__scale-container" aria-label="zoom-photo">
+        {{> templates/svg-manager id="icon-magnifying-glass"
+        svg-class="shop-card__scale" width="19px" height="19px"}}
+      </button>
+    </div>
+
+    <div class="shop-card__inner">
+      <div class="shop-card__title-wrapper">
+        <h4 class="shop-card__title" tabindex="0">{{card-title}}</h4>
+
+        <p class="shop-card__title-tooltip">{{card-title}}</p>
+      </div>
+
+      <p class="shop-card__article-block">
+        <span> Арт: </span>
+
+        <span class="shop-card__article"> {{card-article}} </span>
+      </p>
+
+      <div class="shop-card__description-wrapper">
+        <p class="shop-card__description" tabindex="0">
+          <span> Орех </span>
+          {{characteristics}}
+        </p>
+
+        <p class="shop-card__description-tooltip">
+          <span> Орех </span>
+          {{characteristics}}
+        </p>
+      </div>
+
+      <div class="shop-card__container">
+        <div class="shop-card__weight-container">
+          {{> templates/svg-manager id="icon-scale-tool"
+          svg-class="shop-card__weight-icon" width="18px" height="18px"}}
+
+          <div class="shop-card__weight">
+            <p class="shop-card__weight-title">Масса</p>
+
+            <p class="shop-card__weight-number-block">
+              <span class="shop-card__weight-number"> {{weight}} </span>
+
+              <span> г. </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="shop-card__pack-container">
+          {{> templates/svg-manager id="icon-bag2"
+          svg-class="shop-card__bag-icon" width="12px" height="18px"}}
+
+          <div class="shop-card__pack">
+            <p class="shop-card__pack-title">Упаковка</p>
+
+            <p class="shop-card__pack-type">{{pack-type}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-card__inner">
+      <div class="shop-card__price-container">
+        <p class="shop-card__price-title">Цена:</p>
+
+        <p class="shop-card__price-active">
+          <span class="shop-card__price-text"> от </span>
+
+          <span class="shop-card__price-active_number"> {{full-price}} </span>
+
+          <span> грн. </span>
+        </p>
+
+        <p class="shop-card__price-inactive {{active-sale}}">
+          <span class="shop-card__price-inactive_number"> {{sale-price}} </span>
+
+          <span> грн. </span>
+        </p>
+      </div>
+
+      {{> partials/main-btn btn-class='shop-card__btn-buy' btn-text='Купить'
+      btn-move='add'}}
+    </div>
+
+    <div class="shop-card__flag {{flag}}">
+      {{> templates/svg-manager id="icon-flag-new"
+      svg-class="shop-card__flag-icon" width="82px" height="32px"}}
+
+      <p class="shop-card__flag-text">{{flag}}</p>
+    </div>
+  </div>
+</div>

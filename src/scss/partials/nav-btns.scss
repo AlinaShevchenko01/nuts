@@ -1,0 +1,54 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.nav-btns {
+  position: absolute;
+  width: 141px;
+  @include mixins.flex-between-center;
+  background: variables.$color-bg1;
+  padding: 18px 23px 12px;
+
+  @include media.media-breakpoint-down-equal(sm) {
+    width: 120px;
+    padding: 14px 18px 8px;
+  }
+
+  @include media.media-breakpoint-down-equal(xs) {
+    width: 80px;
+    padding: 10px 10px 6px;
+  }
+
+  &__btn {
+    svg {
+      transition: fill 0.3s ease;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          color: variables.$color-main-bg;
+        }
+      }
+    }
+
+    &:active {
+      svg {
+        color: variables.$color-main-bg;
+      }
+    }
+  }
+
+  &__btn_prev {
+    transform: rotate(-180deg) translateY(4px);
+  }
+
+  svg {
+    color: variables.$color-bg7;
+
+    @include media.media-breakpoint-down-equal(sm) {
+      width: 18px;
+      height: 16px;
+    }
+  }
+}
