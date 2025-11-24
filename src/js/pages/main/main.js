@@ -1,13 +1,13 @@
 import { useLoadFunction } from "lazy-viewport-loader";
 import { reuseFunctions } from "@/js/reuse-functions.js";
 import { initTooltip } from "@/js/partials/tooltip.js";
-import { flipCards } from "@/js/pages/main/flip-card.js";
+import { flipCards } from "@/js/partials/flip-card.js";
 
 
 document.addEventListener("DOMContentLoaded", async () => {
   reuseFunctions();
   initTooltip();
-  flipCards();
+  flipCards('.main-benefit__card');
 
 
   useLoadFunction(

@@ -1,0 +1,33 @@
+<div class="gallery-video" data-container="parent">
+    <div class="gallery-video__container" data-container="hidden">
+        <div class="gallery-video__inner {{class-video-inner}}">
+            {{> partials/btn-play btn-class='gallery-video__btn-play' data-btn-move='play-video'}}
+
+            <h5 class="gallery-video__title">
+                Проект UBHDP
+            </h5>
+
+            <p class="gallery-video__text">
+                Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
+                <span>UBHDP</span> за возможность получить консультацию
+                от мировых специалистов!
+            </p>
+        </div>
+
+        <div class="gallery-video__picture-container">
+            {{> templates/img-manager
+            img-srcset=img-srcset-gallery
+            img-src=img-src-gallery
+            img-alt=img-alt-gallery
+            img-class=img-class-gallery
+            img-width=img-width-gallery
+            img-height=img-height-gallery }}
+
+            <div class="main-hero__shadow shadow"></div>
+        </div>
+    </div>
+
+    {{> templates/video-manager video-class='gallery-video__video'
+    video-width=video-width-gallery video-height=video-height-gallery video-src=video-src-gallery
+    }}
+</div>

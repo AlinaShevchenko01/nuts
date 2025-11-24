@@ -3,10 +3,12 @@
   {{> partials/head title='Орех Причерноморья' basePath='main/main.scss'}}
 
   <body>
-    {{> partials/sprite }} {{> partials/header }} {{> pages/main/main-hero }}
+    {{> partials/sprite }} {{> partials/header }} {{> pages/main/main-hero  img-srcset-hero='/img/pages/main/main-photo-1-o.webp'
+    img-src-hero='/img/pages/main/main-photo-1.png' img-alt-hero='Ореховое поле'
+    img-class-hero='main-hero__preloader' img-width-hero='1920' img-height-hero='600'  }}
     {{> pages/main/main-products }}
     <section class="about-us">
-      {{> partials/production }} {{> partials/info-garden }} {{>
+      {{> partials/production slides-array=slidesProductionMain}} {{> partials/info-garden }} {{>
       partials/our-target }}
     </section>
 

@@ -1,17 +1,17 @@
 @use "@/scss/reuse";
 
 @use "@/scss/pages/main/main-hero";
-@use "@/scss/pages/main/main-products";
-@use "@/scss/pages/main/main-benefit";
-@use "@/scss/partials/shop-card";
-@use "@/scss/partials/shop";
 @use "@/scss/partials/production";
-@use "@/scss/partials/nav-btns";
 @use "@/scss/partials/swiper-production";
+@use "@/scss/partials/nav-btns";
 @use "@/scss/partials/btn-play";
-@use "@/scss/partials/info-garden";
-@use "@/scss/partials/our-target";
+@use "@/scss/pages/about/about-founder";
+@use "@/scss/pages/about/about-gallery";
+@use "@/scss/pages/gallery/galleru-full";
+@use "@/scss/partials/gallery-photo";
+@use "@/scss/partials/gallery-video";
 @use "@/scss/partials/flip-card";
+@use "@/scss/partials/info-garden";
 @use "@/scss/partials/eco";
 @use "@/scss/partials/one-news";
 @use "@/scss/partials/news";

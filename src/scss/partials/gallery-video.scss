@@ -1,0 +1,106 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.gallery-video{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__inner {
+    position: absolute;
+    max-width: 603px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    bottom: 19.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 24px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      top: 10%;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      top: 0;
+    }
+  }
+
+  &__inner_small{
+    bottom: 15.9%;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      top: 3vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      top: 10%;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      top: 0;
+    }
+  }
+
+  &__btn-play{
+    margin-bottom: 26px;
+
+    @include media.media-breakpoint-down-equal(sm) {
+      margin-bottom: 16px;
+    }
+
+    svg {
+      @include media.media-breakpoint-down-equal(sm) {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: variables.$font-weight-extra;
+    margin-bottom: 16px;
+
+    @include media.media-breakpoint-down-equal(sm) {
+      font-size: 18px;
+    }
+
+  }
+
+  &__text{
+    font-size: 14px;
+    font-weight: variables.$font-weight-medium;
+    line-height: 1.5;
+
+    span{
+      font-weight: variables.$font-weight-bold;
+    }
+  }
+
+  &__picture-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

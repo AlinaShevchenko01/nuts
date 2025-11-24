@@ -6,7 +6,7 @@ import postcssCombineMediaQuery from "postcss-combine-media-query";
 import postcssSortMediaQueries from "postcss-sort-media-queries";
 import autoprefixer from "autoprefixer";
 import { hulakPlugins } from "vite-plugin-hulak-tools";
-import { slidesProductionMain } from "./src/js/partials/arrays-for-swipers.js";
+import {slidesProductionAbout, slidesProductionMain} from "./src/js/partials/arrays-for-swipers.js";
 
 export default defineConfig(({ mode }) => {
   const isDeploy = mode === "deploy";
@@ -65,6 +65,7 @@ export default defineConfig(({ mode }) => {
         },
         context: {
           slidesProductionMain,
+          slidesProductionAbout
         },
       }),
       hulakPlugins({

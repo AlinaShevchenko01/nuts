@@ -1,0 +1,39 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.gallery-full {
+  padding: 93px 0 103px;
+
+  @include media.media-breakpoint-down-equal(md) {
+    padding: 60px 0 10px;
+  }
+
+  .gallery-photo{
+    &:nth-child(2) {
+      margin-top: 30px;
+
+      .gallery-photo__inner{
+
+        &:nth-child(2){
+          order: -1;
+        }
+      }
+
+      @include media.media-breakpoint-down-equal(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__btn.white {
+    display: block;
+    padding: 16px 42px;
+    letter-spacing: -0.04em;
+    margin: 70px auto 0;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-top: 40px;
+    }
+  }
+}

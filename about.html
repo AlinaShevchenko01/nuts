@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+{{> partials/head title='О производстве' basePath='about/about.scss'}}
+
+<body>
+{{> partials/sprite }} {{> partials/header }} {{> pages/main/main-hero class-hero=about-hero  img-srcset-hero='/img/pages/about/about-photo-1.webp'
+img-src-hero='/img/pages/about/about-photo-1.png' img-alt-hero='Ореховое поле'
+img-class-hero='main-hero__preloader' img-width-hero='1920' img-height-hero='600'  }}
+
+
+    {{> partials/production slides-array=slidesProductionAbout
+production-class='about-production'}} {{> partials/info-garden }}
+
+{{> pages/about/about-gallery}}
+{{> partials/eco eco-class=''
+img-srcset='/img/pages/about/about-photo-3.webp'
+img-src='/img/pages/about/about-photo-3.png'}}
+
+{{> partials/news }}
+
+
+{{> partials/contact }}
+{{> partials/footer }}
+
+<script type="module" src="/src/js/pages/about/about.js"></script>
+</body>
+</html>

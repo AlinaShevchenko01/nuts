@@ -36,6 +36,10 @@
       padding: 20px 34px;
     }
 
+    @include media.media-breakpoint-down-equal(xs) {
+      padding: 20px 24px;
+    }
+
   }
 
   &__inner {

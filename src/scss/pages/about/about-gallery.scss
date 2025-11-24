@@ -1,0 +1,27 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.about-gallery{
+
+  &__wrapper {
+    max-width: 1402px;
+    padding: 95px 0 30px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 66px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 70px auto;
+  }
+}

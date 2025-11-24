@@ -1,0 +1,116 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.gallery-photo{
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1402px;
+    display: flex;
+    gap: clamp(12px, 2vw, 30px);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: variables.$second-font-family;
+    color: variables.$color-main-bg;
+    margin: 0 auto;
+    padding: 0 56px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 0 34px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      padding: 0 24px;
+    }
+  }
+
+  &__inner {
+    &:nth-child(1) {
+      max-width: 739px;
+      flex: 1 1 60%;
+      height: 556px;
+    }
+
+    &:nth-child(2) {
+      max-width: 520px;
+      flex: 1 1 35%;
+    }
+
+    &:nth-child(3) {
+      max-width: 100%;
+      max-height: 556px;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    {
+      max-width: 409px;
+      flex: 1 1 30%;
+      height: 404px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6){
+      @include media.media-breakpoint-down-equal(sm) {
+        max-width: 100%;
+        flex: 1 1 100%;
+        height: 340px;
+      }
+
+      @include media.media-breakpoint-down-equal(xs) {
+        height: 300px;
+      }
+    }
+  }
+
+  &__card-back {
+    background-color: variables.$color-bg9;
+    padding: 80px 39px 20px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 20px;
+    }
+
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: variables.$font-weight-extra;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    max-width: 490px;
+    width: 90%;
+    font-size: 15px;
+    font-weight: variables.$font-weight-medium;
+    line-height: 1.47;
+
+    @include media.media-breakpoint-down-equal(sm) {
+      font-size: 13px;
+    }
+
+    span {
+      font-weight: variables.$font-weight-bold;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: -56px;
+    right: -116px;
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}

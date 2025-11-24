@@ -49,49 +49,18 @@
     }
   }
 
-  &__card {
-    position: relative;
+  &__card.card {
     max-width: 410px;
-    width: 100%;
     height: 525px;
-    cursor: pointer;
-    overflow: hidden;
 
     @include media.media-breakpoint-down-equal(sm) {
       max-width: 100%;
       height: 300px;
     }
-
-    &.flip {
-      .main-benefit__card-inner {
-        transform: rotateY(180deg);
-      }
-    }
-  }
-
-  &__card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    transform-origin: center;
-  }
-
-  &__card-front,
-  &__card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
   }
 
   &__card-front {
     @include mixins.flex-centering;
-    transform-style: preserve-3d;
-    z-index: 2;
     padding: 10px;
 
     &::before {
@@ -108,7 +77,6 @@
   }
 
   &__card-back {
-    transform: rotateY(180deg);
     @include mixins.flex-centering;
     padding: 10px;
 

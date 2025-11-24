@@ -1,4 +1,4 @@
-<section class="main-hero">
+<section class="main-hero {{class-hero}}">
   <div class="main-hero__wrapper" data-container="parent">
     <div class="main-hero__container" data-container="hidden">
       <div class="main-hero__inner">
@@ -14,9 +14,13 @@
       </div>
 
       <div class="main-hero__picture-container">
-        {{> templates/img-manager img-srcset='/img/pages/main/main-photo-1-o.webp'
-        img-src='/img/pages/main/main-photo-1.png' img-alt='Ореховое поле'
-         img-class='main-hero__preloader' img-width='1920' img-height='600' }}
+        {{> templates/img-manager
+        img-srcset=img-srcset-hero
+        img-src=img-src-hero
+        img-alt=img-alt-hero
+        img-class=img-class-hero
+        img-width=img-width-hero
+        img-height=img-height-hero }}
 
         <div class="main-hero__shadow shadow"></div>
       </div>

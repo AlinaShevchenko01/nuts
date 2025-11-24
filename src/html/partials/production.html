@@ -1,4 +1,4 @@
-<section class="production">
+<section class="production {{production-class}}">
   <div class="production__wrapper">
     <div class="production__inner">
       <h3 class="production__title">О производителе</h3>
@@ -31,7 +31,7 @@
 
     <div class="production__inner">
       {{> partials/swiper-production swiper-class='production__swiper-main'
-      slides=slidesProductionMain}}
+      slides=slides-array}}
     </div>
   </div>
 </section>
