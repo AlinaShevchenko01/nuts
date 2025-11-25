@@ -1,3 +1,3 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/render-news-static-BPLgebUW.js","assets/render-news-cards-Dh778ER7.js","assets/vendor-CPOeuTnm.js","assets/vendor-DV8PrLMj.css","assets/img-manager-DkWBauuw.js","assets/reuse-functions-DplpQI1Z.js"])))=>i.map(i=>d[i]);
 import{r as o}from"./reuse-functions-DplpQI1Z.js";import{_ as r}from"./preload-helper-Cr6v0EL8.js";import{u as e}from"./vendor-CPOeuTnm.js";import{o as t}from"./btn-to-gallery-CeX_tepe.js";document.addEventListener("DOMContentLoaded",()=>{o(),t(),e(()=>r(()=>import("./render-news-static-BPLgebUW.js"),__vite__mapDeps([0,1,2,3,4,5])),".news-block",[],{threshold:0,rootMargin:"200px"})});
-//# sourceMappingURL=news-B3fkCjDO.js.map
+//# sourceMappingURL=news-3ohNb43z.js.map
