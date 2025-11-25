@@ -1,2 +1,0 @@
-import{g as r,r as s}from"./render-news-cards-ChRptU7O.js";import{l as e,a as o}from"./reuse-functions-DplpQI1Z.js";import"./vendor-CPOeuTnm.js";import"./firebase-B_4Y_us7.js";import"./img-manager-rnB8atRr.js";async function a(){const a=await r(),i=document.querySelector(".news-block__wrapper"),n=a.slice(0,3);s(n,i),e(),o()}export{a as renderNewsStatic};
-//# sourceMappingURL=render-news-static-DMMWaVq-.js.map
