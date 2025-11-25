@@ -6,6 +6,8 @@
   position: relative;
   width: 100%;
   height: 100%;
+  font-family: variables.$second-font-family;
+  color: variables.$color-main-bg;
 
   &__container {
     width: 100%;

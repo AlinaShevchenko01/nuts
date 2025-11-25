@@ -3,6 +3,7 @@
 @use "@/scss/utils/media" as media;
 
 .gallery-hero{
+  position: relative;
 
   &__wrapper {
     position: relative;

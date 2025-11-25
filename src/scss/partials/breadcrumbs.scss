@@ -1,0 +1,36 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.breadcrumbs {
+  position: absolute;
+  top: 6.1%;
+  left: 16.4%;
+  @include mixins.flex-between-center;
+  gap: 6px;
+  color: variables.$color-main-bg;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: variables.$font-weight-semibold;
+
+  @include media.media-breakpoint-down-equal(lg) {
+    left: 10%;
+  }
+
+  svg{
+    fill: variables.$color-main-bg;
+  }
+
+  &__item{
+    @include mixins.flex-between-center;
+    gap: 6px;
+  }
+
+  &.gray {
+    color: variables.$color-text1;
+
+    svg{
+      fill: variables.$color-text1;
+    }
+  }
+}

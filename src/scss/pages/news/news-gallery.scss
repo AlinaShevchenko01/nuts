@@ -1,0 +1,42 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.news-gallery{
+
+  &__wrapper {
+    max-width: 1400px;
+    @include mixins.flex-centering;
+    gap: clamp(22px, 4vw, 70px);
+    padding: 0 56px 90px;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 0 34px 40px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      padding: 0 24px 40px;
+    }
+  }
+
+  &__btn.white {
+    padding: 16px 32px;
+  }
+
+  .gallery-video{
+    @include media.media-breakpoint-down-equal(sm) {
+      height: 400px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      height: 340px;
+    }
+  }
+
+  .gallery-video__inner{
+    @include media.media-breakpoint-down-equal(xs) {
+      top: 5%;
+    }
+  }
+}

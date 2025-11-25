@@ -1,4 +1,6 @@
 import { defineConfig } from "vite";
+import {globSync} from "glob";
+import {resolve} from "path";
 import path from "path";
 import handlebars from "vite-plugin-handlebars";
 import FullReload from "vite-plugin-full-reload";
@@ -19,6 +21,12 @@ export default defineConfig(({ mode }) => {
       minify: "terser",
       outDir: "dist",
       rollupOptions: {
+        input: Object.fromEntries(
+            globSync("./*.html").map((file) => [
+              file.replace("./", "").replace(".html", ""),
+              resolve(__dirname, file),
+            ])
+        ),
         output: {
           manualChunks(id) {
             if (id.includes("node_modules")) {

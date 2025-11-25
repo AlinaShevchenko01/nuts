@@ -57,4 +57,14 @@
     text-align: center;
     line-height: 1.04;
   }
+
+  &.about-garden {
+    .info-garden__wrapper {
+      padding: 76px 56px 88px 56px;
+
+      @include media.media-breakpoint-down-equal(md) {
+        padding: 37px 34px 40px 34px;
+      }
+    }
+  }
 }

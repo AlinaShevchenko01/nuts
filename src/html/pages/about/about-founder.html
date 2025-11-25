@@ -1,0 +1,58 @@
+<section class="about-founder">
+    <div class="about-founder__wrapper">
+        <div class="about-founder__inner">
+            {{> templates/img-manager
+            img-srcset='/img/pages/about/about-photo-2.webp'
+            img-src='/img/pages/about/about-photo-2.png' img-alt='Founder'
+            img-class='about-founder__img preloader' img-width='342'
+            img-height='493' }}
+        </div>
+
+        <div class="about-founder__inner">
+            <h5 class="about-founder__title">
+                Павел Тулба
+            </h5>
+
+            <p class="about-founder__subtitle">
+                Учередитель и владелец <br>
+                предприятия “Орех Причерноморья”
+            </p>
+
+            <div class="about-founder__quote">
+                {{> templates/svg-manager id="icon-quotes" width="40px"
+                height="40px" svg-class='about-founder__icon'}}
+
+                <p class="about-founder__quote-text">
+                    Главная наша цель – получить максимальную
+                    прибыль с одного гектара.
+                </p>
+            </div>
+
+            {{> partials/main-btn btn-class='about-founder__btn white'
+            btn-text='Написать нам' btn-move=''}}
+        </div>
+
+        <div class="about-founder__inner">
+            <h5 class="about-founder__title about-founder__title_history">
+                История предприятия
+            </h5>
+
+            <div class="about-founder__text-container">
+                <p class="about-founder__text">
+                    Наше предприятие основано в 2012 году
+                    для закладки смешанного сада грецкого ореха
+                    и фундука.
+                </p>
+                <p class="about-founder__text">
+                    На сегодня мы уже заложили более 100 гектаров сада и продолжаем расширять свои насаждения. Кроме выращивания грецкого ореха и фундука, мы занимаемся выращиванием саженцев, разведением и выращиванием овец, а также являемся первой в Украине компанией, приступившей к промышленному выращиванию трюфелей на корнях фундука.
+                </p>
+                <p class="about-founder__text">
+                    Земля, которой пользуется кооператив, является собственностью членов нашего кооператива.
+                </p>
+            </div>
+
+            {{> templates/svg-manager id="icon-water-mark" width="323px"
+            height="298px" svg-class='about-founder__water-mark'}}
+        </div>
+    </div>
+</section>

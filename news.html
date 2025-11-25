@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+{{> partials/head title='Новости и статьи' basePath='news/news.scss'}}
+
+<body>
+{{> partials/sprite }} {{> partials/header }} {{> pages/news/news-hero}}
+
+{{> pages/news/news-block}}
+
+
+{{> pages/news/news-gallery}}
+
+{{> partials/contact contact-class='gray'}}
+{{> partials/footer }}
+
+<script type="module" src="/src/js/pages/news/news.js"></script>
+</body>
+</html>

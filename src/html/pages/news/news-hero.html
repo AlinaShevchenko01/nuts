@@ -1,0 +1,53 @@
+<section class="news-hero">
+    <div class="news-hero__wrapper">
+        <h2 class="news-hero__title">
+            Новости и статьи
+        </h2>
+
+        <p class="news-hero__subtitle">
+            Свежие новости и полезная информация
+        </p>
+
+        <div class="news-hero__inner">
+            <div class="news-hero__column">
+                {{> templates/img-manager
+                img-srcset='/img/pages/news/news-photo1.webp'
+                img-src='/img/pages/news/news-photo1.png' img-alt='founder'
+                img-class='news-hero__img' img-width='849'
+                img-height='526' }}
+            </div>
+
+            <div class="news-hero__column">
+                <p class="news-hero__date">
+                    12.04.2019
+                </p>
+
+                <h5 class="news-hero__name">
+                    Центр поддержки экспорта,
+                    в студии Павел Тулба
+                </h5>
+
+                <p class="news-hero__text">
+                    Сельскохозяйственный обслуживающий кооператив
+                    “Орех Причерноморья” предлагает своим клиентам
+                    выгодные условия сотрудничества.
+                </p>
+
+                <p class="news-hero__text">
+                    Ореховый бизнес – один из наиболее перспективных
+                    в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать десятки тысяч долларов в год всего
+                    на нескольких гектарах земли.
+                </p>
+
+                <button class="news-hero__btn">
+                    <span class="news-hero__btn-text"> Читать </span>
+
+                    {{> templates/svg-manager id="icon-arrow-right-bigger"
+                    svg-class="news-hero__arrow" width="18px" height="18px"}}
+                </button>
+            </div>
+        </div>
+    </div>
+
+    {{> partials/breadcrumbs breadcrumbs-class='news-hero__breadcrumbs gray' name='Новости и статьи'}}
+</section>

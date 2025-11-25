@@ -3,25 +3,54 @@
 @use "@/scss/utils/media" as media;
 
 .about-gallery{
+  background-color: variables.$color-bg11;
 
   &__wrapper {
     max-width: 1402px;
-    padding: 95px 0 30px;
+    padding: 94px 0 30px;
     margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      padding: 60px 0 30px;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 40px 0 30px;
+    }
   }
 
   &__title {
     text-align: center;
     margin-bottom: 28px;
+
+    @include media.media-breakpoint-down-equal(xs) {
+      margin-bottom: 18px;
+    }
   }
 
   &__text {
     text-align: center;
     margin-bottom: 66px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-bottom: 40px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      margin-bottom: 26px;
+    }
   }
 
   &__btn {
     display: block;
     margin: 70px auto;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin: 40px auto 30px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      margin: 30px auto 20px;
+    }
   }
 }
