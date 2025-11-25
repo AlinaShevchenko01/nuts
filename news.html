@@ -7,7 +7,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Галерея</title>
+  <title>Новости и статьи</title>
 
 
   <link rel="icon" href="/nuts/svg/hazelnut.svg" type="text/xml" />
@@ -18,12 +18,13 @@
     href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100..900&display=swap"
     rel="stylesheet"
   />
-  <script type="module" crossorigin src="/nuts/assets/gallery-Cw_dZAi4.js"></script>
+  <script type="module" crossorigin src="/nuts/assets/news-B3fkCjDO.js"></script>
   <link rel="modulepreload" crossorigin href="/nuts/assets/vendor-CPOeuTnm.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/reuse-functions-DplpQI1Z.js">
-  <link rel="modulepreload" crossorigin href="/nuts/assets/flip-card-7hba7igv.js">
+  <link rel="modulepreload" crossorigin href="/nuts/assets/preload-helper-Cr6v0EL8.js">
+  <link rel="modulepreload" crossorigin href="/nuts/assets/btn-to-gallery-CeX_tepe.js">
   <link rel="stylesheet" crossorigin href="/nuts/assets/vendor-DV8PrLMj.css">
-  <link rel="stylesheet" crossorigin href="/nuts/assets/gallery-08YBpydA.css">
+  <link rel="stylesheet" crossorigin href="/nuts/assets/news-hoSlm0jp.css">
 </head>
 
 <body>
@@ -1020,40 +1021,68 @@
     </div>
   </div>
 </header>
+ <section class="news-hero">
+    <div class="news-hero__wrapper">
+        <h2 class="news-hero__title">
+            Новости и статьи
+        </h2>
 
-<section class="gallery-hero">
-    <div class="gallery-hero__wrapper">
-        <div class="gallery-hero__inner">
-            <h1 class="gallery-hero__title">
-                Галерея
-            </h1>
+        <p class="news-hero__subtitle">
+            Свежие новости и полезная информация
+        </p>
 
-            <p class="gallery-hero__text">
-                Кадры социальной активности компании
-            </p>
-        </div>
+        <div class="news-hero__inner">
+            <div class="news-hero__column">
+                
+                <picture class="">
+                  <source data-srcset="/img/pages/news/news-photo1.webp" srcset="" type="image/webp" />
+                
+                  <img
+                    class="img news-hero__img"
+                    data-src="/img/pages/news/news-photo1.png"
+                    alt="founder"
+                    src=""
+                    width="849"
+                    height="526"
+                  />
+                </picture>
+                
+            </div>
 
-        <div class="gallery-hero__picture-container">
-            
-            <picture class="">
-              <source data-srcset="/img/pages/gallery/gallery-photo-1.webp" srcset="" type="image/webp" />
-            
-              <img
-                class="img gallery-hero__img"
-                data-src="/img/pages/gallery/gallery-photo-1.png"
-                alt="Саженцы"
-                src=""
-                width="1920"
-                height="600"
-              />
-            </picture>
-            
+            <div class="news-hero__column">
+                <p class="news-hero__date">
+                    12.04.2019
+                </p>
 
-            <div class="gallery-hero__shadow shadow"></div>
+                <h5 class="news-hero__name">
+                    Центр поддержки экспорта,
+                    в студии Павел Тулба
+                </h5>
+
+                <p class="news-hero__text">
+                    Сельскохозяйственный обслуживающий кооператив
+                    “Орех Причерноморья” предлагает своим клиентам
+                    выгодные условия сотрудничества.
+                </p>
+
+                <p class="news-hero__text">
+                    Ореховый бизнес – один из наиболее перспективных
+                    в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать десятки тысяч долларов в год всего
+                    на нескольких гектарах земли.
+                </p>
+
+                <button class="news-hero__btn">
+                    <span class="news-hero__btn-text"> Читать </span>
+
+                    <svg class="news-hero__arrow" width="18px" height="18px">
+                      <use href="#icon-arrow-right-bigger"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 
-    <ul class="breadcrumbs gallery-hero__breadcrumbs">
+    <ul class="breadcrumbs news-hero__breadcrumbs gray">
         <li class="breadcrumbs__item">
             <a class="breadcrumbs__link"
             href="index.html" aria-label="Главная">
@@ -1066,589 +1095,83 @@
               <use href="#icon-arrow-right"></use>
             </svg>
     
-            <span class="breadcrumbs__page" aria-label="Галерея">
-                Галерея
+            <span class="breadcrumbs__page" aria-label="Новости и статьи">
+                Новости и статьи
             </span>
         </li>
     </ul></section>
-<section class="gallery-full">
-    <div class="gallery-photo ">
-        <div class="gallery-photo__wrapper">
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-2.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-2.png"
-                                alt="Конференция"
-                                src=""
-                                width="739"
-                                height="556"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-7.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-7.png"
-                                alt="Поле"
-                                src=""
-                                width="520"
-                                height="526"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-video" data-container="parent">
-                    <div class="gallery-video__container" data-container="hidden">
-                        <div class="gallery-video__inner ">
-                            <button
-                              class="btn-play gallery-video__btn-play"
-                              aria-label="play-video"
-                              data-btn="play-video"
-                            >
-                              <svg class="" width="61px" height="61px">
-                                <use href="#icon-play"></use>
-                              </svg>
-                            </button>
-                
-                            <h5 class="gallery-video__title">
-                                Проект UBHDP
-                            </h5>
-                
-                            <p class="gallery-video__text">
-                                Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
-                                <span>UBHDP</span> за возможность получить консультацию
-                                от мировых специалистов!
-                            </p>
-                        </div>
-                
-                        <div class="gallery-video__picture-container">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-3.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-video__img preloader"
-                                data-src="/img/pages/gallery/gallery-photo-3.png"
-                                alt="Конференция"
-                                src=""
-                                width="1290"
-                                height="556"
-                              />
-                            </picture>
-                            
-                
-                            <div class="main-hero__shadow shadow"></div>
-                        </div>
-                    </div>
-                
-                    <video
-                      class="video-hidden gallery-video__video"
-                      data-video="play"
-                      preload="none"
-                      controls="controls"
-                      muted="muted"
-                      playsinline="playsinline"
-                      width="1290"
-                      height="556"
-                    >
-                      <source data-src-video="/video/perspective-o.mp4" src="" type="video/mp4" />
-                    </video>
-                </div>        </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-4.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-4.png"
-                                alt="Трактор"
-                                src=""
-                                width="409"
-                                height="404"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-5.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-5.png"
-                                alt="Конференция"
-                                src=""
-                                width="409"
-                                height="404"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-video" data-container="parent">
-                    <div class="gallery-video__container" data-container="hidden">
-                        <div class="gallery-video__inner gallery-video__inner_small">
-                            <button
-                              class="btn-play gallery-video__btn-play"
-                              aria-label="play-video"
-                              data-btn="play-video"
-                            >
-                              <svg class="" width="61px" height="61px">
-                                <use href="#icon-play"></use>
-                              </svg>
-                            </button>
-                
-                            <h5 class="gallery-video__title">
-                                Проект UBHDP
-                            </h5>
-                
-                            <p class="gallery-video__text">
-                                Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
-                                <span>UBHDP</span> за возможность получить консультацию
-                                от мировых специалистов!
-                            </p>
-                        </div>
-                
-                        <div class="gallery-video__picture-container">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-6.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-video__img preloader"
-                                data-src="/img/pages/gallery/gallery-photo-6.png"
-                                alt="Конференция"
-                                src=""
-                                width="409"
-                                height="404"
-                              />
-                            </picture>
-                            
-                
-                            <div class="main-hero__shadow shadow"></div>
-                        </div>
-                    </div>
-                
-                    <video
-                      class="video-hidden gallery-video__video"
-                      data-video="play"
-                      preload="none"
-                      controls="controls"
-                      muted="muted"
-                      playsinline="playsinline"
-                      width="409"
-                      height="404"
-                    >
-                      <source data-src-video="/video/perspective-o.mp4" src="" type="video/mp4" />
-                    </video>
-                </div>        </div>
-        </div>
-    </div>    <div class="gallery-photo ">
-        <div class="gallery-photo__wrapper">
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-2.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-2.png"
-                                alt="Конференция"
-                                src=""
-                                width="739"
-                                height="556"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-7.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-7.png"
-                                alt="Поле"
-                                src=""
-                                width="520"
-                                height="526"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-video" data-container="parent">
-                    <div class="gallery-video__container" data-container="hidden">
-                        <div class="gallery-video__inner ">
-                            <button
-                              class="btn-play gallery-video__btn-play"
-                              aria-label="play-video"
-                              data-btn="play-video"
-                            >
-                              <svg class="" width="61px" height="61px">
-                                <use href="#icon-play"></use>
-                              </svg>
-                            </button>
-                
-                            <h5 class="gallery-video__title">
-                                Проект UBHDP
-                            </h5>
-                
-                            <p class="gallery-video__text">
-                                Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
-                                <span>UBHDP</span> за возможность получить консультацию
-                                от мировых специалистов!
-                            </p>
-                        </div>
-                
-                        <div class="gallery-video__picture-container">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-3.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-video__img preloader"
-                                data-src="/img/pages/gallery/gallery-photo-3.png"
-                                alt="Конференция"
-                                src=""
-                                width="1290"
-                                height="556"
-                              />
-                            </picture>
-                            
-                
-                            <div class="main-hero__shadow shadow"></div>
-                        </div>
-                    </div>
-                
-                    <video
-                      class="video-hidden gallery-video__video"
-                      data-video="play"
-                      preload="none"
-                      controls="controls"
-                      muted="muted"
-                      playsinline="playsinline"
-                      width="1290"
-                      height="556"
-                    >
-                      <source data-src-video="/video/perspective-o.mp4" src="" type="video/mp4" />
-                    </video>
-                </div>        </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-4.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-4.png"
-                                alt="Трактор"
-                                src=""
-                                width="409"
-                                height="404"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-photo__card card">
-                    <div class="gallery-photo__card-inner card__inner">
-                        <div class="gallery-photo__card-front card__front">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-5.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-photo__img"
-                                data-src="/img/pages/gallery/gallery-photo-5.png"
-                                alt="Конференция"
-                                src=""
-                                width="409"
-                                height="404"
-                              />
-                            </picture>
-                            
-                        </div>
-    
-                        <div class="gallery-photo__card-back card__back">
-                            <p class="gallery-photo__title">
-                                SIAL Paris 2018
-                            </p>
-    
-                            <p class="gallery-photo__text">
-                                В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                                на крупнейшей продовольственной выставке Европы
-                                <span>
-                           SIAL Paris 2018
-                        </span>
-                            </p>
-    
-                            <svg class="gallery-photo__icon" width="322px" height="293px">
-                              <use href="#icon-water-mark"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="gallery-photo__inner">
-                <div class="gallery-video" data-container="parent">
-                    <div class="gallery-video__container" data-container="hidden">
-                        <div class="gallery-video__inner gallery-video__inner_small">
-                            <button
-                              class="btn-play gallery-video__btn-play"
-                              aria-label="play-video"
-                              data-btn="play-video"
-                            >
-                              <svg class="" width="61px" height="61px">
-                                <use href="#icon-play"></use>
-                              </svg>
-                            </button>
-                
-                            <h5 class="gallery-video__title">
-                                Проект UBHDP
-                            </h5>
-                
-                            <p class="gallery-video__text">
-                                Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
-                                <span>UBHDP</span> за возможность получить консультацию
-                                от мировых специалистов!
-                            </p>
-                        </div>
-                
-                        <div class="gallery-video__picture-container">
-                            
-                            <picture class="">
-                              <source data-srcset="/img/pages/gallery/gallery-photo-6.webp" srcset="" type="image/webp" />
-                            
-                              <img
-                                class="img gallery-video__img preloader"
-                                data-src="/img/pages/gallery/gallery-photo-6.png"
-                                alt="Конференция"
-                                src=""
-                                width="409"
-                                height="404"
-                              />
-                            </picture>
-                            
-                
-                            <div class="main-hero__shadow shadow"></div>
-                        </div>
-                    </div>
-                
-                    <video
-                      class="video-hidden gallery-video__video"
-                      data-video="play"
-                      preload="none"
-                      controls="controls"
-                      muted="muted"
-                      playsinline="playsinline"
-                      width="409"
-                      height="404"
-                    >
-                      <source data-src-video="/video/perspective-o.mp4" src="" type="video/mp4" />
-                    </video>
-                </div>        </div>
-        </div>
-    </div>    <button class="main-btn gallery-full__btn white" data-move="">
-      Посмотреть еще
-    </button>
+
+<section class="news-block">
+    <div class="news-block__wrapper">
+
+    </div>
 </section>
 
-
-<section class="contact ">
+<section class="news-gallery">
+    <div class="news-gallery__wrapper">
+        <div class="gallery-video" data-container="parent">
+            <div class="gallery-video__container" data-container="hidden">
+                <div class="gallery-video__inner ">
+                    <button
+                      class="btn-play gallery-video__btn-play"
+                      aria-label="play-video"
+                      data-btn="play-video"
+                    >
+                      <svg class="" width="61px" height="61px">
+                        <use href="#icon-play"></use>
+                      </svg>
+                    </button>
+        
+                    <h5 class="gallery-video__title">
+                        Проект UBHDP
+                    </h5>
+        
+                    <p class="gallery-video__text">
+                        Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
+                        <span>UBHDP</span> за возможность получить консультацию
+                        от мировых специалистов!
+                    </p>
+                </div>
+        
+                <div class="gallery-video__picture-container">
+                    
+                    <picture class="">
+                      <source data-srcset="/img/pages/gallery/gallery-photo-3.webp" srcset="" type="image/webp" />
+                    
+                      <img
+                        class="img gallery-video__img preloader"
+                        data-src="/img/pages/gallery/gallery-photo-3.png"
+                        alt="Конференция"
+                        src=""
+                        width="1290"
+                        height="556"
+                      />
+                    </picture>
+                    
+        
+                    <div class="main-hero__shadow shadow"></div>
+                </div>
+            </div>
+        
+            <video
+              class="video-hidden gallery-video__video"
+              data-video="play"
+              preload="none"
+              controls="controls"
+              muted="muted"
+              playsinline="playsinline"
+              width="1290"
+              height="556"
+            >
+              <source data-src-video="/video/perspective-o.mp4" src="" type="video/mp4" />
+            </video>
+        </div>
+        <button class="main-btn news-gallery__btn white" data-move="to-gallery">
+          Посмотреть еще
+        </button>
+    </div>
+</section>
+<section class="contact gray">
   <div class="contact__wrapper">
     <div class="contact__inner">
       <h3 class="contact__title">
