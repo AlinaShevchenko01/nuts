@@ -1,0 +1,2 @@
+import{l as r,a,r as e}from"./reuse-functions-DplpQI1Z.js";import{o as s}from"./btn-to-gallery-CeX_tepe.js";import{g as o,r as n}from"./render-news-cards-t3GYfIeI.js";import"./vendor-CPOeuTnm.js";import"./img-manager-B6XskJv8.js";document.addEventListener("DOMContentLoaded",async()=>{await async function(){const e=await o(),s=document.querySelector(".news-block__wrapper"),t=e.slice(0,3);n(t,s),r(),a()}(),e(),s()});
+//# sourceMappingURL=news-BsfCNhkA.js.map
