@@ -2,7 +2,8 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.news-gallery{
+.news-gallery {
+  position: relative;
 
   &__wrapper {
     max-width: 1400px;
@@ -24,7 +25,7 @@
     padding: 16px 32px;
   }
 
-  .gallery-video{
+  .gallery-video {
     @include media.media-breakpoint-down-equal(sm) {
       height: 400px;
     }
@@ -34,7 +35,7 @@
     }
   }
 
-  .gallery-video__inner{
+  .gallery-video__inner {
     @include media.media-breakpoint-down-equal(xs) {
       top: 5%;
     }

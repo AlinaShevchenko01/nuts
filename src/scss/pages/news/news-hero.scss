@@ -2,10 +2,10 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.news-hero{
+.news-hero {
   position: relative;
 
-  &__wrapper{
+  &__wrapper {
     max-width: 1400px;
     padding: 68px 32px 60px 56px;
     margin: 0 auto;
@@ -22,7 +22,7 @@
       padding: 40px 24px;
     }
   }
-  
+
   &__title {
     text-align: center;
     padding-right: 26px;
@@ -57,8 +57,7 @@
   }
 
   &__column {
-
-    &:nth-child(1){
+    &:nth-child(1) {
       flex: 1 1 65%;
       max-width: 849px;
       height: 100%;
@@ -69,7 +68,7 @@
       }
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       flex: 1 1 30%;
       max-width: 415px;
 

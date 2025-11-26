@@ -2,7 +2,7 @@ import oneNewsPartial from "@/html/partials/one-news.html";
 import imgManager from "@/html/templates/img-manager.html";
 import videoManager from "@/html/templates/video-manager.html";
 
-export function renderNewsCards (news, container) {
+export function renderNewsCards(news, container) {
   container.innerHTML = "";
 
   news.forEach((item) => {
@@ -15,13 +15,13 @@ export function renderNewsCards (news, container) {
     }).toString();
 
     const videoHtml = item.video
-        ? videoManager({
+      ? videoManager({
           "video-class": "one-news__video",
           "video-src": item.video,
           "video-width": "408",
           "video-height": "207",
         }).toString()
-        : null;
+      : null;
 
     const card = oneNewsPartial({
       "one-news-date": item.date,

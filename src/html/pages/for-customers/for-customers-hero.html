@@ -1,0 +1,25 @@
+<section class="for-customers-hero">
+  <div class="for-customers-hero__wrapper">
+    <div class="for-customers-hero__inner">
+      <h1 class="for-customers-hero__title">Орех Причерноморья</h1>
+
+      <p class="for-customers-hero__subtitle">
+        Единственный в Украине сад совместного выращивание фундука и грецкого
+        ореха
+      </p>
+    </div>
+
+    <div class="for-customers-hero__picture-container picture-container">
+      <div class="for-customers-hero__shadow picture-container__shadow"></div>
+
+      {{> templates/img-manager-2
+      img-srcset='/img/pages/for-customers/for-customers-photo-1.webp'
+      img-src='/img/pages/for-customers/for-customers-1.png' img-alt='Орехи'
+      img-class='for-customers-hero__img picture-container__img'
+      img-width='1920' img-height='600' }}
+    </div>
+  </div>
+
+  {{> partials/breadcrumbs breadcrumbs-class='for-customers-hero__breadcrumbs'
+  name='Оптовым и корпоративным клиентам '}}
+</section>

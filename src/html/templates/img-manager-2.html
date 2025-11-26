@@ -1,0 +1,26 @@
+{{#if img-srcset}}
+
+<picture class="{{picture-class}}">
+  <source srcset="{{img-srcset}}" type="image/webp" />
+
+  <img
+    class="img {{img-class}}"
+    alt="{{img-alt}}"
+    src="{{img-src}}"
+    width="{{img-width}}"
+    height="{{img-height}}"
+    fetchpriority="high"
+  />
+</picture>
+
+{{else}}
+
+<img
+  class="img {{img-class}}"
+  alt="{{img-alt}}"
+  src="{{img-src}}"
+  width="{{img-width}}"
+  height="{{img-height}}"
+/>
+
+{{/if}}

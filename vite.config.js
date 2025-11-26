@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
-import {globSync} from "glob";
-import {resolve} from "path";
+import { globSync } from "glob";
+import { resolve } from "path";
 import path from "path";
 import handlebars from "vite-plugin-handlebars";
 import FullReload from "vite-plugin-full-reload";
@@ -8,7 +8,10 @@ import postcssCombineMediaQuery from "postcss-combine-media-query";
 import postcssSortMediaQueries from "postcss-sort-media-queries";
 import autoprefixer from "autoprefixer";
 import { hulakPlugins } from "vite-plugin-hulak-tools";
-import {slidesProductionAbout, slidesProductionMain} from "./src/js/partials/arrays-for-swipers.js";
+import {
+  slidesProductionAbout,
+  slidesProductionMain,
+} from "./src/js/partials/arrays-for-swipers.js";
 
 export default defineConfig(({ mode }) => {
   const isDeploy = mode === "deploy";
@@ -22,10 +25,10 @@ export default defineConfig(({ mode }) => {
       outDir: "dist",
       rollupOptions: {
         input: Object.fromEntries(
-            globSync("./*.html").map((file) => [
-              file.replace("./", "").replace(".html", ""),
-              resolve(__dirname, file),
-            ])
+          globSync("./*.html").map((file) => [
+            file.replace("./", "").replace(".html", ""),
+            resolve(__dirname, file),
+          ]),
         ),
         output: {
           manualChunks(id) {
@@ -73,7 +76,7 @@ export default defineConfig(({ mode }) => {
         },
         context: {
           slidesProductionMain,
-          slidesProductionAbout
+          slidesProductionAbout,
         },
       }),
       hulakPlugins({

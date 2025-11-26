@@ -121,7 +121,8 @@
         padding: 40px 0 0;
       }
 
-      @include media.media-breakpoint-down-equal(sm) {}
+      @include media.media-breakpoint-down-equal(sm) {
+      }
     }
     .production__inner:nth-child(1) {
       padding: 32px 0 0 0;

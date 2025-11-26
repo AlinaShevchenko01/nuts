@@ -2,10 +2,10 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.about-founder{
+.about-founder {
   background-color: variables.$color-bg11;
 
-  &__wrapper{
+  &__wrapper {
     max-width: 1400px;
     @include mixins.flex-between;
     gap: clamp(12px, 2vw, 22px);
@@ -26,7 +26,7 @@
     }
   }
 
-  &__inner{
+  &__inner {
     &:nth-child(1) {
       max-width: 342px;
       flex: 1 1 29%;
@@ -57,7 +57,6 @@
       @include media.media-breakpoint-down-equal(xxs) {
         flex: 1 1 100%;
         max-width: 100%;
-
       }
     }
 
@@ -68,7 +67,6 @@
       background-color: variables.$color-bg9;
       overflow: hidden;
       padding: 33px 34px 10px 47px;
-
 
       @include media.media-breakpoint-down-equal(lg) {
         flex: 1 1 46%;
@@ -120,7 +118,7 @@
     }
   }
 
-  &__quote{
+  &__quote {
     @include mixins.flex-between;
     gap: 12px;
   }
@@ -165,7 +163,7 @@
     padding: 16px 40px 16px 40px;
   }
 
-  &__water-mark{
+  &__water-mark {
     position: absolute;
     bottom: -22px;
     right: -86px;

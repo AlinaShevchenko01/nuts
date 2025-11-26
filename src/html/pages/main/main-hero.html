@@ -13,23 +13,18 @@
         data-btn-move='play-video' }}
       </div>
 
-      <div class="main-hero__picture-container">
-        {{> templates/img-manager
-        img-srcset=img-srcset-hero
-        img-src=img-src-hero
-        img-alt=img-alt-hero
-        img-class=img-class-hero
-        img-width=img-width-hero
-        img-height=img-height-hero }}
+      <div class="main-hero__picture-container picture-container">
+        <div class="main-hero__shadow picture-container__shadow"></div>
 
-        <div class="main-hero__shadow shadow"></div>
+        {{> templates/img-manager-2 img-srcset=img-srcset-hero
+        img-src=img-src-hero img-alt=img-alt-hero img-class=img-class-hero
+        img-width=img-width-hero img-height=img-height-hero }}
       </div>
     </div>
 
     {{> templates/video-manager video-class='main-hero__video'
     video-width='1000' video-height='600' video-src='video/walnut-small-o.mp4'
-    }}
-
-    {{> partials/breadcrumbs breadcrumbs-class=hero-breadcrumbs name=breadcrumbs-name}}
+    }} {{> partials/breadcrumbs breadcrumbs-class=hero-breadcrumbs
+    name=breadcrumbs-name}}
   </div>
 </section>

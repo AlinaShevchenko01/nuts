@@ -2,7 +2,9 @@
   <div class="burger__wrapper">
     <div class="burger__inner">
       <a href="#" class="burger__logo">
-        <img src="/img/header/logo.webp" alt="logo" />
+        {{> templates/img-manager-2 img-srcset='/img/header/logo.webp'
+        img-src='/img/header/logo.png' img-alt='logo'
+        img-class='burger__logo-icon'}}
 
         <span class="burger__name"> ОРЕХ ПРИЧЕРНОМОРЬЯ </span>
       </a>
@@ -16,9 +18,10 @@
     partials/navigation class='burger__navigation' }}
 
     <div class="burger__row">
-      <picture>
-        <img class="burger__bg" src="/img/pages/main/main-photo-2.webp" />
-      </picture>
+      {{> templates/img-manager img-srcset='/img/pages/main/main-photo-2.webp'
+      img-src='/img/pages/main/main-photo-2.png' img-alt='Garden'
+      img-class='burger__bg'}}
+
       <p class="burger__title">Орех Причерноморья</p>
 
       <p class="burger__text">

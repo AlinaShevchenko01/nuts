@@ -39,7 +39,6 @@
     @include media.media-breakpoint-down-equal(xs) {
       padding: 20px 24px;
     }
-
   }
 
   &__inner {
@@ -81,7 +80,6 @@
     letter-spacing: -0.005em;
     margin-top: 23px;
 
-
     @include media.media-breakpoint-down-equal(lg) {
       font-size: 14px;
     }
@@ -91,8 +89,6 @@
       grid-template-columns: repeat(3, 1fr);
       max-width: 100%;
       margin-top: 18px;
-
-
     }
 
     @include media.media-breakpoint-down-equal(sm) {
@@ -101,7 +97,7 @@
 
     a {
       transition: color 0.3s ease;
-      @media  (hover: hover) {
+      @media (hover: hover) {
         &:hover {
           color: variables.$color-bg1;
         }
@@ -134,7 +130,7 @@
       }
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       flex: 1 1 15%;
       font-family: variables.$second-font-family;
       font-size: 12px;
@@ -154,10 +150,9 @@
       @include mixins.flex-between-center;
       gap: 2px;
 
-      li{
+      li {
         &:nth-child(3) {
-
-          a{
+          a {
             display: flex;
 
             svg {

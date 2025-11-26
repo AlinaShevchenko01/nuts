@@ -1,23 +1,19 @@
 <!doctype html>
 <html lang="ru">
-{{> partials/head title='Галерея' basePath='gallery/gallery.scss'}}
+  {{> partials/head title='Галерея' basePath='gallery/gallery.scss'}}
 
-<body>
-{{> partials/sprite }} {{> partials/header }}
-{{> pages/gallery/gallery-hero }}
+  <body>
+    {{> partials/sprite }} {{> partials/header }} {{> pages/gallery/gallery-hero
+    }}
 
-<section class="gallery-full">
-    {{> partials/gallery-photo }}
-    {{> partials/gallery-photo }}
-    {{>
-    partials/main-btn btn-class='gallery-full__btn white'
-    btn-text='Посмотреть еще' btn-move=''}}
-</section>
+    <section class="gallery-full">
+      {{> partials/gallery-photo }} {{> partials/gallery-photo }} {{>
+      partials/main-btn btn-class='gallery-full__btn white' btn-text='Посмотреть
+      еще' btn-move=''}}
+    </section>
 
+    {{> partials/contact }} {{> partials/footer }}
 
-{{> partials/contact }}
-{{> partials/footer }}
-
-<script type="module" src="/src/js/pages/gallery/gallery.js"></script>
-</body>
+    <script type="module" src="/src/js/pages/gallery/gallery.js"></script>
+  </body>
 </html>

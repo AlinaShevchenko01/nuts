@@ -9,13 +9,12 @@
     padding: 60px 0 10px;
   }
 
-  .gallery-photo{
+  .gallery-photo {
     &:nth-child(2) {
       margin-top: 30px;
 
-      .gallery-photo__inner{
-
-        &:nth-child(2){
+      .gallery-photo__inner {
+        &:nth-child(2) {
           order: -1;
         }
       }

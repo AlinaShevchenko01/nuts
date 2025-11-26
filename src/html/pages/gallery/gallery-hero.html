@@ -1,25 +1,22 @@
 <section class="gallery-hero">
-    <div class="gallery-hero__wrapper">
-        <div class="gallery-hero__inner">
-            <h1 class="gallery-hero__title">
-                Галерея
-            </h1>
+  <div class="gallery-hero__wrapper">
+    <div class="gallery-hero__inner">
+      <h1 class="gallery-hero__title">Галерея</h1>
 
-            <p class="gallery-hero__text">
-                Кадры социальной активности компании
-            </p>
-        </div>
-
-        <div class="gallery-hero__picture-container">
-            {{> templates/img-manager
-            img-srcset='/img/pages/gallery/gallery-photo-1.webp'
-            img-src='/img/pages/gallery/gallery-photo-1.png' img-alt='Саженцы'
-            img-class='gallery-hero__img' img-width='1920'
-            img-height='600' }}
-
-            <div class="gallery-hero__shadow shadow"></div>
-        </div>
+      <p class="gallery-hero__text">Кадры социальной активности компании</p>
     </div>
 
-    {{> partials/breadcrumbs breadcrumbs-class='gallery-hero__breadcrumbs' name='Галерея'}}
+    <div class="gallery-hero__picture-container picture-container">
+      {{> templates/img-manager-2
+      img-srcset='/img/pages/gallery/gallery-photo-1.webp'
+      img-src='/img/pages/gallery/gallery-photo-1.png' img-alt='Саженцы'
+      img-class='gallery-hero__img picture-container__img' img-width='1920'
+      img-height='600' }}
+
+      <div class="gallery-hero__shadow picture-container__shadow"></div>
+    </div>
+  </div>
+
+  {{> partials/breadcrumbs breadcrumbs-class='gallery-hero__breadcrumbs'
+  name='Галерея'}}
 </section>

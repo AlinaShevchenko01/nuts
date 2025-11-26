@@ -2,7 +2,7 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.news-block{
+.news-block {
   &__wrapper {
     max-width: 1400px;
     @include mixins.flex-between;
@@ -16,11 +16,12 @@
     }
 
     @include media.media-breakpoint-down-equal(xs) {
-      padding: 0  24px 32px;
+      padding: 0 24px 32px;
     }
   }
 
-  .one-news{
+  .one-news {
+    flex-shrink: 1;
 
     .one-news__wrapper {
       @include media.media-breakpoint-down-equal(md) {
@@ -81,7 +82,7 @@
     }
   }
 
-  .one-news__btn{
+  .one-news__btn {
     @include media.media-breakpoint-down-equal(sm) {
       margin-bottom: 0;
     }
