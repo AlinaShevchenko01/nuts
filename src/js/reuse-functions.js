@@ -1,3 +1,4 @@
+import { useLoadFunction } from "lazy-viewport-loader";
 import { changeLanguage } from "@/js/partials/language-dropdown.js";
 import { moveBurger } from "@/js/partials/burger.js";
 import { lazyLoad } from "@/js/partials/lazy-loading.js";
@@ -10,4 +11,13 @@ export function reuseFunctions() {
   moveBurger();
   lazyLoadVideo();
   initAccordion();
+  useLoadFunction(
+      () => import("@/js/partials/map.js"),
+      ".contact",
+      [],
+      {
+        threshold: 0,
+        rootMargin: "200px",
+      },
+  );
 }

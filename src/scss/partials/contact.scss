@@ -241,13 +241,6 @@
     }
   }
 
-  &__place-holder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
   &.gray {
     background-color: variables.$color-bg11;
   }
