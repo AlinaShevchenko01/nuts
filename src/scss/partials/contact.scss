@@ -23,7 +23,7 @@
   &__inner {
     flex: 1 1 40%;
     max-width: 376px;
-    margin-top: 16px;
+    margin: 16px 0 28px;
 
     @include media.media-breakpoint-down-equal(md) {
       flex: 1 1 100%;
