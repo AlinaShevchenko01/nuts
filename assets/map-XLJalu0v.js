@@ -1,2 +1,0 @@
-import{L as o}from"./vendor-MLoxMhBq.js";async function e(){const e=document.querySelector("#map"),n=46.43148,r=30.71528,t=o.icon({iconUrl:"/nuts/svg/place-holder.svg",iconSize:[49,49],iconAnchor:[24,49]}),c=o.map(e).setView([n,r],14);o.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19}).addTo(c),o.marker([n,r],{icon:t}).addTo(c)}export{e as initMap};
-//# sourceMappingURL=map-XLJalu0v.js.map

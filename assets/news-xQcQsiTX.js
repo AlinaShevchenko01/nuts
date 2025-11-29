@@ -1,3 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/render-news-static-lzci0q6f.js","assets/render-news-cards-DYp9Y91p.js","assets/vendor-MLoxMhBq.js","assets/vendor-BTDLRqRw.css","assets/img-manager-BU4SdNBQ.js","assets/reuse-functions-4ZtkHQkF.js"])))=>i.map(i=>d[i]);
-import{r as o,_ as r}from"./reuse-functions-4ZtkHQkF.js";import{u as s}from"./vendor-MLoxMhBq.js";import{o as t}from"./btn-to-gallery-CeX_tepe.js";document.addEventListener("DOMContentLoaded",async()=>{o(),t(),s(()=>r(()=>import("./render-news-static-lzci0q6f.js"),__vite__mapDeps([0,1,2,3,4,5])),".news-block",[],{threshold:0,rootMargin:"200px"})});
-//# sourceMappingURL=news-xQcQsiTX.js.map
