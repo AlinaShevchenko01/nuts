@@ -16,6 +16,7 @@ import {
 export default defineConfig(({ mode }) => {
   const isDeploy = mode === "deploy";
   const basePath = isDeploy ? "/nuts/" : "/";
+  const htmlFiles = [...globSync("./*.html"), ...globSync("./pages/*.html")];
 
   return {
     base: basePath,
@@ -25,7 +26,7 @@ export default defineConfig(({ mode }) => {
       outDir: "dist",
       rollupOptions: {
         input: Object.fromEntries(
-          globSync("./*.html").map((file) => [
+          htmlFiles.map((file) => [
             file.replace("./", "").replace(".html", ""),
             resolve(__dirname, file),
           ]),
@@ -77,6 +78,7 @@ export default defineConfig(({ mode }) => {
         context: {
           slidesProductionMain,
           slidesProductionAbout,
+          BASE_URL: basePath,
         },
       }),
       hulakPlugins({

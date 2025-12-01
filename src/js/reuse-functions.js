@@ -11,13 +11,8 @@ export function reuseFunctions() {
   moveBurger();
   lazyLoadVideo();
   initAccordion();
-  useLoadFunction(
-      () => import("@/js/partials/map.js"),
-      ".contact",
-      [],
-      {
-        threshold: 0,
-        rootMargin: "200px",
-      },
-  );
+  useLoadFunction(() => import("@/js/partials/map.js"), ".contact", [], {
+    threshold: 0,
+    rootMargin: "200px",
+  });
 }

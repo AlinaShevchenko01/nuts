@@ -15,7 +15,6 @@ export function lazyLoadVideo() {
             source.removeAttribute("data-src-video");
 
             video.setAttribute("preload", "metadata");
-            //video.load();
 
             observerVideo.unobserve(video);
           }
@@ -32,7 +31,7 @@ export function lazyLoadVideo() {
     observerVideo.observe(video);
   });
 
-  btns.forEach((btn, index) => {
+  btns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const containerParent = btn.closest("[data-container='parent']");
       const containerHidden = containerParent.querySelector(

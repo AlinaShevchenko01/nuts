@@ -2,7 +2,7 @@
   <div class="for-customers-info__wrapper">
     <div class="for-customers-info__inner">
       <h2 class="for-customers-info__title">
-        Оптовым  и корпоративным клиентам
+        Оптовым и корпоративным клиентам
       </h2>
 
       <div class="for-customers-info__column">
@@ -30,233 +30,245 @@
       </div>
     </div>
 
-      <div class="swiper for-customers-info__tabs">
+    <div class="swiper for-customers-info__tabs">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="for-customers-info__tab">
+            {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
+            id="icon-supermarket" width="37px" height="37px" }}
+
+            <span class="for-customers-info__tab-name">
+              Крупные супермаркеты
+            </span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="for-customers-info__tab">
+            {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
+            id="icon-shop" width="37px" height="37px" }}
+
+            <span class="for-customers-info__tab-name">
+              Розничные магазины
+            </span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="for-customers-info__tab">
+            {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
+            id="icon-dinner-table" width="49px" height="46px" }}
+
+            <span class="for-customers-info__tab-name"> Компании HoReCa </span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="for-customers-info__tab">
+            {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
+            id="icon-dumbbell" width="45px" height="45px" }}
+
+            <span class="for-customers-info__tab-name">
+              Фитнес <br />
+              и спорт клубы
+            </span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="for-customers-info__tab">
+            {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
+            id="icon-cake" width="43px" height="43px" }}
+
+            <span class="for-customers-info__tab-name">
+              Кондитерские и пекарни
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="for-customers-info__container">
+      <div class="for-customers-info__page-swiper swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="for-customers-info__tab">
-              {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
-              id="icon-supermarket" width="37px" height="37px" }}
+          <div class="for-customers-info__page-slide swiper-slide">
+            <div class="for-customers-info__container-inner">
+              <p class="for-customers-info__text">
+                СОК "Орех Причерноморья" предлагает своим клиентам выгодные
+                условия сорудничества.
+              </p>
 
-              <span class="for-customers-info__tab-name"> Крупные супермаркеты </span>
+              <p class="for-customers-info__text">
+                Мы готовы рассмотреть особые условия для оптовых покупателей, с
+                готовностью идем на встречу к любому предложению.
+              </p>
+
+              <p class="for-customers-info__text">
+                Особые условия подготовленны для розничных магазинов. компаний
+                HoReCa, спорт-клубов.
+              </p>
+
+              <p class="for-customers-info__text">
+                Если вы заинтересованы в нашей продукции, пишите или звоните в
+                наш главный офис, мы всегда пойдем вам на встречу.
+              </p>
+
+              {{> partials/main-btn btn-class='for-customers-info__btn'
+              btn-text='Написать нам' btn-move=''}}
+            </div>
+
+            <div class="for-customers-info__photo">
+              {{> templates/img-manager-2
+              img-srcset='/img/pages/for-customers/for-customers-photo-2.webp'
+              img-src='/img/pages/for-customers/for-customers-photo-2.png'
+              img-alt='Супермаркет' img-class='for-customers-info__img'
+              img-width='761' img-height='471' }}
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="for-customers-info__tab">
-              {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
-              id="icon-shop" width="37px" height="37px" }}
+          <div class="swiper-slide for-customers-info__page-slide">
+            <div class="for-customers-info__container-inner">
+              <p class="for-customers-info__text">
+                СОК "Орех Причерноморья" предлагает своим клиентам выгодные
+                условия сорудничества.
+              </p>
 
-              <span class="for-customers-info__tab-name"> Розничные магазины </span>
+              <p class="for-customers-info__text">
+                Мы готовы рассмотреть особые условия для оптовых покупателей, с
+                готовностью идем на встречу к любому предложению.
+              </p>
+
+              <p class="for-customers-info__text">
+                Особые условия подготовленны для розничных магазинов. компаний
+                HoReCa, спорт-клубов.
+              </p>
+
+              <p class="for-customers-info__text">
+                Если вы заинтересованы в нашей продукции, пишите или звоните в
+                наш главный офис, мы всегда пойдем вам на встречу.
+              </p>
+
+              {{> partials/main-btn btn-class='for-customers-info__btn'
+              btn-text='Написать нам' btn-move=''}}
+            </div>
+
+            <div class="for-customers-info__photo">
+              {{> templates/img-manager-2
+              img-srcset='/img/pages/for-customers/for-customers-photo-3.webp'
+              img-src='/img/pages/for-customers/for-customers-photo-3.png'
+              img-alt='Магазин' img-class='for-customers-info__img'
+              img-width='761' img-height='471' }}
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="for-customers-info__tab">
-              {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
-              id="icon-dinner-table" width="49px" height="46px" }}
+          <div class="swiper-slide for-customers-info__page-slide">
+            <div class="for-customers-info__container-inner">
+              <p class="for-customers-info__text">
+                СОК "Орех Причерноморья" предлагает своим клиентам выгодные
+                условия сорудничества.
+              </p>
 
-              <span class="for-customers-info__tab-name"> Компании HoReCa </span>
+              <p class="for-customers-info__text">
+                Мы готовы рассмотреть особые условия для оптовых покупателей, с
+                готовностью идем на встречу к любому предложению.
+              </p>
+
+              <p class="for-customers-info__text">
+                Особые условия подготовленны для розничных магазинов. компаний
+                HoReCa, спорт-клубов.
+              </p>
+
+              <p class="for-customers-info__text">
+                Если вы заинтересованы в нашей продукции, пишите или звоните в
+                наш главный офис, мы всегда пойдем вам на встречу.
+              </p>
+
+              {{> partials/main-btn btn-class='for-customers-info__btn'
+              btn-text='Написать нам' btn-move=''}}
+            </div>
+
+            <div class="for-customers-info__photo">
+              {{> templates/img-manager-2
+              img-srcset='/img/pages/for-customers/for-customers-photo-4.webp'
+              img-src='/img/pages/for-customers/for-customers-photo-4.png'
+              img-alt='Кафе' img-class='for-customers-info__img' img-width='761'
+              img-height='471' }}
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="for-customers-info__tab">
-              {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
-              id="icon-dumbbell" width="45px" height="45px" }}
+          <div class="swiper-slide for-customers-info__page-slide">
+            <div class="for-customers-info__container-inner">
+              <p class="for-customers-info__text">
+                СОК "Орех Причерноморья" предлагает своим клиентам выгодные
+                условия сорудничества.
+              </p>
 
-              <span class="for-customers-info__tab-name"> Фитнес <br> и спорт клубы </span>
+              <p class="for-customers-info__text">
+                Мы готовы рассмотреть особые условия для оптовых покупателей, с
+                готовностью идем на встречу к любому предложению.
+              </p>
+
+              <p class="for-customers-info__text">
+                Особые условия подготовленны для розничных магазинов. компаний
+                HoReCa, спорт-клубов.
+              </p>
+
+              <p class="for-customers-info__text">
+                Если вы заинтересованы в нашей продукции, пишите или звоните в
+                наш главный офис, мы всегда пойдем вам на встречу.
+              </p>
+
+              {{> partials/main-btn btn-class='for-customers-info__btn'
+              btn-text='Написать нам' btn-move=''}}
+            </div>
+
+            <div class="for-customers-info__photo">
+              {{> templates/img-manager-2
+              img-srcset='/img/pages/for-customers/for-customers-photo-5.webp'
+              img-src='/img/pages/for-customers/for-customers-photo-5.png'
+              img-alt='Спортзал' img-class='for-customers-info__img'
+              img-width='761' img-height='471' }}
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="for-customers-info__tab">
-              {{> templates/svg-manager svg-class='for-customers-info__tab-icon'
-              id="icon-cake" width="43px" height="43px" }}
+          <div class="swiper-slide for-customers-info__page-slide">
+            <div class="for-customers-info__container-inner">
+              <p class="for-customers-info__text">
+                СОК "Орех Причерноморья" предлагает своим клиентам выгодные
+                условия сорудничества.
+              </p>
 
-              <span class="for-customers-info__tab-name">
-          Кондитерские и пекарни
-        </span>
-            </div>
-          </div>
-        </div>
-      </div>
+              <p class="for-customers-info__text">
+                Мы готовы рассмотреть особые условия для оптовых покупателей, с
+                готовностью идем на встречу к любому предложению.
+              </p>
 
-      <hr />
+              <p class="for-customers-info__text">
+                Особые условия подготовленны для розничных магазинов. компаний
+                HoReCa, спорт-клубов.
+              </p>
 
-      <div class="for-customers-info__container">
-        <div class="for-customers-info__page-swiper swiper">
-          <div class="swiper-wrapper">
-            <div class="for-customers-info__page-slide swiper-slide ">
-              <div class="for-customers-info__container-inner">
-                <p class="for-customers-info__text">
-                  СОК "Орех Причерноморья" предлагает своим клиентам выгодные условия
-                  сорудничества.
-                </p>
+              <p class="for-customers-info__text">
+                Если вы заинтересованы в нашей продукции, пишите или звоните в
+                наш главный офис, мы всегда пойдем вам на встречу.
+              </p>
 
-                <p class="for-customers-info__text">
-                  Мы готовы рассмотреть особые условия для оптовых покупателей, с
-                  готовностью идем на встречу к любому предложению.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Особые условия подготовленны для розничных магазинов. компаний HoReCa,
-                  спорт-клубов.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Если вы заинтересованы в нашей продукции, пишите или звоните в наш
-                  главный офис, мы всегда пойдем вам на встречу.
-                </p>
-
-                {{>
-                partials/main-btn btn-class='for-customers-info__btn' btn-text='Написать нам' btn-move=''}}
-              </div>
-
-              <div class="for-customers-info__photo">
-                {{> templates/img-manager-2
-                img-srcset='/img/pages/for-customers/for-customers-photo-2.webp'
-                img-src='/img/pages/for-customers/for-customers-photo-2.png' img-alt='Супермаркет'
-                img-class='for-customers-info__img' img-width='761' img-height='471' }}
-              </div>
+              {{> partials/main-btn btn-class='for-customers-info__btn'
+              btn-text='Написать нам' btn-move=''}}
             </div>
 
-            <div class="swiper-slide for-customers-info__page-slide">
-              <div class="for-customers-info__container-inner">
-                <p class="for-customers-info__text">
-                  СОК "Орех Причерноморья" предлагает своим клиентам выгодные условия
-                  сорудничества.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Мы готовы рассмотреть особые условия для оптовых покупателей, с
-                  готовностью идем на встречу к любому предложению.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Особые условия подготовленны для розничных магазинов. компаний HoReCa,
-                  спорт-клубов.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Если вы заинтересованы в нашей продукции, пишите или звоните в наш
-                  главный офис, мы всегда пойдем вам на встречу.
-                </p>
-
-                {{>
-                partials/main-btn btn-class='for-customers-info__btn' btn-text='Написать нам' btn-move=''}}
-              </div>
-
-              <div class="for-customers-info__photo">
-                {{> templates/img-manager-2
-                img-srcset='/img/pages/for-customers/for-customers-photo-3.webp'
-                img-src='/img/pages/for-customers/for-customers-photo-3.png' img-alt='Магазин'
-                img-class='for-customers-info__img' img-width='761' img-height='471' }}
-              </div>
-            </div>
-
-            <div class="swiper-slide for-customers-info__page-slide">
-              <div class="for-customers-info__container-inner">
-                <p class="for-customers-info__text">
-                  СОК "Орех Причерноморья" предлагает своим клиентам выгодные условия
-                  сорудничества.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Мы готовы рассмотреть особые условия для оптовых покупателей, с
-                  готовностью идем на встречу к любому предложению.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Особые условия подготовленны для розничных магазинов. компаний HoReCa,
-                  спорт-клубов.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Если вы заинтересованы в нашей продукции, пишите или звоните в наш
-                  главный офис, мы всегда пойдем вам на встречу.
-                </p>
-
-                {{>
-                partials/main-btn btn-class='for-customers-info__btn' btn-text='Написать нам' btn-move=''}}
-              </div>
-
-              <div class="for-customers-info__photo">
-                {{> templates/img-manager-2
-                img-srcset='/img/pages/for-customers/for-customers-photo-4.webp'
-                img-src='/img/pages/for-customers/for-customers-photo-4.png' img-alt='Кафе'
-                img-class='for-customers-info__img' img-width='761' img-height='471' }}
-              </div>
-            </div>
-
-            <div class="swiper-slide for-customers-info__page-slide">
-              <div class="for-customers-info__container-inner">
-                <p class="for-customers-info__text">
-                  СОК "Орех Причерноморья" предлагает своим клиентам выгодные условия
-                  сорудничества.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Мы готовы рассмотреть особые условия для оптовых покупателей, с
-                  готовностью идем на встречу к любому предложению.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Особые условия подготовленны для розничных магазинов. компаний HoReCa,
-                  спорт-клубов.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Если вы заинтересованы в нашей продукции, пишите или звоните в наш
-                  главный офис, мы всегда пойдем вам на встречу.
-                </p>
-
-                {{>
-                partials/main-btn btn-class='for-customers-info__btn' btn-text='Написать нам' btn-move=''}}
-              </div>
-
-              <div class="for-customers-info__photo">
-                {{> templates/img-manager-2
-                img-srcset='/img/pages/for-customers/for-customers-photo-5.webp'
-                img-src='/img/pages/for-customers/for-customers-photo-5.png' img-alt='Спортзал'
-                img-class='for-customers-info__img' img-width='761' img-height='471' }}
-              </div>
-            </div>
-
-            <div class="swiper-slide for-customers-info__page-slide">
-              <div class="for-customers-info__container-inner">
-                <p class="for-customers-info__text">
-                  СОК "Орех Причерноморья" предлагает своим клиентам выгодные условия
-                  сорудничества.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Мы готовы рассмотреть особые условия для оптовых покупателей, с
-                  готовностью идем на встречу к любому предложению.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Особые условия подготовленны для розничных магазинов. компаний HoReCa,
-                  спорт-клубов.
-                </p>
-
-                <p class="for-customers-info__text">
-                  Если вы заинтересованы в нашей продукции, пишите или звоните в наш
-                  главный офис, мы всегда пойдем вам на встречу.
-                </p>
-
-                {{>
-                partials/main-btn btn-class='for-customers-info__btn' btn-text='Написать нам' btn-move=''}}
-              </div>
-
-              <div class="for-customers-info__photo">
-                {{> templates/img-manager-2
-                img-srcset='/img/pages/for-customers/for-customers-photo-6.webp'
-                img-src='/img/pages/for-customers/for-customers-photo-6.png' img-alt='Кондитерская'
-                img-class='for-customers-info__img' img-width='761' img-height='471' }}
-              </div>
+            <div class="for-customers-info__photo">
+              {{> templates/img-manager-2
+              img-srcset='/img/pages/for-customers/for-customers-photo-6.webp'
+              img-src='/img/pages/for-customers/for-customers-photo-6.png'
+              img-alt='Кондитерская' img-class='for-customers-info__img'
+              img-width='761' img-height='471' }}
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
 </section>

@@ -27,12 +27,12 @@ export function moveBurger() {
     }
   }
 
-  const links = burger.querySelectorAll('.navigation__item')
-  links.forEach(link => {
+  const links = burger.querySelectorAll(".navigation__item");
+  links.forEach((link) => {
     link.addEventListener("click", (e) => {
-        closeBurger()
-    })
-  })
+      closeBurger();
+    });
+  });
 
   closeButton.addEventListener("click", (e) => {
     closeBurger();

@@ -8,7 +8,7 @@
     "build": "vite build",
     "build:deploy": "vite build --mode deploy",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build:deploy && gh-pages -d dist",
     "convert-webp": "node convert-webp.js",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check ."

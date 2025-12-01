@@ -10,9 +10,11 @@
     </div>
 
     <div class="main-products__shop-container">
-      {{> partials/shop shop-class='main-products__shop' }} {{>
-      partials/main-btn btn-class='main-products__btn-shop white'
-      btn-text='Перейти в магазин' btn-move='to-shop'}}
+      {{> partials/shop shop-class='main-products__shop' }}
+      <a href="pages/shop.html">
+        {{> partials/main-btn btn-class='main-products__btn-shop white'
+        btn-text='Перейти в магазин'}}
+      </a>
     </div>
   </div>
 </section>

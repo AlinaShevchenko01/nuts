@@ -15,6 +15,4 @@ export function initSwiper(container) {
     grabCursor: true,
     speed: 700,
   });
-
-  //lazyLoadSwiper(swiperProduction);
 }

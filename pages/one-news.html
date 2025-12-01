@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru">
+  {{> partials/head title='Новость' basePath='one-news/one-news.scss'}}
+
+  <body>
+    {{> partials/sprite }} {{> partials/header }}
+
+    <main class="one-news">
+      {{> pages/one-news/one-news-hero }} {{> pages/one-news/one-news-aside }}
+    </main>
+
+    {{> partials/contact }} {{> partials/footer }}
+    <script type="module" src="/src/js/pages/one-news/one-news.js"></script>
+  </body>
+</html>

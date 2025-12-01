@@ -4,8 +4,11 @@
 
     <p class="about-gallery__text">Кадры социальной активности компании</p>
 
-    {{> partials/gallery-photo gallery-photo-class='about-gallery__photos'}} {{>
-    partials/main-btn btn-class='about-gallery__btn white' btn-text='Смотреть
-    всю галерею' btn-move='to-gallery'}}
+    {{> partials/gallery-photo gallery-photo-class='about-gallery__photos'}}
+
+    <a href="pages/gallery.html">
+      {{> partials/main-btn btn-class='about-gallery__btn white'
+      btn-text='Смотреть всю галерею'}}
+    </a>
   </div>
 </section>
