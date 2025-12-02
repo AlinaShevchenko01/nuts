@@ -1,0 +1,157 @@
+<section class="product-hero">
+    <div class="product-hero__wrapper">
+        <div class="product-hero__inner product-hero__inner_swiper">
+            <div class="product-hero__item-swiper item-swiper">
+                <div class="product-hero__item-swiper-wrapper item-swiper__wrapper">
+                    {{> templates/img-manager img-srcset='/img/items/item-1.webp'
+                    img-src='/img/items/item-1.png' img-alt='Item'
+                    img-class='product-hero__img item-swiper__img' img-width='153' img-height='431'
+                    picture-class='product-hero__picture item-swiper__picture'
+                    }}
+
+                    {{> templates/img-manager img-srcset='/img/items/item-1.webp'
+                    img-src='/img/items/item-1.png' img-alt='Item'
+                    img-class='product-hero__img item-swiper__img' img-width='153' img-height='431'
+                    picture-class='product-hero__picture item-swiper__picture'
+                    }}
+                </div>
+            </div>
+
+            <div class="product-hero__item-nav item-swiper__nav">
+                <button
+                        class="product-hero__item-btn product-hero__item-btn_prev item-swiper__btn item-swiper__btn_prev"
+                        aria-label="prev-photo"
+                >
+                    {{> templates/svg-manager id="icon-arrow-right"
+                    svg-class="product-hero__icon-arrow item-swiper__icon-arrow" width="27px" height="27px"}}
+                </button>
+
+                <button
+                        class="product-hero__item-btn product-hero__item-btn_next item-swiper__btn item-swiper__btn_next"
+                        aria-label="next-photo"
+                >
+                    {{> templates/svg-manager id="icon-arrow-right"
+                    svg-class="product-hero__icon-arrow item-swiper__icon-arrow" width="27px" height="27px"}}
+                </button>
+            </div>
+
+            <button class="product-hero__scale-container item-swiper__scale-container" aria-label="zoom-photo">
+                {{> templates/svg-manager id="icon-magnifying-glass"
+                svg-class="product-hero__scale item-swiper__scale" width="19px" height="19px"}}
+            </button>
+        </div>
+
+        <div class="product-hero__inner">
+            <div class="product-hero__row product-hero__row_first">
+                <p class="product-hero__group">
+                    Грецкий орех
+                </p>
+
+                <p class="product-hero__article">
+                    <span>
+                        Арт:
+                    </span>
+
+                    <span class="product-hero__article-number">
+                        0091
+                    </span>
+                </p>
+            </div>
+
+            <h1 class="product-hero__title">
+                Орех соленый кондитерский
+                очищенный
+            </h1>
+
+            <div class="product-hero__row">
+                <p class="product-hero__properties">
+                    Состав:
+                </p>
+
+                <p class="product-hero__value">
+                    Ядро грецкого ореха, вымытого очищенного
+                    от кожуры, соль экстра (раствор 7%)
+                </p>
+            </div>
+
+            <div class="product-hero__row product-hero__row_third">
+                <p class="product-hero__properties">
+                    Масса нетто:
+                </p>
+
+                <p class="product-hero__value">
+                    40г.
+                </p>
+            </div>
+
+            <div class="product-hero__row product-hero__row_fourth">
+                <p class="product-hero__properties">
+                    Энергетическая ценность:
+                </p>
+
+                <p class="product-hero__value">
+                    654 Ккал.
+                </p>
+            </div>
+
+            <div class="product-hero__row product-hero__row_fifth">
+                <p class="product-hero__properties">
+                    Срок годности:
+                </p>
+
+                <p class="product-hero__value">
+                    12 месяцев, с даты расфасовки <br>
+                    (указана на упаковке)
+                </p>
+            </div>
+
+            <div class="product-hero__storage">
+                <div class="product-hero__storage-icon">
+                    {{> templates/svg-manager id="icon-warning"
+                    svg-class="product-hero__icon-warning" width="21px" height="21px"}}
+                </div>
+
+                <p class="product-hero__storage-text">
+                    Хранить в помещениях, защищенных от попадания прямых,
+                    солнечных лучей, при температуре от +3 °C до +20 °C, и относительной
+                    влажности воздуха не более 75 %
+                </p>
+            </div>
+
+            <div class="product-hero__container">
+                <div class="product-hero__price-container">
+                    <p class="product-hero__price-text">
+                        Ваша цена:
+                    </p>
+
+                    <p class="product-hero__price-green">
+                    <span>
+                        19
+                    </span>
+
+                        <span>
+                       грн.
+                    </span>
+                    </p>
+
+                    <p class="product-hero__price-gray">
+                    <span>
+                        21
+                    </span>
+
+                        <span>
+                       грн.
+                    </span>
+                    </p>
+                </div>
+
+                {{> partials/main-btn btn-text='Заказать' btn-class='product-hero__btn-buy'}}
+            </div>
+
+
+        </div>
+    </div>
+
+    {{> partials/breadcrumbs breadcrumbs-class='product-hero__breadcrumbs gray'
+    name='Карточка товара'}}
+</section>

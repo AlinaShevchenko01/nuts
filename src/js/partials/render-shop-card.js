@@ -17,7 +17,7 @@ export async function renderShopCard() {
     const imagesHtml = product.photo
       .map((img) =>
         imgManager({
-          "picture-class": "shop-card__item-picture",
+          "picture-class": "shop-card__item-picture item-swiper__picture",
           "img-srcset": img.imgSrcSet,
           "img-src": img.imgSrc,
           "img-alt": product.name,

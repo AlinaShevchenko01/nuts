@@ -1,8 +1,10 @@
 import Swiper from "swiper";
 import { Controller } from "swiper/modules";
 import "swiper/css";
+import {initTabsControl} from "@/js/partials/connect-swipers.js";
+import {lazyLoadSwiper} from "@/js/partials/swiper-lazy-loading.js";
 
-export function connectSwipers() {
+export function initForCustomersSwipers() {
   const pageSwiper = new Swiper(".for-customers-info__page-swiper", {
     modules: [Controller],
     speed: 1000,
@@ -41,28 +43,6 @@ export function connectSwipers() {
     },
   });
 
-  tabsSwiper.controller.control = pageSwiper;
-  pageSwiper.controller.control = tabsSwiper;
-
-  function updateActiveTab(index) {
-    const tabs = document.querySelectorAll(
-      ".for-customers-info__tabs .for-customers-info__tab",
-    );
-    tabs.forEach((tab, i) => {
-      tab.classList.toggle("active", i === index);
-    });
-  }
-  updateActiveTab(0);
-
-  tabsSwiper.slides.forEach((slide, index) => {
-    slide.addEventListener("click", () => {
-      pageSwiper.slideTo(index);
-      updateActiveTab(index);
-    });
-  });
-
-  pageSwiper.on("slideChange", () => {
-    const i = pageSwiper.realIndex;
-    updateActiveTab(i);
-  });
+  initTabsControl(tabsSwiper, pageSwiper, '.for-customers-info__tabs .for-customers-info__tab');
+  lazyLoadSwiper(pageSwiper)
 }

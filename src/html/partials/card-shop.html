@@ -1,31 +1,31 @@
 <div class="shop-card {{class-card}}">
   <div class="shop-card__wrapper">
     <div class="shop-card__inner">
-      <div class="shop-card__item-swiper">
-        <div class="shop-card__item-swiper-wrapper">{{images}}</div>
+      <div class="shop-card__item-swiper item-swiper">
+        <div class="shop-card__item-swiper-wrapper item-swiper__wrapper">{{images}}</div>
       </div>
 
-      <div class="shop-card__item-nav">
+      <div class="shop-card__item-nav item-swiper__nav">
         <button
-          class="shop-card__item-btn shop-card__item-btn_prev"
+          class="shop-card__item-btn shop-card__item-btn_prev item-swiper__btn item-swiper__btn_prev"
           aria-label="prev-photo"
         >
           {{> templates/svg-manager id="icon-arrow-right"
-          svg-class="shop-card__icon-arrow" width="23px" height="23px"}}
+          svg-class="shop-card__icon-arrow item-swiper__icon-arrow" width="23px" height="23px"}}
         </button>
 
         <button
-          class="shop-card__item-btn shop-card__item-btn_next"
+          class="shop-card__item-btn shop-card__item-btn_next item-swiper__btn item-swiper__btn_next"
           aria-label="next-photo"
         >
           {{> templates/svg-manager id="icon-arrow-right"
-          svg-class="shop-card__icon-arrow" width="23px" height="23px"}}
+          svg-class="shop-card__icon-arrow item-swiper__icon-arrow" width="23px" height="23px"}}
         </button>
       </div>
 
-      <button class="shop-card__scale-container" aria-label="zoom-photo">
+      <button class="shop-card__scale-container item-swiper__scale-container" aria-label="zoom-photo">
         {{> templates/svg-manager id="icon-magnifying-glass"
-        svg-class="shop-card__scale" width="19px" height="19px"}}
+        svg-class="shop-card__scale item-swiper__scale" width="19px" height="19px"}}
       </button>
     </div>
 

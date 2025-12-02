@@ -1,7 +1,7 @@
 export function initCustomCardSwiper(card) {
-  const slides = card.querySelectorAll(".shop-card__item-picture");
-  const btnNext = card.querySelector(".shop-card__item-btn_next");
-  const btnPrev = card.querySelector(".shop-card__item-btn_prev");
+  const slides = card.querySelectorAll(".item-swiper__picture");
+  const btnNext = card.querySelector(".item-swiper__btn_next");
+  const btnPrev = card.querySelector(".item-swiper__btn_prev");
 
   let index = 0;
   slides[index].classList.add("active");

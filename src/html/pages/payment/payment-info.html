@@ -1,0 +1,230 @@
+<section class="payment-info">
+    <div class="payment-info__wrapper">
+        <div class="payment-info__swiper-tabs swiper">
+            <div class="payment-info__swiper-tabs-wrapper swiper-wrapper">
+                <div class="payment-info__swiper-tabs-slide swiper-slide">
+                    <div class="payment-info__tabs-container">
+                        {{> templates/svg-manager svg-class='payment-info__tabs-icon'
+                        id="icon-wallet" width="37px" height="37px" }}
+
+                        <span class="payment-info__tabs-name">
+              Оплата заказа
+            </span>
+                    </div>
+                </div>
+
+                <div class="payment-info__swiper-tabs-slide swiper-slide">
+                    <div class="payment-info__tabs-container">
+                        {{> templates/svg-manager svg-class='payment-info__tabs-icon'
+                        id="icon-lorry" width="45px" height="45px" }}
+
+                        <span class="payment-info__tabs-name">
+              Доставка партии
+            </span>
+                    </div>
+                </div>
+
+                <div class="payment-info__swiper-tabs-slide swiper-slide">
+                    <div class="payment-info__tabs-container">
+                        {{> templates/svg-manager svg-class='payment-info__tabs-icon'
+                        id="icon-package" width="36px" height="36px" }}
+
+                        <span class="payment-info__tabs-name">
+              Возврат товара
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-info__pages-swiper swiper">
+            <div class="payment-info__pages-swiper-wrapper swiper-wrapper">
+                <div class="payment-info__pages-swiper-slide swiper-slide">
+                    <div class="payment-info__column">
+                        <p class="payment-info__title">
+                            Способы оплаты
+                        </p>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-bank" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Безналичный расчет
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Вы можете выбрать “получить реквизиты”
+                                для дальнейшей оплаты на карту, или в терминалах.
+                            </p>
+                        </div>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-bank-card" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Оплата с помощью банковской карты
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Оплатите Ваш заказ картой любого банка онлайн
+                                (LiqPay/Приват24)
+                            </p>
+                        </div>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-wallet2" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Наличный расчет
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Оплата заказов наложенным платежом в отделении
+                                Новой Почты, или наличными курьерами
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="payment-info__column">
+                        {{> templates/img-manager img-srcset='/img/pages/payment/payment-photo1.webp'
+                        img-src='/img/pages/payment/payment-photo1.png' img-alt='Оплата'
+                        img-class='payment-info__img' img-width='770' img-height='471'
+                        picture-class='product-info__picture'
+                        }}
+                    </div>
+                </div>
+
+                <div class="payment-info__pages-swiper-slide swiper-slide">
+                    <div class="payment-info__column">
+                        <p class="payment-info__title">
+                            Способы доставки
+                        </p>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-bank" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Доставка Новой Почтой (паллеты / коробки)
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Мы отправляем партии любым удобным для вас способом: в отделение, на почтомат или адресную доставку.
+                            </p>
+                        </div>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-bank-card" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Доставка курьером по Украине
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Курьер привезёт заказ прямо к вашему складу или офису.
+                            </p>
+                        </div>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-wallet2" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Самовывоз со склада
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Вы можете самостоятельно забрать заказ с нашего центрального склада по предварительному согласованию времени.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="payment-info__column">
+                        {{> templates/img-manager img-srcset='/img/pages/payment/payment-photo2.webp'
+                        img-src='/img/pages/payment/payment-photo2.png' img-alt='Доставка'
+                        img-class='payment-info__img' img-width='770' img-height='471'
+                        picture-class='product-info__picture'
+                        }}
+                    </div>
+                </div>
+
+                <div class="payment-info__pages-swiper-slide swiper-slide">
+                    <div class="payment-info__column">
+                        <p class="payment-info__title">
+                            Условия возврата
+                        </p>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-bank" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Гарантия качества
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Мы тщательно контролируем продукцию, но если вы получили товар с несоответствием — мы обязательно решим вопрос.
+                            </p>
+                        </div>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-bank-card" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Поддержка клиентов
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                Менеджер лично сопровождает процесс возврата от первого обращения и до получения нового товара.
+                            </p>
+                        </div>
+
+                        <div class="payment-info__container">
+                            <div class="payment-info__row">
+                                {{> templates/svg-manager svg-class='payment-info__pages-icon'
+                                id="icon-wallet2" width="48px" height="48px" }}
+
+                                <p class="payment-info__subtitle">
+                                    Возврат средств
+                                </p>
+                            </div>
+
+                            <p class="payment-info__text">
+                                При возврате денежных средств перечисление осуществляется на карту или расчётный счёт клиента в течение 1–3 рабочих дней.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="payment-info__column">
+                        {{> templates/img-manager img-srcset='/img/pages/payment/payment-photo3.webp'
+                        img-src='/img/pages/payment/payment-photo3.png' img-alt='Возврат'
+                        img-class='payment-info__img' img-width='770' img-height='471'
+                        picture-class='product-info__picture'
+                        }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

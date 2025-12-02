@@ -4,7 +4,7 @@ import { useLoadFunction } from "lazy-viewport-loader";
 document.addEventListener("DOMContentLoaded", () => {
   reuseFunctions();
   useLoadFunction(
-    () => import("@/js/pages/for-customers/connect-swipers.js"),
+    () => import("@/js/pages/for-customers/for-customers-swipers.js"),
     ".for-customers-info__tabs",
     [],
     {

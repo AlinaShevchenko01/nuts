@@ -1,0 +1,21 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+
+.one-news-page {
+  display: flex;
+  max-width: 1360px;
+  gap: clamp(16px, 2vw, 40px);
+  margin: 0 auto;
+  padding: 0 35px 0 35px;
+
+  @include media.media-breakpoint-down-equal(md) {
+    flex-direction: column;
+    padding: 0 34px;
+  }
+
+  @include media.media-breakpoint-down-equal(xs) {
+    padding: 0 24px;
+  }
+}

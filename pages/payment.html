@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+{{> partials/head title='Оплата и доставка' basePath='payment/payment.scss'}}
+
+<body>
+{{> partials/sprite }} {{> partials/header }}
+
+<main >
+    {{> pages/payment/payment-hero }} {{> pages/payment/payment-info }}
+    {{> pages/payment/payment-garden }}
+
+
+</main>
+
+{{> partials/contact }} {{> partials/footer }}
+<script type="module" src="/src/js/pages/payment/payment.js"></script>
+</body>
+</html>
