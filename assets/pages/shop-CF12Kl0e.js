@@ -1,2 +1,0 @@
-import{r as o,_ as r}from"../reuse-functions-DgwyWWIx.js";import{u as s}from"../vendor-CdPkAZIS.js";document.addEventListener("DOMContentLoaded",async()=>{o(),s(()=>r(()=>import("../render-shop-card-Cq6HjLsR.js"),[]),".shop-hero",[],{threshold:0,rootMargin:"200px"}),s(()=>r(()=>import("../swiper-production-DTsGVe0p.js"),[]),".shop-info",[".shop-info__swiper"],{threshold:0,rootMargin:"200px"})});
-//# sourceMappingURL=shop-CF12Kl0e.js.map
