@@ -1,11 +1,11 @@
 import { reuseFunctions } from "@/js/reuse-functions.js";
-import {initCustomCardSwiper} from "@/js/partials/custom-swiper.js";
 import {useLoadFunction} from "lazy-viewport-loader";
+import {renderProductCard} from "@/js/pages/product/render-product.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     reuseFunctions();
-    const card = document.querySelector('.product-hero__inner_swiper');
-    initCustomCardSwiper(card);
+    await renderProductCard()
+
     useLoadFunction(
         () => import("@/js/pages/product/product-swiper.js"),
         ".product-info",

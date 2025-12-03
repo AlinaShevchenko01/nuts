@@ -1,0 +1,21 @@
+<section class="shop-hero">
+    <div class="shop-hero__wrapper">
+        <div class="shop-hero__inner">
+            <h1 class="shop-hero__title">Каталог продукции</h1>
+        </div>
+
+        <div class="shop-hero__picture-container picture-container">
+            <div class="shop-hero__shadow picture-container__shadow">
+            </div>
+
+            {{> templates/img-manager-2
+            img-srcset='/img/pages/shop/shop-photo1.webp'
+            img-src='/img/pages/shop/shop-photo1.png' img-alt='Орехи'
+            img-class='shop__img picture-container__img'
+            img-width='1920' img-height='300' }}
+        </div>
+
+        {{> partials/breadcrumbs breadcrumbs-class='shop-hero__breadcrumbs'
+        name='Магазин'}}
+    </div>
+</section>

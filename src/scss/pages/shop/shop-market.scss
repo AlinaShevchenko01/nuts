@@ -1,0 +1,16 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.shop-market {
+
+  &__wrapper {
+
+  }
+
+  &__btn-shop {
+    display: block;
+    margin: 0 auto;
+  }
+
+}

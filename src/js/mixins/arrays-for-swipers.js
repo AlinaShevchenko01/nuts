@@ -36,3 +36,18 @@ export const slidesProductionAbout = [
     videoSrc: "/video/walnut2-o.mp4",
   },
 ];
+
+export const slidesShop = [
+  {
+    imgSrcset: "/img/pages/shop/shop-photo2.webp",
+    imgSrc: "/img/pages/shop/shop-photo2.png",
+    imgAlt: "Орехи",
+    imgClass: "swiper-production__swiper-img shop-info__swiper-img",
+  },
+  {
+    imgSrcset: "/img/pages/shop/shop-photo3.webp",
+    imgSrc: "/img/pages/shop/shop-photo3.png",
+    imgAlt: "Орехи",
+    imgClass: "swiper-production__swiper-img shop-info__swiper-img",
+  },
+];

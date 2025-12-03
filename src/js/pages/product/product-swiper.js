@@ -32,5 +32,5 @@ export function initProductSwipers() {
     })
 
     initTabsControl(tabsSwiper, pageSwiper, '.product-info__swiper-tabs .product-info__swiper-tabs-text');
-    lazyLoadSwiper(pageSwiper)
+    lazyLoadSwiper(pageSwiper, 1)
 }

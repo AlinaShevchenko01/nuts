@@ -1,0 +1,25 @@
+<section class="not-found-hero">
+    <div class="not-found-hero__wrapper">
+        {{> templates/img-manager-2
+        img-srcset='/img/pages/404/404-photo1.webp'
+        img-src='/img/pages/404/404-photo1.png' img-alt='not-found'
+        img-class='not-found-hero__img'  img-width='1920'
+        img-height='600' }}
+
+        <p class="not-found-hero__text">
+            Страница не найдена
+        </p>
+
+        <a class="not-found-hero__link"
+           href="index">
+            <button class="not-found-hero__btn">
+                {{> templates/svg-manager id="icon-arrow-left" width="14px" height="14px"
+                svg-class='not-found-hero__icon'}}
+
+                <span class="not-found-hero__btn-text">
+                    Вернуться на Главную страницу
+                </span>
+            </button>
+        </a>
+    </div>
+</section>

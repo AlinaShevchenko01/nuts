@@ -1,0 +1,16 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.shop-hero {
+  position: relative;
+
+  &__wrapper {
+    position: relative;
+    padding: clamp(120px, 7vw, 134px) clamp(24px, 3vw, 56px) clamp(104px, 6.5vw, 104px);
+  }
+
+  &__breadcrumbs {
+    top: clamp(14px, 2vw, 38px);
+  }
+}

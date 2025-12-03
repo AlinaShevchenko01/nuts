@@ -1,9 +1,23 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Title</title>
-    <link rel="stylesheet" href="/src/scss/pages/main/main.scss" />
-  </head>
-  <body></body>
+{{> partials/head title='Магазин
+'
+basePath='shop/shop.scss'}}
+
+<body>
+{{> partials/sprite }} {{> partials/header }}
+
+<main>
+  {{> pages/shop/shop-hero }}
+  {{> pages/shop/shop-market }}
+  {{> pages/shop/shop-info }}
+</main>
+
+{{> partials/contact }} {{>
+partials/footer }}
+<script
+        type="module"
+        src="/src/js/pages/shop/shop.js"
+></script>
+</body>
 </html>

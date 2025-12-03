@@ -11,7 +11,8 @@ import { hulakPlugins } from "vite-plugin-hulak-tools";
 import {
   slidesProductionAbout,
   slidesProductionMain,
-} from "./src/js/partials/arrays-for-swipers.js";
+  slidesShop
+} from "./src/js/mixins/arrays-for-swipers.js";
 
 export default defineConfig(({ mode }) => {
   const isDeploy = mode === "deploy";
@@ -78,6 +79,7 @@ export default defineConfig(({ mode }) => {
         context: {
           slidesProductionMain,
           slidesProductionAbout,
+          slidesShop,
           BASE_URL: basePath,
         },
       }),

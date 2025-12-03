@@ -1,0 +1,46 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.not-found-hero{
+
+  &__wrapper{
+    max-width: 570px;
+    text-align: center;
+    padding: 112px 24px 100px;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 80px 24px;
+    }
+  }
+
+  &__img {
+    //max-width: 540px;
+  }
+
+  &__text{
+    font-weight: variables.$font-weight-medium;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    margin: 33px 0 18px;
+
+  }
+
+  &__btn{
+    @include mixins.flex-between-center;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 1.06;
+    color: variables.$color-bg1;
+    font-weight: variables.$font-weight-bold;
+    border: 1.5px solid variables.$color-bg1;
+    padding: 14px 24px 15px;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(xs) {
+      font-size: 14px;
+    }
+  }
+
+}

@@ -10,6 +10,7 @@
   transition: border-color 0.3s;
   align-self: center;
   justify-self: center;
+  cursor: pointer;
 
   @include media.media-breakpoint-down-equal(md) {
     max-width: 520px;

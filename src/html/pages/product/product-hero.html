@@ -1,19 +1,9 @@
-<section class="product-hero">
+<div class="product-hero {{product-class}}">
     <div class="product-hero__wrapper">
         <div class="product-hero__inner product-hero__inner_swiper">
             <div class="product-hero__item-swiper item-swiper">
                 <div class="product-hero__item-swiper-wrapper item-swiper__wrapper">
-                    {{> templates/img-manager img-srcset='/img/items/item-1.webp'
-                    img-src='/img/items/item-1.png' img-alt='Item'
-                    img-class='product-hero__img item-swiper__img' img-width='153' img-height='431'
-                    picture-class='product-hero__picture item-swiper__picture'
-                    }}
-
-                    {{> templates/img-manager img-srcset='/img/items/item-1.webp'
-                    img-src='/img/items/item-1.png' img-alt='Item'
-                    img-class='product-hero__img item-swiper__img' img-width='153' img-height='431'
-                    picture-class='product-hero__picture item-swiper__picture'
-                    }}
+                    {{images}}
                 </div>
             </div>
 
@@ -44,7 +34,7 @@
         <div class="product-hero__inner">
             <div class="product-hero__row product-hero__row_first">
                 <p class="product-hero__group">
-                    Грецкий орех
+                    {{product-type}}
                 </p>
 
                 <p class="product-hero__article">
@@ -53,14 +43,13 @@
                     </span>
 
                     <span class="product-hero__article-number">
-                        0091
+                        {{product-article}}
                     </span>
                 </p>
             </div>
 
             <h1 class="product-hero__title">
-                Орех соленый кондитерский
-                очищенный
+                {{product-title}}
             </h1>
 
             <div class="product-hero__row">
@@ -69,8 +58,7 @@
                 </p>
 
                 <p class="product-hero__value">
-                    Ядро грецкого ореха, вымытого очищенного
-                    от кожуры, соль экстра (раствор 7%)
+                    {{product-composition}}
                 </p>
             </div>
 
@@ -80,7 +68,7 @@
                 </p>
 
                 <p class="product-hero__value">
-                    40г.
+                    {{product-weight}}г.
                 </p>
             </div>
 
@@ -90,7 +78,7 @@
                 </p>
 
                 <p class="product-hero__value">
-                    654 Ккал.
+                    {{product-energy-value}} Ккал.
                 </p>
             </div>
 
@@ -126,7 +114,7 @@
 
                     <p class="product-hero__price-green">
                     <span>
-                        19
+                        {{current-price}}
                     </span>
 
                         <span>
@@ -136,7 +124,7 @@
 
                     <p class="product-hero__price-gray">
                     <span>
-                        21
+                        {{price}}
                     </span>
 
                         <span>
@@ -154,4 +142,4 @@
 
     {{> partials/breadcrumbs breadcrumbs-class='product-hero__breadcrumbs gray'
     name='Карточка товара'}}
-</section>
+</div>

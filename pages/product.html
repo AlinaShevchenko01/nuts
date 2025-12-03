@@ -5,8 +5,13 @@
 <body>
 {{> partials/sprite }} {{> partials/header }}
 
-<main >
-    {{> pages/product/product-hero }} {{> pages/product/product-info }}
+<main>
+    <section id="product-main">
+        <div class="product-hero__skeleton"></div>
+
+    </section>
+
+     {{> pages/product/product-info }}
 </main>
 
 {{> partials/contact }} {{> partials/footer }}

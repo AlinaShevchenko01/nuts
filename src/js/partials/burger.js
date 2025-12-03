@@ -14,16 +14,12 @@ export function moveBurger() {
     }
     burger.classList.add("active");
     disablePageScroll(burger);
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
   });
 
   function closeBurger() {
     if (burger.classList.contains("active")) {
       burger.classList.remove("active");
       enablePageScroll();
-      document.documentElement.style.overflow = "";
-      document.body.style.overflow = "";
     }
   }
 

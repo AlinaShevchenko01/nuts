@@ -5,6 +5,18 @@
 .product-hero {
   position: relative;
 
+  &__skeleton {
+    height: 800px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      height: 900px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      height: 950px;
+    }
+  }
+
   &__wrapper {
     max-width: 1404px;
     @include mixins.flex-between;
@@ -33,6 +45,12 @@
       background-color: variables.$color-bg6;
       border: 1.5px solid variables.$color-text1;
       margin-top: 2px;
+
+      @media (hover: hover) {
+        &:hover {
+          border: 1.5px solid variables.$color-bg2;
+        }
+      }
 
       @include media.media-breakpoint-down-equal(md) {
         flex: 1 1 100%;
@@ -88,6 +106,17 @@
     opacity: 1;
   }
 
+  &__img {
+    max-height: 340px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      max-height: 260px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      max-height: 220px;
+    }
+  }
 
   &__row {
     @include mixins.flex-between;
@@ -275,6 +304,7 @@
   }
 
   &__price-gray {
+    display: none;
     font-weight: variables.$font-weight-medium;
     color: variables.$color-text1;
     letter-spacing: -0.01em;
@@ -305,6 +335,12 @@
     @include media.media-breakpoint-down-equal(xs) {
       top: 12px;
       left: 24px;
+    }
+  }
+
+  &.sale {
+    .product-hero__price-gray{
+      display: block;
     }
   }
 }

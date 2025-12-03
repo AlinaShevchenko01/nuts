@@ -4,10 +4,14 @@
   basePath='for-customers/for-customers.scss'}}
 
   <body>
-    {{> partials/sprite }} {{> partials/header }} {{>
-    pages/for-customers/for-customers-hero}} {{>
-    pages/for-customers/for-customers-info}} {{>
-    pages/for-customers/for-customers-benefit}} {{> partials/contact }} {{>
+    {{> partials/sprite }} {{> partials/header }}
+
+    <main>
+      {{>
+      pages/for-customers/for-customers-hero}} {{>
+      pages/for-customers/for-customers-info}} {{>
+      pages/for-customers/for-customers-benefit}}
+    </main> {{> partials/contact }} {{>
     partials/footer }}
 
     <script

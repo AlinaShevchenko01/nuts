@@ -17,6 +17,10 @@
     @include media.media-breakpoint-down-equal(md) {
       top: 116px;
     }
+
+    @include media.media-breakpoint-down-equal(md) {
+      top: 106px;
+    }
   }
 
   &__wrapper {

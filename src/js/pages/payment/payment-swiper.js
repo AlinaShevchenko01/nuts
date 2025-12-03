@@ -20,7 +20,10 @@ export function initPaymentSwiper() {
         spaceBetween: 30,
         breakpoints: {
             0: {
-                slidesPerView: 1.8,
+                slidesPerView: 1.4,
+            },
+            576:{
+              slidesPerView: 2.1,
             },
             768:{
                 slidesPerView: 2.8,
