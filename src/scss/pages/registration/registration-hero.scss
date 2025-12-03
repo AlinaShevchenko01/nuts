@@ -1,0 +1,40 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.registration-hero{
+  position: relative;
+
+  &__wrapper{
+    max-width: 1404px;
+    padding: 82px 56px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: variables.$font-weight-extra;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: variables.$color-main-text;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    max-width: 474px;
+  }
+
+  &__form-title{
+    font-family: variables.$second-font-family;
+    font-size: 17px;
+    font-weight: variables.$font-weight-bold;
+    line-height: 1.88;
+    letter-spacing: 0.01em;
+
+  }
+
+  &__breadcrumbs{
+    top: 20px;
+  }
+}

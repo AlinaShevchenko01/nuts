@@ -1,0 +1,64 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.custom-input{
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+
+  &:focus-within label,
+  input:not(:placeholder-shown) + label {
+    font-size: 13px;
+    transform: translateY(-22px) translateX(-12px);
+  }
+
+  &__input {
+    width: 100%;
+    font-family: variables.$second-font-family;
+    font-size: 20px;
+    line-height: 1.21;
+    font-weight: variables.$font-weight-medium;
+    color: variables.$color-text2;
+    border: 0.5px solid variables.$color-border5;
+    cursor: text;
+    background-color: transparent;
+    transition: border 0.4s ease, background-color 0.4s ease;
+    padding: 20px 14px 1px;
+
+    &:focus {
+      border: 1.5px solid variables.$color-bg2;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: variables.$color-bg12;
+      }
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-family: variables.$second-font-family;
+    font-size: 14px;
+    font-weight: variables.$font-weight-medium;
+    line-height: 1.21;
+    //pointer-events: none;
+    transition: transform 0.4s ease;
+  }
+
+  &__error{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: variables.$color-sale;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+}

@@ -1,0 +1,94 @@
+<section class="registration-hero">
+    <div class="registration-hero__wrapper">
+        <h1 class="registration-hero__title">
+            Регистрация
+        </h1>
+        <form class="registration-hero__form">
+            <div class="registration-hero__column">
+                <div class="registration-hero__container">
+                    <h2 class="registration-hero__form-title">
+                        1. Контактные данные
+                    </h2>
+
+                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    input-id='fullName'
+                    input-type='text'
+                    input-name='fullName'
+                    label-text='ФИО*'
+                    }}
+
+                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    input-id='email'
+                    input-type='email'
+                    input-name='email'
+                    label-text='Email*'
+                    }}
+
+                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    input-id='telephone'
+                    input-type='tel'
+                    input-name='telephone'
+                    label-text='Телефон*'
+                    }}
+                </div>
+
+                <div class="registration-hero__container">
+                    <h2 class="registration-hero__form-title">
+                        2. Адрес
+                    </h2>
+
+                    {{>partials/custom-select select-class='registration-hero__form-select'
+
+                    }}
+
+                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    input-id='city'
+                    input-type='text'
+                    input-name='city'
+                    label-text='Город*'
+                    }}
+
+                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    input-id='address'
+                    input-type='text'
+                    input-name='address'
+                    label-text='Адрес'
+                    }}
+                </div>
+
+                <div class="registration-hero__container">
+                    <h2 class="registration-hero__form-title">
+                        3. Пароль
+                    </h2>
+
+                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    input-id='password'
+                    input-type='password'
+                    input-name='password'
+                    label-text='Пароль*'
+                    }}
+
+                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    input-id='password-again'
+                    input-type='password'
+                    input-name='password-again'
+                    label-text='Подтвердите пароль*'
+                    }}
+
+                    {{> partials/main-btn btn-class='registration-hero__submit' btn-text='Продолжить'
+                    btn-move=''}}
+                </div>
+            </div>
+
+            <div class="registration-hero__column">
+
+            </div>
+
+        </form>
+
+        <div class="registration-hero__inner"></div>
+    </div>
+
+    {{> partials/breadcrumbs breadcrumbs-class='registration-hero__breadcrumbs gray'
+    name='Регистрация'}}
+</section>

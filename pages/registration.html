@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+{{> partials/head title='Регистрация'
+basePath='registration/registration.scss'}}
+
+<body>
+{{> partials/sprite }} {{> partials/header }}
+
+<main>
+    {{> pages/registration/registration-hero}}
+</main>
+
+{{> partials/contact }} {{>
+partials/footer }}
+<script
+        type="module"
+        src="/src/js/pages/registration/registration.js"
+></script>
+</body>
+</html>
