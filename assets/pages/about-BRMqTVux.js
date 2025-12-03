@@ -1,0 +1,2 @@
+import{r,_ as o}from"../reuse-functions-Dk9e896E.js";import{u as e}from"../vendor-MLoxMhBq.js";import{f as s}from"../flip-card-7hba7igv.js";document.addEventListener("DOMContentLoaded",async()=>{r(),s(".gallery-photo__card"),e(()=>o(()=>import("../swiper-production-CqmNdPdP.js"),[]),".production",[".production__swiper-main"],{threshold:0,rootMargin:"200px"}),e(()=>o(()=>import("../render-news-swiper-Dvr_Fuxx.js"),[]),".news",[],{threshold:0,rootMargin:"200px"})});
+//# sourceMappingURL=about-BRMqTVux.js.map
