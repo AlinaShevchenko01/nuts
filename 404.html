@@ -20,11 +20,11 @@
     rel="stylesheet"
   />
   <base href="/nuts/" />
-  <script type="module" crossorigin src="/nuts/assets/404-CEEuu_iY.js"></script>
+  <script type="module" crossorigin src="/nuts/assets/404-BLUSbwpu.js"></script>
   <link rel="modulepreload" crossorigin href="/nuts/assets/vendor-CdPkAZIS.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/reuse-functions-CZ1yo8_i.js">
   <link rel="stylesheet" crossorigin href="/nuts/assets/vendor-BTDLRqRw.css">
-  <link rel="stylesheet" crossorigin href="/nuts/assets/404-DGPPT7At.css">
+  <link rel="stylesheet" crossorigin href="/nuts/assets/404-CXUvzFhe.css">
 </head>
 
 <body>
@@ -846,6 +846,10 @@
       <path fill="#fff" style="fill: var(--color3, #fff)" d="M15.394 24.835c-1.421 0-2.572-1.151-2.572-2.572v-13.595c0-1.42 1.152-2.572 2.572-2.572s2.572 1.152 2.572 2.572v13.595c0 1.421-1.152 2.572-2.572 2.572z"></path>
       <path fill="#fff" style="fill: var(--color3, #fff)" d="M15.229 32c1.218 0 2.205-0.987 2.205-2.205s-0.987-2.205-2.205-2.205c-1.218 0-2.205 0.987-2.205 2.205s0.987 2.205 2.205 2.205z"></path>
     </symbol>
+
+    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+      <path fill="#337d5a" style="fill: var(--color1, #337d5a)" d="M13.333 29.334l1.867-1.867-10.133-10.133h26.933v-2.667h-26.933l10.133-10.133-1.867-1.867-13.333 13.333 13.333 13.333z"></path>
+    </symbol>
   </defs>
 </svg>
  <header class="header">
@@ -1296,9 +1300,38 @@
 
 <main>
     <section class="not-found-hero">
-        <h2>
-            404
-        </h2>
+        <div class="not-found-hero__wrapper">
+            
+            <picture class="">
+              <source srcset="/nuts/img/pages/404/404-photo1.webp" type="image/webp" />
+            
+              <img
+                class="img not-found-hero__img"
+                alt="not-found"
+                src="/nuts/img/pages/404/404-photo1.png"
+                width="1920"
+                height="600"
+                fetchpriority="high"
+              />
+            </picture>
+            
+    
+            <p class="not-found-hero__text">
+                Страница не найдена
+            </p>
+    
+            <a class="not-found-hero__link">
+                <button class="not-found-hero__btn">
+                    <svg class="not-found-hero__icon" width="14px" height="14px">
+                      <use href="#icon-arrow-left"></use>
+                    </svg>
+    
+                    <span class="not-found-hero__btn-text">
+                        Вернуться на Главную страницу
+                    </span>
+                </button>
+            </a>
+        </div>
     </section></main>
 
 <section class="contact " id="contact">
