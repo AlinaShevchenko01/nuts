@@ -1,2 +1,0 @@
-function e(e){const t=e.querySelectorAll(".item-swiper__picture"),i=e.querySelector(".item-swiper__btn_next"),c=e.querySelector(".item-swiper__btn_prev");let r=0;function s(e){t.forEach(e=>{e.classList.remove("active")}),r=e<0?t.length-1:e>=t.length?0:e,t[r].classList.add("active")}t[r].classList.add("active"),i.addEventListener("click",()=>{s(r+1)}),c.addEventListener("click",()=>{s(r-1)})}export{e as i};
-//# sourceMappingURL=custom-swiper-DNRAhqfM.js.map

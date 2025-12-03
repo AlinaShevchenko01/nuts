@@ -1,2 +1,0 @@
-import{r as o,_ as r}from"../reuse-functions-Dk9e896E.js";import{i as e}from"../custom-swiper-DNRAhqfM.js";import{u as t}from"../vendor-MLoxMhBq.js";document.addEventListener("DOMContentLoaded",async()=>{o();const s=document.querySelector(".product-hero__inner_swiper");e(s),t(()=>r(()=>import("../product-swiper-DW5aHllJ.js"),[]),".product-info",[],{threshold:0,rootMargin:"140px"})});
-//# sourceMappingURL=product-iQQMKIxX.js.map

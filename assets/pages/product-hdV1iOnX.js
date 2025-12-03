@@ -1,0 +1,2 @@
+import{r,_ as o}from"../reuse-functions-Dqc60i7P.js";import{u as t}from"../vendor-DMP4mftG.js";document.addEventListener("DOMContentLoaded",async()=>{r(),t(()=>o(()=>import("../render-product-XkiCytGD.js"),[]),"#product-main",[],{threshold:0,rootMargin:"140px"}),t(()=>o(()=>import("../product-swiper-wV51Euz1.js"),[]),".product-info",[],{threshold:0,rootMargin:"140px"})});
+//# sourceMappingURL=product-hdV1iOnX.js.map

@@ -1,2 +1,0 @@
-import{r as o,_ as r}from"../reuse-functions-Dk9e896E.js";import{u as s}from"../vendor-MLoxMhBq.js";document.addEventListener("DOMContentLoaded",async()=>{o(),s(()=>r(()=>import("../render-shop-card-CihYUidh.js"),[]),".shop-hero",[],{threshold:0,rootMargin:"200px"}),s(()=>r(()=>import("../swiper-production-CqmNdPdP.js"),[]),".shop-info",[".shop-info__swiper"],{threshold:0,rootMargin:"200px"})});
-//# sourceMappingURL=shop-CbZKN1l8.js.map
