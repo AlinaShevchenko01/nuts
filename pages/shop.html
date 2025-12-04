@@ -20,11 +20,12 @@
     rel="stylesheet"
   />
   <base href="/nuts/" />
-  <script type="module" crossorigin src="/nuts/assets/pages\shop-D2Vhosa6.js"></script>
+  <script type="module" crossorigin src="/nuts/assets/pages\shop-DPEESxqH.js"></script>
   <link rel="modulepreload" crossorigin href="/nuts/assets/vendor-CdPkAZIS.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/reuse-functions-CsFiiDOq.js">
+  <link rel="modulepreload" crossorigin href="/nuts/assets/custom-select-DxGmpHFX.js">
   <link rel="stylesheet" crossorigin href="/nuts/assets/vendor-BTDLRqRw.css">
-  <link rel="stylesheet" crossorigin href="/nuts/assets/shop-BP_pkj6C.css">
+  <link rel="stylesheet" crossorigin href="/nuts/assets/shop-5eriHhBv.css">
 </head>
 
 <body>
@@ -850,6 +851,10 @@
     <symbol id="icon-arrow-left" viewBox="0 0 32 32">
       <path fill="#337d5a" style="fill: var(--color1, #337d5a)" d="M13.333 29.334l1.867-1.867-10.133-10.133h26.933v-2.667h-26.933l10.133-10.133-1.867-1.867-13.333 13.333 13.333 13.333z"></path>
     </symbol>
+
+    <symbol id="icon-settings" viewBox="0 0 32 32">
+      <path fill="#337d5a" style="fill: var(--color1, #337d5a)" d="M10.193 12.972c-1.704 0-3.156 1.047-3.696 2.504h-6.498v2.504h6.498c0.539 1.457 1.992 2.504 3.696 2.504s3.156-1.047 3.696-2.504h19.566v-2.504h-19.566c-0.539-1.457-1.992-2.504-3.696-2.504zM10.193 17.979c-0.721 0-1.307-0.562-1.307-1.252s0.586-1.252 1.307-1.252c0.721 0 1.307 0.562 1.307 1.252s-0.586 1.252-1.307 1.252zM27.741 3.958c-0.539-1.457-1.992-2.504-3.696-2.504s-3.156 1.047-3.696 2.504h-20.35v2.504h20.35c0.539 1.457 1.992 2.504 3.696 2.504s3.156-1.047 3.696-2.504h5.713v-2.504h-5.713zM24.045 6.462c-0.72 0-1.307-0.562-1.307-1.252s0.586-1.252 1.307-1.252c0.721 0 1.307 0.562 1.307 1.252s-0.586 1.252-1.307 1.252zM21.562 24.489c-1.704 0-3.156 1.047-3.696 2.504h-17.867v2.504h17.867c0.539 1.457 1.992 2.504 3.696 2.504s3.156-1.047 3.696-2.504h8.197v-2.504h-8.197c-0.539-1.457-1.992-2.504-3.696-2.504zM21.562 29.496c-0.721 0-1.307-0.562-1.307-1.252s0.586-1.252 1.307-1.252 1.307 0.562 1.307 1.252c0 0.69-0.586 1.252-1.307 1.252z"></path>
+    </symbol>
   </defs>
 </svg>
  <header class="header">
@@ -1343,7 +1348,122 @@
       </div>
   </section>  <section class="shop-market">
       <div class="shop-market__wrapper">
-          <div class="shop-market__inner"></div>
+          <div class="shop-market__inner">
+              <div class="shop-market__container shop-market__container_filter">
+                  <span class="shop-market__text">
+                      Фильтр
+                  </span>
+  
+                  <svg class="shop-market__settings-icon" width="22px" height="22px">
+                    <use href="#icon-settings"></use>
+                  </svg>
+              </div>
+  
+              <div class="custom-select shop-market__select shop-market__select_taste"
+              data-select=""
+              data-required="">
+                  <input type="hidden"
+                  name=""
+                  class="custom-select__input">
+                  <button class="custom-select__btn"
+                  type="button">
+                      <span class="custom-select__label">
+                          Вкус
+                      </span>
+              
+                      <svg class="custom-select__arrow" width="11px" height="7px">
+                        <use href="#icon-arrow-down"></use>
+                      </svg>
+                  </button>
+              
+                  <ul class="custom-select__dropdown">
+                      <li
+                      class="custom-select__option">Сладкий</li>
+              
+                      <li
+                              class="custom-select__option">Медовый</li>
+              
+                      <li
+                              class="custom-select__option">Соленый</li>
+              
+                      <li
+                              class="custom-select__option">Сырный</li>
+                  </ul>
+              
+                  <span class="custom-select__error">
+                      Заполните, пожалуйста, это поле.
+                  </span>
+              </div>
+              <div class="custom-select shop-market__select shop-market__select_weight"
+              data-select=""
+              data-required="">
+                  <input type="hidden"
+                  name=""
+                  class="custom-select__input">
+                  <button class="custom-select__btn"
+                  type="button">
+                      <span class="custom-select__label">
+                          Масса
+                      </span>
+              
+                      <svg class="custom-select__arrow" width="11px" height="7px">
+                        <use href="#icon-arrow-down"></use>
+                      </svg>
+                  </button>
+              
+                  <ul class="custom-select__dropdown">
+                      <li
+                      class="custom-select__option">40г</li>
+              
+                      <li
+                              class="custom-select__option">100г</li>
+              
+                      <li
+                              class="custom-select__option">80г</li>
+              
+                      <li
+                              class="custom-select__option">220</li>
+                  </ul>
+              
+                  <span class="custom-select__error">
+                      Заполните, пожалуйста, это поле.
+                  </span>
+              </div>
+              <div class="shop-market__container shop-market__container_price">
+                  <span class="shop-market__text">
+                      Стоимость
+                  </span>
+  
+                  <div class="shop-market__arrows">
+                      <button class="shop-market__btn-arrow shop-market__btn-arrow_up">
+                          <svg class="shop-market__icon-arrow_up shop-market__icon-arrow" width="15px" height="15px">
+                            <use href="#icon-arrow-right"></use>
+                          </svg>
+                      </button>
+  
+                      <button class="shop-market__btn-arrow shop-market__btn-arrow_down">
+                          <svg class="shop-market__icon-arrow_down shop-market__icon-arrow" width="15px" height="15px">
+                            <use href="#icon-arrow-right"></use>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+  
+              <button class="main-btn shop-market__btn-accept" data-move="">
+                Применить
+              </button>
+  
+              <button class="shop-market__cancel">
+                  <svg class="shop-market__icon-cross" width="12px" height="12px">
+                    <use href="#icon-close"></use>
+                  </svg>
+  
+                  <span class="shop-market__cancel-text">
+                      Сбросить
+                  </span>
+              </button>
+  
+          </div>
   
           <div class="shop-market__container shop">
           </div>
