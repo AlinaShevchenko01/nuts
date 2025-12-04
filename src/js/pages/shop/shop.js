@@ -1,8 +1,10 @@
 import { reuseFunctions } from "@/js/reuse-functions.js";
 import {useLoadFunction} from "lazy-viewport-loader";
+import {initCustomSelect} from "@/js/partials/custom-select.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     reuseFunctions();
+    initCustomSelect();
 
     useLoadFunction(
         () => import("@/js/partials/render-shop-card.js"),

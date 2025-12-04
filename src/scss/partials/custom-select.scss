@@ -2,4 +2,110 @@
 @use "@/scss/utils/mixins" as mixins;
 @use "@/scss/utils/media" as media;
 
-.custom-select{}
+.custom-select{
+  position: relative;
+  width: 100%;
+  font-family: variables.$second-font-family;
+  font-weight: variables.$font-weight-medium;
+  font-size: 14px;
+  line-height: 1.21;
+  border: 0.5px solid variables.$color-border5;
+  transition: border 0.4s ease, background-color 0.4s ease;
+  margin-bottom: 16px;
+
+  &.open{
+    border: 0.5px solid variables.$color-border5;
+
+    .custom-select__btn{
+      border: 1.5px solid variables.$color-bg1;
+      padding: 13px 13px 14px;
+    }
+
+    .custom-select__dropdown{
+      max-height: 200px;
+    }
+  }
+
+  &.error {
+    .custom-select__btn{
+      border: 1.5px solid variables.$color-sale;
+      padding: 15px 14px 14px;
+    }
+
+    .custom-select__error {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: variables.$color-bg12;
+    }
+  }
+
+  &__btn{
+    @include mixins.flex-between-center;
+    font-family: variables.$second-font-family;
+    font-weight: variables.$font-weight-medium;
+    width: 100%;
+    padding: 14px 14px 15px;
+  }
+
+  &__arrow {
+    transition: transform 0.3s ease;
+
+    &.rotate {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__dropdown{
+    position: absolute;
+    width: calc(100% + 1px);
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    overflow-y: auto;
+    left: -1px;
+    top: 100%;
+    z-index: 10;
+    box-shadow: 2px 0 5px 0 variables.$color-bg1;
+  }
+
+  &__option{
+    color: variables.$color-text3;
+    border-bottom: 1px solid variables.$color-border2;
+    border-left: 1px solid variables.$color-border2;
+    border-right: 1px solid variables.$color-border2;
+    cursor: pointer;
+    background-color: variables.$color-main-bg;
+    padding: 14px 12px;
+
+    @media (hover: hover) {
+      &:hover {
+        font-weight: variables.$font-weight-semibold;
+        background-color: variables.$color-bg1;
+        color: variables.$color-main-bg;
+        border-bottom: 1px solid variables.$color-bg1;
+        border-left: 1px solid variables.$color-bg1;
+        border-right: 1px solid variables.$color-bg1;
+      }
+    }
+
+    &.selected{
+      font-weight: variables.$font-weight-semibold;
+      background-color: variables.$color-bg1;
+      color: variables.$color-main-bg;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: -14px;
+    left: 6px;
+    width: 100%;
+    color: variables.$color-sale;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+  }
+}

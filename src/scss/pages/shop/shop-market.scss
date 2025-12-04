@@ -5,7 +5,63 @@
 .shop-market {
 
   &__wrapper {
+    max-width: 1404px;
+    padding: 62px 56px 80px;
+    margin: 0 auto;
+  }
 
+  &__inner {
+    @include mixins.flex-between-center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  &__container{
+    @include mixins.flex-between-center;
+    gap: 6px;
+  }
+
+  &__container_filter{
+    flex: 1 0 7.4%;
+    max-width: 95px;
+
+
+  }
+
+  &__text {
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    font-weight: variables.$font-weight-bold;
+  }
+
+  &__arrows {
+    @include mixins.flex-between-center;
+  }
+
+  &__icon-arrow {
+    color: variables.$color-text1;
+  }
+
+  &__cancel {
+    @include mixins.flex-between-center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: variables.$font-weight-semibold;
+    color: variables.$color-text1;
+    fill: variables.$color-text1;
+    transition: color 0.3s ease, fill 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: variables.$color-bg2;
+        fill: variables.$color-bg2;
+      }
+    }
+
+    &:active {
+      color: variables.$color-bg1;
+      fill: variables.$color-bg1;
+    }
   }
 
   &__btn-shop {
