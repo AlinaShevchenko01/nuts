@@ -19,11 +19,11 @@
     rel="stylesheet"
   />
   <base href="/nuts/" />
-  <script type="module" crossorigin src="/nuts/assets/pages\registration-DBZEAO3h.js"></script>
+  <script type="module" crossorigin src="/nuts/assets/pages\registration-CbIVMr82.js"></script>
   <link rel="modulepreload" crossorigin href="/nuts/assets/vendor-CdPkAZIS.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/reuse-functions-CsFiiDOq.js">
   <link rel="stylesheet" crossorigin href="/nuts/assets/vendor-BTDLRqRw.css">
-  <link rel="stylesheet" crossorigin href="/nuts/assets/registration-BrTMXomt.css">
+  <link rel="stylesheet" crossorigin href="/nuts/assets/registration-CVIE7lIB.css">
 </head>
 
 <body>
@@ -926,7 +926,7 @@
             </li>
           </ul>
     
-          <div class="contact-blocditk__language">
+          <div class="contact-block__language">
             <button
               class="contact-block__language-btn"
               aria-haspopup="listbox"
@@ -1205,7 +1205,7 @@
           </li>
         </ul>
   
-        <div class="contact-blocditk__language">
+        <div class="contact-block__language">
           <button
             class="contact-block__language-btn"
             aria-haspopup="listbox"
@@ -1365,11 +1365,15 @@
                         </h2>
     
                         <div class="custom-select registration-hero__form-select"
-                        data-select="select-name">
+                        data-select=""
+                        data-required="">
+                            <input type="hidden"
+                            name=""
+                            class="custom-select__input">
                             <button class="custom-select__btn"
                             type="button">
                                 <span class="custom-select__label">
-                                    
+                                    Страна
                                 </span>
                         
                                 <svg class="custom-select__arrow" width="11px" height="7px">
@@ -1379,18 +1383,59 @@
                         
                             <ul class="custom-select__dropdown">
                                 <li
-                                class="custom-select__option"></li>
+                                class="custom-select__option">Украина</li>
                         
                                 <li
-                                        class="custom-select__option"></li>
+                                        class="custom-select__option">Молдова</li>
                         
                                 <li
-                                        class="custom-select__option"></li>
+                                        class="custom-select__option">Румыния</li>
                         
                                 <li
-                                        class="custom-select__option"></li>
+                                        class="custom-select__option">Казахстан</li>
                             </ul>
+                        
+                            <span class="custom-select__error">
+                                Заполните, пожалуйста, это поле.
+                            </span>
                         </div>
+                        <div class="custom-select registration-hero__form-select"
+                        data-select=""
+                        data-required="">
+                            <input type="hidden"
+                            name=""
+                            class="custom-select__input">
+                            <button class="custom-select__btn"
+                            type="button">
+                                <span class="custom-select__label">
+                                    Область
+                                </span>
+                        
+                                <svg class="custom-select__arrow" width="11px" height="7px">
+                                  <use href="#icon-arrow-down"></use>
+                                </svg>
+                            </button>
+                        
+                            <ul class="custom-select__dropdown">
+                                <li
+                                class="custom-select__option">Донецкая</li>
+                        
+                                <li
+                                        class="custom-select__option">Харьковская</li>
+                        
+                                <li
+                                        class="custom-select__option">Николаевская</li>
+                        
+                                <li
+                                        class="custom-select__option">Другая</li>
+                            </ul>
+                        
+                            <span class="custom-select__error">
+                                Заполните, пожалуйста, это поле.
+                            </span>
+                        </div>
+    
+    
                         <div class="custom-input registration-hero__form-input">
                             <input class="custom-input__input"
                             id="city"
