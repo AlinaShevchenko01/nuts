@@ -1,0 +1,2 @@
+import{g as a,c as t,a as s,d as r}from"./vendor-CdPkAZIS.js";import{d as o}from"./firebase-BABsrvC7.js";async function n(){try{return(await a(t(o,"products"))).docs.map(a=>a.data())}catch(s){return console.log(s),[]}}async function c(a){try{const t=await s(r(o,"products",a));return t.exists()?{id:t.id,...t.data()}:null}catch(t){return console.log(t),null}}export{c as a,n as g};
+//# sourceMappingURL=get-products-Cmpvwq6p.js.map
