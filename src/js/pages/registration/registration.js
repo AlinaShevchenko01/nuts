@@ -1,7 +1,7 @@
 import { reuseFunctions } from "@/js/reuse-functions.js";
-import {initCustomSelect} from "@/js/partials/custom-select.js";
+import {initRegistrationSelects} from "@/js/pages/registration/init-registration-selects.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     reuseFunctions();
-    initCustomSelect();
+    initRegistrationSelects();
 });

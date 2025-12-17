@@ -1,15 +1,25 @@
 import { reuseFunctions } from "@/js/reuse-functions.js";
 import {useLoadFunction} from "lazy-viewport-loader";
-import {initCustomSelect} from "@/js/partials/custom-select.js";
+import { getProducts } from "@/js/firebase/get-products.js";
+import {closeSelects} from "@/js/partials/select/close-selects.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     reuseFunctions();
-    initCustomSelect();
+    const products = await getProducts();
+
+    useLoadFunction(
+        () => import("@/js/pages/shop/shop-custom-select.js"),
+        ".shop-market",
+        [products],
+        { threshold: 0, rootMargin: "200px" },
+    );
+
+    closeSelects()
 
     useLoadFunction(
         () => import("@/js/partials/render-shop-card.js"),
-        ".shop-hero",
-        [],
+        ".shop-market",
+        [products],
         { threshold: 0, rootMargin: "200px" },
     );
 

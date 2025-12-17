@@ -5,6 +5,7 @@
 .custom-input{
   position: relative;
   width: 100%;
+  cursor: text;
   margin-bottom: 16px;
 
   &:focus-within label,
@@ -21,7 +22,7 @@
     font-weight: variables.$font-weight-medium;
     color: variables.$color-text2;
     border: 0.5px solid variables.$color-border5;
-    cursor: text;
+    cursor: inherit;
     background-color: transparent;
     transition: border 0.4s ease, background-color 0.4s ease;
     padding: 20px 14px 1px;
@@ -59,6 +60,20 @@
     font-size: 12px;
     pointer-events: none;
     opacity: 0;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+
+    .custom-input__input{
+      pointer-events: none;
+    }
+
+    .custom-input__label {
+      pointer-events: none;
+    }
+
   }
 
 }

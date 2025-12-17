@@ -37,30 +37,20 @@
                         2. Адрес
                     </h2>
 
-                    {{>partials/custom-select select-class='registration-hero__form-select'
-                    select-label='Страна'
-                    text-1='Украина'
-                    text-2='Молдова'
-                    text-3='Румыния'
-                    text-4='Казахстан'                    }}
+                    {{>partials/custom-select select-class='registration-hero__form-select_country single'
+                    select-label='Страна' }}
 
-                    {{>partials/custom-select select-class='registration-hero__form-select'
-                    select-label='Область'
-                    text-1='Донецкая'
-                    text-2='Харьковская'
-                    text-3='Николаевская'
-                    text-4='Другая'                    }}
+                    {{>partials/custom-select select-class='registration-hero__form-select single disabled'
+                    select-label='Область'  }}
 
-
-
-                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    {{>partials/custom-input input-class='registration-hero__form-input disabled'
                     input-id='city'
                     input-type='text'
                     input-name='city'
                     label-text='Город*'
                     }}
 
-                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    {{>partials/custom-input input-class='registration-hero__form-input disabled'
                     input-id='address'
                     input-type='text'
                     input-name='address'
@@ -80,7 +70,7 @@
                     label-text='Пароль*'
                     }}
 
-                    {{>partials/custom-input input-class='registration-hero__form-input'
+                    {{>partials/custom-input input-class='registration-hero__form-input disabled'
                     input-id='password-again'
                     input-type='password'
                     input-name='password-again'

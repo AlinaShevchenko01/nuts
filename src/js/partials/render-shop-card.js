@@ -1,15 +1,14 @@
-import { getProducts } from "@/js/firebase/get-products.js";
 import { lazyLoad } from "@/js/partials/lazy-loading.js";
 import { initCustomCardSwiper } from "@/js/partials/custom-swiper.js";
 import cardPartial from "@/html/partials/shop-card.html";
 import imgManager from "@/html/templates/img-manager.html";
 import itemCharacteristics from "@/html/partials/card-characteristics.html";
+import {translate} from "@/js/partials/translate.js";
 
-export async function renderShopCard() {
+export async function renderShopCard(products) {
   const shopContainer = document.querySelector(".shop");
   const btnMore = document.querySelector('[data-move="more"]');
   shopContainer.innerHTML = "";
-  const products = await getProducts();
   const groupSize = 6;
   let renderedCards = 0;
 
@@ -29,7 +28,7 @@ export async function renderShopCard() {
     const characteristicsHtml = product.characteristics
       .map((char) =>
         itemCharacteristics({
-          "characteristic-text": char,
+          "characteristic-text": translate(`characteristics.${char}`),
         }).toString(),
       )
       .join(",");
@@ -41,12 +40,13 @@ export async function renderShopCard() {
       "id": product.id,
       "card-article": product.id,
       weight: product.weight,
-      "pack-type": product.packType,
+      "pack-type": translate(`packType.${product.packType}`),
       "full-price": Math.round(product.price * product.salePercent),
       "sale-percent": product.salePercent,
       "sale-price": product.price,
       "class-card": product.itemFlag,
-      flag: product.itemFlag,
+      "flag": product.itemFlag,
+       "flag-text": translate(`itemFlag.${product.itemFlag}`),
     });
 
     return cardShop;

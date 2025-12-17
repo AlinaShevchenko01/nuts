@@ -6,26 +6,51 @@
 
   &__wrapper {
     max-width: 1404px;
-    padding: 62px 56px 80px;
+    padding: 70px 56px 96px;
     margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(md) {
+      padding: 50px 34px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs) {
+      padding: 40px 24px;
+    }
   }
 
   &__inner {
-    @include mixins.flex-between-center;
-    gap: 16px;
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 11% 22% 13.24% 20% 15% 10%;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 60px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 0.5fr repeat(3, 1fr);
+      row-gap: 24px;
+      column-gap: 16px;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 6px;
+    }
   }
 
   &__container{
-    @include mixins.flex-between-center;
-    gap: 6px;
+    display: flex;
+    gap: clamp(6px, 1vw, 14px);
   }
 
   &__container_filter{
-    flex: 1 0 7.4%;
     max-width: 95px;
-
-
   }
 
   &__text {
@@ -34,22 +59,130 @@
     font-weight: variables.$font-weight-bold;
   }
 
-  &__arrows {
-    @include mixins.flex-between-center;
+  &__select {
+    @include media.media-breakpoint-down-equal(lg) {
+      max-width: 100%;
+    }
+
+    .custom-select__arrow {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  &__select_taste {
+    max-width: 283px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      grid-area: 2/1/3/3;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      grid-area: 2/1/3/3;
+    }
+  }
+
+  &__select_weight {
+    max-width: 171px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      grid-area: 2/3/3/5;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      grid-area: 3/1/4/3;
+    }
+  }
+
+  &__container_price {
+    margin-left: 28px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      justify-self: flex-end;
+      margin-left: 0;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      grid-area: 1/2/2/4;
+      justify-self: flex-start;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      grid-area: 1/2/2/3;
+      justify-self: flex-end;
+    }
+
   }
 
   &__icon-arrow {
     color: variables.$color-text1;
+    transition: color 0.3s ease, fill 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: variables.$color-bg2;
+      }
+    }
+
+    &:active {
+      color: variables.$color-bg1;
+    }
+
+    &.active {
+      color: variables.$color-bg1;
+    }
+  }
+
+  &__icon-arrow_up{
+    transform: rotate(90deg);
+  }
+
+  &__icon-arrow_down{
+    transform: rotate(-90deg);
+  }
+
+  &__btn-accept {
+    align-self: center;
+    padding: 16px 37px 15px 37px;
+    margin-left: 46px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      justify-self: flex-start;
+      margin: 0;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      grid-area: 3/1/4/2;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      grid-area: 4/1/5/2;
+    }
   }
 
   &__cancel {
-    @include mixins.flex-between-center;
-    gap: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 14px;
     font-weight: variables.$font-weight-semibold;
     color: variables.$color-text1;
     fill: variables.$color-text1;
     transition: color 0.3s ease, fill 0.3s ease;
+    margin-left: 24px;
+
+    @include media.media-breakpoint-down-equal(lg) {
+      margin: 0;
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      grid-area: 3/2/4/3;
+    }
+
+    @include media.media-breakpoint-down-equal(sm) {
+      grid-area: 4/2/5/3;
+      justify-self: flex-end;
+    }
 
     @media (hover: hover) {
       &:hover {
@@ -64,9 +197,10 @@
     }
   }
 
-  &__btn-shop {
+  &__btn-shop.white {
     display: block;
-    margin: 0 auto;
+    padding: 16px 43px 16px 43px;
+    margin: 72px auto 0;
   }
 
 }

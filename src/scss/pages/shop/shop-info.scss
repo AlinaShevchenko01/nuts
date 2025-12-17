@@ -3,12 +3,13 @@
 @use "@/scss/utils/media" as media;
 
 .shop-info{
+  background-color: variables.$color-bg11;
 
   &__wrapper {
     max-width: 1404px;
     @include mixins.flex-between;
     gap: 30px;
-    padding: 196px 56px 54px;
+    padding: 100px 56px 54px;
     margin: 0 auto;
 
     @include media.media-breakpoint-down-equal(lg) {
