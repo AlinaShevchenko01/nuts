@@ -11,10 +11,10 @@
             </div>
 
             {{>partials/custom-select select-class='shop-market__select shop-market__select_taste'
-            select-label='Вкус'                     }}
+            select-label='Вкус' select-name='flavor'                    }}
 
             {{>partials/custom-select select-class='shop-market__select shop-market__select_weight'
-            select-label='Масса'                     }}
+            select-label='Масса'     select-name='weight'                }}
 
             <div class="shop-market__container shop-market__container_price">
                 <span class="shop-market__text">
@@ -22,22 +22,24 @@
                 </span>
 
                 <div class="shop-market__arrows">
-                    <button class="shop-market__btn-arrow shop-market__btn-arrow_up">
+                    <button class="shop-market__btn-arrow shop-market__btn-arrow_up"
+                    data-sort="down">
                         {{> templates/svg-manager id='icon-arrow-right'
                         svg-class="shop-market__icon-arrow_up shop-market__icon-arrow" width="15px" height="15px"}}
                     </button>
 
-                    <button class="shop-market__btn-arrow shop-market__btn-arrow_down">
+                    <button class="shop-market__btn-arrow shop-market__btn-arrow_down"
+                    data-sort="up">
                         {{> templates/svg-manager id='icon-arrow-right'
                         svg-class="shop-market__icon-arrow_down shop-market__icon-arrow" width="15px" height="15px"}}
                     </button>
                 </div>
             </div>
 
-            {{> partials/main-btn btn-class='shop-market__btn-accept' btn-move=''
+            {{> partials/main-btn btn-class='shop-market__btn-accept' btn-move='apply'
             btn-text='Применить'}}
 
-            <button class="shop-market__cancel">
+            <button class="shop-market__cancel disabled" data-move="reset">
                 {{> templates/svg-manager id='icon-close'
                 svg-class="shop-market__icon-cross" width="12px" height="12px"}}
 

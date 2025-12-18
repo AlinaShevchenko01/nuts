@@ -13,11 +13,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         [products],
         { threshold: 0, rootMargin: "200px" },
     );
-
     closeSelects()
 
     useLoadFunction(
-        () => import("@/js/partials/render-shop-card.js"),
+        () => import("@/js/pages/shop/shop-filters.js"),
         ".shop-market",
         [products],
         { threshold: 0, rootMargin: "200px" },

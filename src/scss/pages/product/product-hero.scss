@@ -86,16 +86,22 @@
   }
 
   &__item-btn{
-    top: 45.5%;
+    top: 50%;
   }
 
   &__item-btn_prev{
     left: 21px;
-    transform: rotate(180deg) translateY(56%);
+    transform: rotate(0deg) translateY(0);
+
+
+    .item-swiper__icon-arrow{
+      transform: rotate(180deg);
+    }
   }
 
   &__item-btn_next{
     right: 21px;
+
   }
 
   &__scale-container{

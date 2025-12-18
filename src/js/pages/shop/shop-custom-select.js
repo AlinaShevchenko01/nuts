@@ -14,7 +14,7 @@ export function initShopSelects (products) {
     const weightValues = getUniqueValues(products,
         product => product.weight)
     const weightOptions = buildSelectOptions(weightValues,
-        value => translate(`${value} г.`));
+        value =>`${value} г.`);
 
     initCustomSelect(weightOptions, '.shop-market__select_weight')
 }

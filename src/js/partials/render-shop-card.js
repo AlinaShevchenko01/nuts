@@ -4,11 +4,18 @@ import cardPartial from "@/html/partials/shop-card.html";
 import imgManager from "@/html/templates/img-manager.html";
 import itemCharacteristics from "@/html/partials/card-characteristics.html";
 import {translate} from "@/js/partials/translate.js";
+import { initTooltip } from "@/js/partials/tooltip.js";
 
-export async function renderShopCard(products) {
+export function renderShopCard(products) {
   const shopContainer = document.querySelector(".shop");
   const btnMore = document.querySelector('[data-move="more"]');
   shopContainer.innerHTML = "";
+
+  if (btnMore) {
+    btnMore.classList.remove('hidden');
+    btnMore.onclick = null;
+  }
+
   const groupSize = 6;
   let renderedCards = 0;
 
@@ -91,8 +98,11 @@ export async function renderShopCard(products) {
   renderGroup();
 
   if (btnMore) {
-    btnMore.addEventListener("click", () => {
+    btnMore.onclick = () => {
       renderGroup();
-    });
+    }
   }
+
+  initTooltip();
+
 }

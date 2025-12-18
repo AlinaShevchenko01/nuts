@@ -7,8 +7,7 @@ export function toggleSelectState(container) {
     const input = select.querySelector('.custom-select__value');
     const btn = select.querySelector('.custom-select__btn');
 
-    const selectedValues = [];
-    const placeholder = label.textContent;
+    select.selectedValues = [];
 
     btn.addEventListener('click', (e) => {
         e.stopPropagation()
@@ -35,20 +34,27 @@ export function toggleSelectState(container) {
                  const optionText = option.querySelector('.custom-select__input-text').textContent.trim()
 
                  if (checkbox.checked) {
-                     selectedValues.push(optionText);
+                     select.selectedValues.push(optionText);
                  }else {
-                     const index = selectedValues.indexOf(optionText);
-                     selectedValues.splice(index, 1);
+                     const index =  select.selectedValues.indexOf(optionText);
+                     select.selectedValues.splice(index, 1);
                  }
-
-                 if (selectedValues.length === 1) {
-                     label.textContent = selectedValues[0];
-                 } else if (selectedValues.length > 1) {
-                     label.textContent = `Выбрано ${selectedValues.length}`;
-                 } else {
-                     label.textContent = placeholder;
-                 }
+                 updateSelectLabel(select)
              }
         })
+    }
+}
+
+export function updateSelectLabel (select) {
+    const label = select.querySelector('.custom-select__label');
+    const placeholder = select.ariaPlaceholder
+    const count = select.selectedValues.length;
+
+    if ( count === 1) {
+        label.textContent =  select.selectedValues[0];
+    } else if ( count > 1) {
+        label.textContent = `Выбрано ${count}`;
+    } else {
+        label.textContent = placeholder;
     }
 }
