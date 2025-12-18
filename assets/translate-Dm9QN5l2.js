@@ -1,2 +1,0 @@
-const e={characteristics:{sweet:"сладкий",salty:"солёный",honey:"медовый",raspberry:"малиновый",milky:"молочный",cheese:"сырный",bacon:"бекон",classic:"классический",confectionery:"кондитерский",roasted:"жареный",peeled:"очищенный",crushed:"дроблёный"},packType:{vacuum:"вакуумная",container:"контейнер",box:"коробка",jar:"баночка"},itemFlag:{sale:"акция",new:"новинка",basic:"базовый"}};function c(c){return String(c).split(".").map(e=>e.trim()).join(".").split(".").reduce((e,c)=>e?.[c],e)??c}export{c as t};
-//# sourceMappingURL=translate-Dm9QN5l2.js.map

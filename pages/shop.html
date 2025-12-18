@@ -20,14 +20,17 @@
     rel="stylesheet"
   />
   <base href="/nuts/" />
-  <script type="module" crossorigin src="/nuts/assets/pages\shop-DbAflXZG.js"></script>
+  <script type="module" crossorigin src="/nuts/assets/pages\shop-DP0j4Ei9.js"></script>
   <link rel="modulepreload" crossorigin href="/nuts/assets/vendor-CdPkAZIS.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/reuse-functions-CsFiiDOq.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/firebase-BABsrvC7.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/get-products-Cmpvwq6p.js">
   <link rel="modulepreload" crossorigin href="/nuts/assets/close-select-BgJcd01a.js">
+  <link rel="modulepreload" crossorigin href="/nuts/assets/custom-swiper-DNRAhqfM.js">
+  <link rel="modulepreload" crossorigin href="/nuts/assets/img-manager-rnB8atRr.js">
+  <link rel="modulepreload" crossorigin href="/nuts/assets/render-shop-card-DhQhuer8.js">
   <link rel="stylesheet" crossorigin href="/nuts/assets/vendor-BTDLRqRw.css">
-  <link rel="stylesheet" crossorigin href="/nuts/assets/shop-cxOUcqyn.css">
+  <link rel="stylesheet" crossorigin href="/nuts/assets/shop-Bl7IXg8H.css">
 </head>
 
 <body>
@@ -1366,10 +1369,10 @@
               </div>
   
               <div class="custom-select shop-market__select shop-market__select_taste"
-              data-select=""
+              data-select="flavor"
               data-required="">
                   <input type="hidden"
-                  name=""
+                  name="flavor"
                   class="custom-select__value">
                   <button class="custom-select__btn"
                   type="button">
@@ -1391,10 +1394,10 @@
                   </span>
               </div>
               <div class="custom-select shop-market__select shop-market__select_weight"
-              data-select=""
+              data-select="weight"
               data-required="">
                   <input type="hidden"
-                  name=""
+                  name="weight"
                   class="custom-select__value">
                   <button class="custom-select__btn"
                   type="button">
@@ -1421,13 +1424,15 @@
                   </span>
   
                   <div class="shop-market__arrows">
-                      <button class="shop-market__btn-arrow shop-market__btn-arrow_up">
+                      <button class="shop-market__btn-arrow shop-market__btn-arrow_up"
+                      data-sort="up">
                           <svg class="shop-market__icon-arrow_up shop-market__icon-arrow" width="15px" height="15px">
                             <use href="#icon-arrow-right"></use>
                           </svg>
                       </button>
   
-                      <button class="shop-market__btn-arrow shop-market__btn-arrow_down">
+                      <button class="shop-market__btn-arrow shop-market__btn-arrow_down"
+                      data-sort="down">
                           <svg class="shop-market__icon-arrow_down shop-market__icon-arrow" width="15px" height="15px">
                             <use href="#icon-arrow-right"></use>
                           </svg>
@@ -1435,7 +1440,7 @@
                   </div>
               </div>
   
-              <button class="main-btn shop-market__btn-accept" data-move="">
+              <button class="main-btn shop-market__btn-accept" data-move="apply">
                 Применить
               </button>
   
