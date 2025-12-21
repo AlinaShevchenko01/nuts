@@ -19,14 +19,14 @@
       rel="stylesheet"
     />
     <base href="/nuts/" />
-    <script type="module" crossorigin src="/nuts/assets/index-Dr1izcVg.js"></script>
+    <script type="module" crossorigin src="/nuts/assets/index-xOcwGPWr.js"></script>
     <link rel="modulepreload" crossorigin href="/nuts/assets/vendor-CdPkAZIS.js">
     <link rel="modulepreload" crossorigin href="/nuts/assets/reuse-functions-CsFiiDOq.js">
     <link rel="modulepreload" crossorigin href="/nuts/assets/firebase-BABsrvC7.js">
     <link rel="modulepreload" crossorigin href="/nuts/assets/get-products-Cmpvwq6p.js">
     <link rel="modulepreload" crossorigin href="/nuts/assets/flip-card-7hba7igv.js">
     <link rel="stylesheet" crossorigin href="/nuts/assets/vendor-BTDLRqRw.css">
-    <link rel="stylesheet" crossorigin href="/nuts/assets/index-D-49GfUj.css">
+    <link rel="stylesheet" crossorigin href="/nuts/assets/index-C5lyMETI.css">
   </head>
 
   <body>
@@ -40,7 +40,7 @@
     <symbol id="icon-arrow-down" viewBox="0 0 43 32">
       <path
         fill="#93b474"
-        style="fill: var(--color1, #93b474)"
+        style="fill: currentColor"
         d="M21.306 21.727l-16.089-15.327-5.217 5.381 21.306 20.219 21.361-20.219-5.217-5.381-16.144 15.327z"
       ></path>
     </symbol>
@@ -850,7 +850,7 @@
     </symbol>
 
     <symbol id="icon-arrow-left" viewBox="0 0 32 32">
-      <path fill="#337d5a" style="fill: var(--color1, #337d5a)" d="M13.333 29.334l1.867-1.867-10.133-10.133h26.933v-2.667h-26.933l10.133-10.133-1.867-1.867-13.333 13.333 13.333 13.333z"></path>
+      <path fill="#337d5a" style="fill: currentColor" d="M13.333 29.334l1.867-1.867-10.133-10.133h26.933v-2.667h-26.933l10.133-10.133-1.867-1.867-13.333 13.333 13.333 13.333z"></path>
     </symbol>
 
     <symbol id="icon-settings" viewBox="0 0 32 32">
@@ -973,6 +973,130 @@
       </div>
     </div>
 
+    <div class="cart-small">
+        <ul class="cart-small__list">
+            <li class="cart-item cart-small__cart-item">
+                <p class="cart-item__text">
+                    Орех соленый 80г
+                   
+                </p>
+            
+                <div class="cart-item__quantity">
+                    <button class="cart-item__btn cart-item__btn_minus">
+                        <svg class="cart-item__arrow cart-item__arrow_minus" width="10px" height="8px">
+                          <use href="#icon-arrow-down"></use>
+                        </svg>
+                    </button>
+            
+            
+                        <input type="text"
+                                class="cart-item__input"
+                        aria-label="quantity"
+                        name="quantity"
+                        value="">
+            
+                    <button class="cart-item__btn cart-item__btn_plus">
+                        <svg class="cart-item__arrow cart-item__arrow_plus" width="10px" height="8px">
+                          <use href="#icon-arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            
+                <p class="cart-item__price">
+                    <span>
+                        25
+                    </span>
+            
+                    <span>грн.</span>
+                </p>
+            
+                <p class="cart-item__total-price">
+                    <span>
+                        100
+                    </span>
+            
+                    <span>грн.</span>
+                </p>
+            
+                <button class="cart-item__delete">
+                    <svg class="cart-item__delete-icon" width="12px" height="12px">
+                      <use href="#icon-close"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="cart-item cart-small__cart-item">
+                <p class="cart-item__text">
+                    Орех соленый 80г
+                   
+                </p>
+            
+                <div class="cart-item__quantity">
+                    <button class="cart-item__btn cart-item__btn_minus">
+                        <svg class="cart-item__arrow cart-item__arrow_minus" width="10px" height="8px">
+                          <use href="#icon-arrow-down"></use>
+                        </svg>
+                    </button>
+            
+            
+                        <input type="text"
+                                class="cart-item__input"
+                        aria-label="quantity"
+                        name="quantity"
+                        value="">
+            
+                    <button class="cart-item__btn cart-item__btn_plus">
+                        <svg class="cart-item__arrow cart-item__arrow_plus" width="10px" height="8px">
+                          <use href="#icon-arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            
+                <p class="cart-item__price">
+                    <span>
+                        25
+                    </span>
+            
+                    <span>грн.</span>
+                </p>
+            
+                <p class="cart-item__total-price">
+                    <span>
+                        100
+                    </span>
+            
+                    <span>грн.</span>
+                </p>
+            
+                <button class="cart-item__delete">
+                    <svg class="cart-item__delete-icon" width="12px" height="12px">
+                      <use href="#icon-close"></use>
+                    </svg>
+                </button>
+            </li>    </ul>
+    
+        <div class="cart-sum cart-small__cart-sum">
+            <div class="cart-sum__inner">
+                <p class="cart-sum__text">
+                    Всего
+                </p>
+        
+                <p class="cart-sum__num">
+                    <span>
+                        175 
+                    </span>
+        
+                    <span class="cart-sum__num-text">
+                        грн.
+                    </span>
+                </p>
+            </div>
+        
+            <button class="main-btn cart-sum__order" data-move="btn-move-go">
+              Перейти в корзину
+            </button>
+        </div>
+    
+    </div>
     <div class="header__grid">
       <div class="header__column">
         <button class="header__burger-icon">
@@ -1390,7 +1514,8 @@
     </div>
 
     <div class="main-products__shop-container">
-      <div class="shop main-products__shop"></div>
+      <div class="shop main-products__shop">
+      </div>
       <a href="pages/shop.html">
         <button class="main-btn main-products__btn-shop white" data-move="">
           Перейти в магазин
