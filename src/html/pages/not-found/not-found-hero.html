@@ -10,16 +10,6 @@
             Страница не найдена
         </p>
 
-        <a class="not-found-hero__link"
-           href="index">
-            <button class="not-found-hero__btn">
-                {{> templates/svg-manager id="icon-arrow-left" width="14px" height="14px"
-                svg-class='not-found-hero__icon'}}
-
-                <span class="not-found-hero__btn-text">
-                    Вернуться на Главную страницу
-                </span>
-            </button>
-        </a>
+        {{> partials/btn-back btn-back-class='not-found-hero__link' direction='index' btn-back-text='Вернуться на Главную страницу'}}
     </div>
 </section>

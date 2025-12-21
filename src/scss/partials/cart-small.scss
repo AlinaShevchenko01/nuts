@@ -1,0 +1,85 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.cart-small {
+  position: absolute;
+  top: 122px;
+  right: 16.6vw;
+  z-index: 1;
+  width: 468px;
+  max-height: 460px;
+  overflow-y: auto;
+  border: 1.5px solid variables.$color-bg1;
+  background-color: variables.$color-main-bg;
+  padding: 16px 30px 26px 30px;
+
+  @include media.media-breakpoint-down-equal(l) {
+    right: 56px;
+  }
+
+  @include media.media-breakpoint-down-equal(md) {
+    top: 86px;
+    right: 12px;
+    padding: 16px;
+  }
+
+  @include media.media-breakpoint-down-equal(xs) {
+    top: 96px;
+    right: 4px;
+    width: 98%;
+    max-width: 468px;
+    padding: 16px 8px;
+  }
+
+  &__cart-item.cart-item{
+    line-height: 1.36;
+    padding: 14px 0 17px 0;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: inherit;
+      }
+    }
+
+    @include media.media-breakpoint-down-equal(md) {
+      width: 100%;
+      gap: 6px;
+    }
+
+    .cart-item__text {
+      flex: 1 1 30%;
+      max-width: none;
+    }
+
+    .cart-item__quantity{
+      margin-left: 0;
+    }
+
+    .cart-item__price {
+      display: none;
+    }
+
+    .cart-item__delete{
+      display: block;
+    }
+  }
+
+  &__cart-sum.cart-sum {
+    gap: 12px;
+    justify-self: flex-end;
+    margin-top: 17px;
+
+    @include media.media-breakpoint-down-equal(xs) {
+      flex-direction: row;
+    }
+
+    .cart-sum__order {
+      padding: 14px 17px 15px 16px;
+
+      @include media.media-breakpoint-down-equal(xs) {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -25,6 +25,10 @@
     }
   }
 
+  &__wrapper {
+    position: relative;
+  }
+
   &__grid {
     width: 67.7%;
     max-width: 1293px;

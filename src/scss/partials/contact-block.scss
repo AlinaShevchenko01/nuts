@@ -196,6 +196,7 @@
   }
 
   &__language-arrow {
+    color: variables.$color-bg2;
     transition: transform 0.3s ease;
 
     &.rotate {

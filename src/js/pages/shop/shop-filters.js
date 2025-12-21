@@ -167,11 +167,9 @@ function syncSelectFromFilters (selectName, values) {
     select.selectedValues = []
 
     checkboxes.forEach(checkbox => {
-        const option = checkbox.closest('.custom-select__option');
-        const optionText = option.querySelector('.custom-select__input-text').textContent.trim()
         if (values.includes(checkbox.value)) {
             checkbox.checked = true;
-            select.selectedValues.push(optionText)
+            select.selectedValues.push(checkbox.value)
         } else {
             checkbox.checked = false;
         }

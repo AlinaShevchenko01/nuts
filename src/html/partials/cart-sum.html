@@ -1,0 +1,20 @@
+<div class="cart-sum {{cart-sum-class}}">
+    <div class="cart-sum__inner">
+        <p class="cart-sum__text">
+            Всего
+        </p>
+
+        <p class="cart-sum__num">
+            <span>
+                175 {{cart-total-value}}
+            </span>
+
+            <span class="cart-sum__num-text">
+                грн.
+            </span>
+        </p>
+    </div>
+
+    {{> partials/main-btn btn-class='cart-sum__order'
+    btn-text=cart-sum-btn btn-move='btn-move-go'}}
+</div>

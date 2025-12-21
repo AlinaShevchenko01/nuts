@@ -1,0 +1,46 @@
+<li class="cart-item {{cart-item-class}}">
+    <p class="cart-item__text">
+        Орех соленый 80г
+       {{item-name}}
+    </p>
+
+    <div class="cart-item__quantity">
+        <button class="cart-item__btn cart-item__btn_minus">
+            {{> templates/svg-manager id="icon-arrow-down" width="10px"
+            height="8px" svg-class='cart-item__arrow cart-item__arrow_minus'}}
+        </button>
+
+
+            <input type="text"
+                    class="cart-item__input"
+            aria-label="quantity"
+            name="quantity"
+            value="{{item-quantity}}">
+
+        <button class="cart-item__btn cart-item__btn_plus">
+            {{> templates/svg-manager id="icon-arrow-down" width="10px"
+            height="8px" svg-class='cart-item__arrow cart-item__arrow_plus'}}
+        </button>
+    </div>
+
+    <p class="cart-item__price">
+        <span>
+            25{{item-price}}
+        </span>
+
+        <span>грн.</span>
+    </p>
+
+    <p class="cart-item__total-price">
+        <span>
+            100{{item-total-price}}
+        </span>
+
+        <span>грн.</span>
+    </p>
+
+    <button class="cart-item__delete">
+        {{> templates/svg-manager id="icon-close" width="12px"
+        height="12px" svg-class='cart-item__delete-icon'}}
+    </button>
+</li>

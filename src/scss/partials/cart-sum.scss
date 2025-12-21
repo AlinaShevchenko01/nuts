@@ -1,0 +1,45 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.cart-sum{
+  @include mixins.flex-between-center;
+  gap: 28px;
+
+  @include media.media-breakpoint-down-equal(xs) {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__inner{
+    @include mixins.flex-between-center;
+    gap: 6px;
+  }
+
+  &__text {
+    font-weight: variables.$font-weight-bold;
+    line-height: 1.78;
+  }
+
+  &__num {
+    font-family: variables.$second-font-family;
+    color: variables.$color-bg1;
+    font-size: 22px;
+    font-weight: variables.$font-weight-bold;
+    line-height: 1.45;
+  }
+
+  &__num-text {
+    font-size: 14px;
+    font-weight: variables.$font-weight-semibold;
+    line-height: 2.29;
+  }
+
+  &__order {
+    font-size: 16px;
+    font-weight: variables.$font-weight-bold;
+    padding: 14px 57px 15px 57px;
+  }
+
+}

@@ -1,0 +1,40 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.btn-back{
+
+  &__btn {
+    @include mixins.flex-between-center;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 1.06;
+    color: variables.$color-bg1;
+    font-weight: variables.$font-weight-bold;
+    border: 1.5px solid variables.$color-bg1;
+    transition: background-color 0.25s ease;
+    padding: 14px 24px 15px;
+
+    @include media.media-breakpoint-down-equal(xs) {
+      font-size: 14px;
+    }}
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: variables.$color-bg1;
+
+      span{
+        color: variables.$color-main-bg;
+      }
+
+      svg {
+        color: variables.$color-main-bg;
+      }
+    }
+  }
+
+  &__icon {
+    color: variables.$color-bg1;
+    transition: color 0.25s ease;
+  }
+}

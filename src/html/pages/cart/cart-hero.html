@@ -1,0 +1,121 @@
+<section class="cart-hero">
+    <div class="cart-hero__wrapper">
+        <div class="cart-hero__inner">
+            <h1 class="cart-hero__title">
+                Корзина
+            </h1>
+
+            <div class="cart-hero__inner-container">
+                <p class="cart-hero__text">Ваш личный менеджер Олег</p>
+
+                <a  href="tel:+380677771412" class="cart-hero__link-call">
+                    <button class="cart-hero__btn-call">
+                        {{> templates/svg-manager id="icon-telephone" width="12px"
+                        height="12px" svg-class='cart-hero__phone-icon'}}
+
+                        <span>
+                            +38 067 777 14 12
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="cart-hero__table">
+            <div class="cart-hero__title-row">
+                <p class="cart-hero__row-name">
+                    <span>
+                       Товар
+                    </span>
+
+                    {{> templates/svg-manager id="icon-arrow-down" width="10px"
+                    height="8px" svg-class='cart-hero__arrow-down'}}
+                </p>
+
+                <p class="cart-hero__row-name">
+                    <span>
+                        Кол - во
+                    </span>
+
+                    {{> templates/svg-manager id="icon-arrow-down" width="10px"
+                    height="8px" svg-class='cart-hero__arrow-down'}}
+                </p>
+
+                <p class="cart-hero__row-name">
+                    <span>
+                        Цена за товар
+                    </span>
+
+                    {{> templates/svg-manager id="icon-arrow-down" width="10px"
+                    height="8px" svg-class='cart-hero__arrow-down'}}
+                </p>
+
+                <p class="cart-hero__row-name">
+                    <span>
+                        Итоговая стоимость
+                    </span>
+
+                    {{> templates/svg-manager id="icon-arrow-down" width="10px"
+                    height="8px" svg-class='cart-hero__arrow-down'}}
+                </p>
+            </div>
+
+            <ul class="cart-hero__item-list">
+                {{>partials/cart-item  cart-item-class='cart-hero__cart-item'
+                item-name=cart-item-name
+                item-quantity=cart-item-quantity
+                item-price=cart-item-price
+                item-total-price=cart-total-price}}
+
+                {{>partials/cart-item  cart-item-class='cart-hero__cart-item'
+                item-name=cart-item-name
+                item-quantity=cart-item-quantity
+                item-price=cart-item-price
+                item-total-price=cart-total-price}}
+
+                {{>partials/cart-item  cart-item-class='cart-hero__cart-item'
+                item-name=cart-item-name
+                item-quantity=cart-item-quantity
+                item-price=cart-item-price
+                item-total-price=cart-total-price}}
+
+                {{>partials/cart-item  cart-item-class='cart-hero__cart-item'
+                item-name=cart-item-name
+                item-quantity=cart-item-quantity
+                item-price=cart-item-price
+                item-total-price=cart-total-price}}
+            </ul>
+        </div>
+
+        <div class="cart-hero__row-total">
+            {{> partials/btn-back btn-back-class='cart-hero__btn-back' direction='pages/shop.html' btn-back-text='Продолжить покупки'}}
+
+            {{> partials/cart-sum cart-sum-btn='Оформить заказ' cart-sum-class='cart-hero__cart-sum' cart-total-value=cart-total}}
+        </div>
+
+        <div class="cart-hero__message">
+            <p class="cart-hero__message-text">
+                Для оформления заказа необходимо
+            </p>
+
+            <div class="cart-hero__message-move">
+                <a href="pages/authorization.html"
+                        class="cart-hero__message-btn">
+                        Авторизоваться
+                </a>
+
+                <span>
+                   или
+                </span>
+
+                <a class="cart-hero__btn-registration"
+                   href="pages/registration.html">
+                        Зарегистрироваться
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {{> partials/breadcrumbs breadcrumbs-class='cart-hero__breadcrumbs gray'
+    name='Корзина'}}
+</section>

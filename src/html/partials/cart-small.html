@@ -1,0 +1,19 @@
+<div class="cart-small">
+    <ul class="cart-small__list">
+        {{>partials/cart-item  cart-item-class='cart-small__cart-item'
+        item-name=cart-item-name
+        item-quantity=cart-item-quantity
+        item-price=cart-item-price
+        item-total-price=cart-total-price}}
+
+        {{>partials/cart-item  cart-item-class='cart-small__cart-item'
+        item-name=cart-item-name
+        item-quantity=cart-item-quantity
+        item-price=cart-item-price
+        item-total-price=cart-total-price}}
+    </ul>
+
+    {{> partials/cart-sum cart-sum-btn='Перейти в корзину' cart-sum-class='cart-small__cart-sum' cart-total-value=cart-small-total}}
+
+
+</div>

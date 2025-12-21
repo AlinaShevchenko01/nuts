@@ -1,0 +1,107 @@
+@use "@/scss/utils/variables" as variables;
+@use "@/scss/utils/mixins" as mixins;
+@use "@/scss/utils/media" as media;
+
+.cart-item{
+  @include mixins.flex-between-center;
+  gap: 16px;
+  font-family: variables.$second-font-family;
+  font-size: 14px;
+  font-weight: variables.$font-weight-medium;
+  line-height: 2.29;
+  border-bottom: 1px solid variables.$color-border2;
+  padding: 15px 24px;
+
+  @include media.media-breakpoint-down-equal(md) {
+    width: 956px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: variables.$color-bg12;
+    }
+  }
+
+  &__text {
+    flex: 1 1 12%;
+    max-width: 300px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      max-width: 240px;
+    }
+  }
+
+  &__quantity {
+    @include mixins.flex-between-center;
+    gap: 6px;
+    flex: 1 1 8%;
+    max-width: 70px;
+    margin-left: -100px;
+
+    @include media.media-breakpoint-down-equal(md) {
+      margin-left: -70px;
+    }
+
+
+    input {
+      font-family: variables.$second-font-family;
+    }
+  }
+
+  &__btn{
+    color: variables.$color-text1;
+
+    @media (hover: hover) {
+      &:hover {
+        color: variables.$color-bg2;
+      }
+    }
+
+    &:active {
+      color: variables.$color-bg1;
+    }
+  }
+
+  &__arrow_minus {
+    transform: rotate(90deg);
+  }
+
+  &__arrow_plus {
+    transform: rotate(-90deg);
+  }
+
+  &__input {
+    width: 44px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid variables.$color-border5;
+
+    &:focus {
+      border: 1px solid variables.$color-bg2;
+    }
+  }
+
+  &__price {
+    flex: 1 1 11%;
+    max-width: 146px;
+    text-align: center;
+  }
+
+  &__total-price {
+    flex: 1 1 14%;
+    max-width: 180px;
+    text-align: center;
+  }
+
+  &__delete{
+    display: none;
+    fill: variables.$color-inactive;
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        fill: variables.$color-bg2;
+      }
+    }
+  }
+}
